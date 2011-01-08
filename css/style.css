@@ -34,7 +34,12 @@ blockquote:after { content: '"'; }
 
 #contributors li { float: left; list-style: none;  margin-right: 4px;}
 
-
+footer {
+	background: #eee;
+	line-height: 64px;
+	margin: 32px 0;
+	text-align: center;
+}
 
 
 
