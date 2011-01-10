@@ -25,7 +25,6 @@ html {
   background-position: fixed;  
 }
 
-body { background: url('../images/bg.png'); }
 
 h1, h2 { color: hsl(15, 84%, 30%); }
 .intro { background: hsl(272, 23%, 29%); color: hsl(42, 21%, 85%); text-shadow: 1px 1px 1px #000; }
@@ -56,24 +55,59 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 .content h2 { margin-top: 1em; }
 
 #contributors { vertical-align: middle; }
-#contributors h2 { font-size: 1em; display: inline; margin: 0; text-shadow: none; }
+#contributors h2 { display: none; }
 #contributors a:after { content: ", "; }
 #contributors a:last-child:after { content: "."; }
 
 .incorrect, .cert, .noaffiliation { 
-  background: url(../images/incorrect.png) no-repeat top left; 
+  background: url(../images/incorrect.png) no-repeat 1em center; 
   min-height: 3em;
-  padding-left: 4em;
   list-style: none;
+  margin-left: -4em;              
+  padding: 0.75em 0 0.75em 5em;  
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 3em;
+  color: hsl(42, 21%, 85%); 
+  text-shadow: 1px 1px 1px #000;  
 }
-.cert { background-position: top right; padding-left: 0; padding-right: 4em; }
-.cert { background-image: url(../images/cert.png); }
+.cert { 
+  background-image: url(../images/cert.png); 
+}
 .noaffiliation { background-image: url(../images/now3csupport.png); }
+                                                    
+.cert:before,
+.incorrect:before,
+.noaffiliation:before { 
+  position: absolute; 
+  left: 50%;
+  margin-top: -0.75em; 
+  height: 4.5em; 
+  width: 50%; 
+  content: ""; 
+  display: block;
+  z-index: -1;  
+}
+
+.cert, .cert:before { background-color: hsl(201, 39%, 40%); }
+.cert { 
+  border-top-right-radius: 3em; 
+  border-bottom-right-radius: 3em; 
+  background-position: 99% center; 
+  padding-left: 0; 
+  padding-right: 5em; 
+}
+
+.cert:before { right: 50%; left: auto; }
+
+.incorrect, .incorrect:before { background-color: hsl(337, 76%, 32%); }
+.noaffiliation, .noaffiliation:before { background-color: hsl(31, 78%, 34%); }
 
 section li[id$="sucks"], section li[id$="quiz"] { display: none; }       
 section li[id$="sucks"]:target, section li[id$="quiz"]:target { display: block; }
 section nav { margin: 0.5em 0; }
 section nav a { display: inline-block; padding: 0.25em 0; margin: 0 1em; }
+section nav a:first-child { margin-left: 0; }
+section nav a:last-child { margin-right: 0; }
 
 footer { text-align: center; margin: 3.75em 0 1.875em 0; }
 
