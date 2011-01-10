@@ -48,7 +48,9 @@ h1, h2 {
 
 header h1 { text-align: center; margin: 0.6em 0 1.2em 0; }
 ol, ul { margin: 0; padding: 0; }
-p, li { margin: 0.75em 0; padding: 0; }
+
+p, li { margin: 1.5em 0; padding: 0; }
+p { margin: 0 0 1.5em; }
 p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
 .content, .intro { min-width: 60%; max-width: 800px; margin: 0 auto; }
@@ -131,10 +133,11 @@ sup { display:none;} /* kill off those comment links */
 
 
 
+section li { font-family: 'Neucha'; }
+section li blockquote, section li a { font-family: Arial; }
 
-
-
-
+blockquote { border-left: 3px solid #ccc; padding-left: 15px; }
+p + blockquote { margin-top: -1.3em; margin-bottom: .2em; }
 
 
 
