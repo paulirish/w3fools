@@ -58,7 +58,17 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 #contributors { vertical-align: middle; }
 #contributors h2 { font-size: 1em; display: inline; margin: 0; text-shadow: none; }
 #contributors a:after { content: ", "; }
-#contributors a:last-child:after { content: ""; }
+#contributors a:last-child:after { content: "."; }
+
+.incorrect, .cert, .noaffiliation { 
+  background: url(../images/incorrect.png) no-repeat top left; 
+  min-height: 3em;
+  padding-left: 4em;
+  list-style: none;
+}
+.cert { background-position: top right; padding-left: 0; padding-right: 4em; }
+.cert { background-image: url(../images/cert.png); }
+.noaffiliation { background-image: url(../images/now3csupport.png); }
 
 section li[id$="sucks"], section li[id$="quiz"] { display: none; }       
 section li[id$="sucks"]:target, section li[id$="quiz"]:target { display: block; }
