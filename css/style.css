@@ -119,7 +119,8 @@ sup { display:none;} /* kill off those comment links */
 
 
 
-
+section li { font-family: 'Neucha'; }
+section li blockquote, section li a { font-family: Arial; }
 
 
 
