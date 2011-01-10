@@ -26,45 +26,62 @@ html {
 }
 
 
-h1, h2 { color: hsl(15, 84%, 30%); }
+h1 b, h2 { color: hsl(15, 84%, 30%); }
 
 body { 
   font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
 }
 
-a, a:visited, a:active { text-decoration: none; color: hsl(41, 88%, 37%); }
-a:hover { color: hsl(37, 89%, 20%); }
+a, a:visited, a:active { text-decoration: none; color: hsl(41, 88%, 27%); }
+a:hover { color: hsl(20, 80%, 30%); }
 
-h1 { font-size: 5em; line-height: 1; }
-h2 { font-size: 3em; line-height: 1; }
 h4 { margin: 1em 0; font-size: 110%;}
+
+header:after { content: "✪  〮✪  〮✪  〮✪  〮✪"; text-align: center; display: block; }
+
 footer { font-size: 0.8em; line-height: 1.375;}
 
-h1, h2 { 
+header h1 b, h2 { 
   font-family: 'LeagueGothicRegular', Arial, sans-serif; 
   text-transform: uppercase; 
   letter-spacing: 0.5px;
-  text-shadow: hsl(26,68%,50%) 1px 1px, hsl(26,68%,50%) 2px 2px, hsl(26,68%,50%) 3px 3px, hsl(26,68%,50%) 4px 4px;   
+  text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px, hsl(15, 84%, 10%) 3px 3px, hsl(15, 84%, 10%) 4px 4px;   
+  display: block;
 }
 
-header h1 { text-align: center; margin: 0.6em 0 1.2em 0; }
+header { margin: 6em 0 4.5em 0; }
+
+header h1 { 
+  font-size: 1.5em; 
+  line-height: 1; 
+  text-shadow:  hsl(15, 84%, 30%) 1px 1px,  hsl(15, 84%, 30%) 2px 2px;
+  text-align: center; 
+  margin: 0.5em 0 1em 0; 
+  text-transform: uppercase; 
+  color: hsl(15, 84%, 10%);  
+}
+
+header h1 b { font-size: 4em; line-height: 1; }
+h2 { font-size: 3em; line-height: 1; letter-spacing: 1px; }
+
 ol, ul { margin: 0; padding: 0; }
 
 p, li { margin: 1.5em 0; padding: 0; }
 p { margin: 0 0 1.5em; }
 p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
-.content, .intro { min-width: 60%; max-width: 800px; margin: 0 auto; }
+.content, .intro p { min-width: 60%; max-width: 800px; margin: 0 auto; }
 
 .intro { 
   background: hsla(42, 21%, 55%, 0.2);
-  border-radius: 0.5em;
-  color: hsl(272, 23%, 29%); 
-  padding: 0.75em 1.5em 1.5em 1.5em;
-  outline: 1px solid hsla(42, 21%, 55%, 0.2); 
+  padding: 1.5em 1.5em 1px 1.5em;
+  outline: 1px dotted hsla(42, 21%, 55%, 0.2); 
   outline-offset: 0.25em;
   margin-bottom: 1.5em; 
 }
+
+.intro p { margin-bottom: 1.5em; }
+.intro p:last-child { text-align: right; font-style: italic; }
 
 
 .content h2 { margin-top: 1.5em; }
@@ -78,48 +95,12 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
 
 .incorrect, .cert, .noaffiliation { 
-  background: url(../images/incorrect.png) no-repeat 1em center; 
   min-height: 3em;
   list-style: none;
-  margin: 1.5em 0 1.5em -4em;              
-  padding: 1.5em 0 1.5em 5em;  
-  border-top-left-radius: 3em;
-  border-bottom-left-radius: 3em;
-  color: hsl(42, 21%, 85%); 
+  margin: 0;
+  padding: 1.5em 0;  
 }
-.cert { 
-  background-image: url(../images/cert.png); 
-}
-.noaffiliation { background-image: url(../images/now3csupport.png); }
-                                                    
-.cert:before,
-.incorrect:before,
-.noaffiliation:before { 
-  position: absolute; 
-  left: 50%;
-  margin-top: -1.5em; 
-  height: 6em; 
-  width: 50%; 
-  content: ""; 
-  display: block;
-  z-index: -1;  
-}
-
-
-.cert { 
-  border-top-right-radius: 3em; 
-  border-bottom-right-radius: 3em; 
-  background-position: 99% center; 
-  padding-left: 0; 
-  padding-right: 5em; 
-  text-align: right;
-}
-
-.cert:before { right: 50%; left: auto; }                     
-
-.cert, .cert:before {  background-color: hsl(272, 23%, 29%);  }
-.incorrect, .incorrect:before {  background-color: hsl(60, 13%, 6%); }
-.noaffiliation, .noaffiliation:before { background-color: hsl(35, 83%, 20%); }
+                  
 
 section li[id$="sucks"], section li[id$="quiz"] { display: none; }       
 section li[id$="sucks"]:target, section li[id$="quiz"]:target { display: block; }
