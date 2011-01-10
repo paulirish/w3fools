@@ -50,7 +50,7 @@ header h2:before {
   display: block;
 }
 
-.content, .intro p, .sucks li { min-width: 60%; max-width: 800px; margin: 0 auto; }
+.content, .intro p, .sucks li, .sucks .intro { min-width: 60%; max-width: 800px; margin: 0 auto; }
 
 .intro p:last-child { text-align: right; font-style: italic; }
 
@@ -93,8 +93,6 @@ sup { display:none;} /* kill off those comment links */
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
-.sucks .intro { width: 900px; margin: 0 auto; padding-bottom: 20px;}
-.sucks .intro blockquote { font-size: 22px;}
 /* 
 
 COLORS!
@@ -214,6 +212,8 @@ p + blockquote {
   margin-bottom: 0.937em; 
 }
 
+.sucks .intro { margin-bottom: 1.5em; margin-top: 2.25em; }
+.sucks .intro blockquote { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
 
 @media screen and (max-device-width: 480px) {
 
