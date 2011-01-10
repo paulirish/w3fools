@@ -5,6 +5,7 @@
 
 (function($) {
 	$(function() {
+		
 		var $toc = $('#toc'),
 			$tocLinks = $toc.find('a'),
 			$body = $(document.body),
@@ -31,39 +32,39 @@
 		// auto highlight nav links depending on doc position
 		var deferred = false,
 			timeout = false, // so gonna clear this later, you have NO idea	
-			last = false,
-			past = false,	
+			last = false, // makes sure the previous link gets un-activated
 		 	check = function() {
 				var scroll = $body.scrollTop(),
 					height = $body.height(),
-					margin = $window.height() * ( scroll / height );
-				$.each( cache, function( i, v ) {					
-					if ( scroll + margin >  v.target.position().top  ) {
+					tolerance = $window.height() * ( scroll / height );
+					
+				$.each( cache, function( i, v ) {	
+					// if we're past the link's section, activate it 				
+					if ( scroll + tolerance >  v.target.position().top  ) {
 						last && last.removeClass('active');				
-						v.link.addClass('active');						
-						last = v.link;
+						last = v.link.addClass('active');						
 					} else {
 						v.link.removeClass('active');
-						return false;
-					}
-					
+						return false; // get outta this $.each
+					}					
 				});
 				
+				// all done
 				clearTimeout( timeout );
-				deferred = false; // we're done				
+				deferred = false; 			
 			};
 		
 		// work on scroll, but debounced
 		$(document).scroll( function() {	
-			// timeout was already created
+			// timeout hasn't been created yet
 			if ( !deferred ) {
 				timeout = setTimeout( check , 250 ); // defer this stuff
 				deferred = true;
 			}				
 					
 		});
-	});
-	
+		
+	});	
 })(jQuery);
 
 
