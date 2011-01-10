@@ -78,7 +78,10 @@ section nav a:last-child { margin-right: 0; }
 
 section nav, .belief, #main .sucks h2, footer, .sucks li li:after { text-align: center; }
 
-.sucks li li:after { content: "  〮 〮 〮✪ 〮 〮 〮"; display: block; }
+.sucks li li { position: relative; }
+.sucks li li:after { content: ""; display: block; margin: 0 auto; position: absolute; left: 40%; width: 30%; border-bottom: 1px dotted; }
+
+.sucks li li:last-of-type:after { border-bottom: 0; }
 .sucks h3 { letter-spacing: 2px; }
 
 
@@ -114,6 +117,7 @@ header, header h2 { text-shadow: hsl(15, 84%, 30%) 1px 1px; }
   outline: 1px dotted hsla(42, 21%, 55%, 0.2); 
 }
 
+.sucks li li:after { border-color: hsl(41, 38%, 50%); }
 
 /*
 
@@ -184,8 +188,10 @@ section nav { margin: 0.75em 0; }
 
 #main .sucks h2 { margin-top: 0; }
 
-.sucks li,
-.sucks li li:after { padding: 1.5em 0 0; }
+.sucks li { padding-top: 1.5em; }
+.sucks li li { padding: 3em 0 0; }
+
+.sucks li li:after { bottom: -1.5em; }
 
 .sucks h3 { font-size: 2em; line-height: 1.5; }
 
