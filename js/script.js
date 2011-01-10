@@ -1,20 +1,18 @@
 /* Author: 
-
+	@danheberden and the gang :)
 */
-
-
 (function($) {
 	$(function() {
 		
 		var $toc = $('#toc'),
 			$tocLinks = $toc.find('a'),
-			$body = $(document.body),
-			$window = $(window),
+			$body = $( document.body) ,
+			$window = $( window ),
 			cache = {};
 		
 		// build cache	
 		$tocLinks.each(function(i,v) {
-			var href =  $(this).attr('href'),
+			var href =  $( this ).attr( 'href' ,
 				$target = $( href );
 			if ( $target.length ) {
 				cache[ this.href ] = { link: $(v), target: $target }; 
@@ -22,10 +20,10 @@
 		});
 		
 		// handle nav links
-		$toc.delegate('a', 'click', function(e) {
+		$toc.delegate( 'a', 'click', function(e) {
 			e.preventDefault(); // if you expected return false, *sigh*			
-			if ( cache[this.href] && cache[this.href].target ) {
-				$body.animate({ scrollTop: cache[this.href].target.position().top }, 600, 'swing' );
+			if ( cache[ this.href ] && cache[ this.href ].target ) {
+				$body.animate( { scrollTop: cache[ this.href ].target.position().top }, 600, 'swing' );
 			}			
 		});
 		
@@ -60,9 +58,14 @@
 			if ( !deferred ) {
 				timeout = setTimeout( check , 250 ); // defer this stuff
 				deferred = true;
-			}				
-					
+			}		
 		});
+		
+		// fix any possible failed scroll events and fix the nav automatically
+		(function() {
+			$(document).scroll();
+			setTimeout( arguments.callee, 1500 );			
+		})();
 		
 	});	
 })(jQuery);
