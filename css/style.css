@@ -47,6 +47,7 @@ h1, h2 { font-family: 'LeagueGothicRegular', Arial, sans-serif; text-transform: 
 header h1 { text-align: center; margin: 0.4em 0;}
 ol, ul { margin: 0; padding: 0; }
 p, li { margin: 1.5em 0; padding: 0; }
+p { margin: 0 0 2em; }
 p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
 .intro { padding: 2em 0; margin-bottom: 1.75em; outline: 2px dotted hsl(38,100%,27%); outline-offset: 0.25em; }
