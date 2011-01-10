@@ -95,6 +95,9 @@ sup { display:none;} /* kill off those comment links */
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
+
+#toc { position:fixed; bottom:0px; left: 0px; text-align: center; width:100%; background: hsla(42, 21%, 55%, 0.95);}
+#toc a { display:inline-block; padding: 1px 20px 0px; }
 /* 
 
 COLORS!
@@ -121,6 +124,7 @@ header, header h2 { text-shadow: hsl(15, 84%, 30%) 1px 1px; }
 
 .sucks li li:after { border-color: hsl(41, 38%, 50%); }
 
+#toc a.active { color:#444; }
 /*
 
 
