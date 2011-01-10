@@ -12,7 +12,7 @@
 		
 		// build cache	
 		$tocLinks.each(function(i,v) {
-			var href =  $( this ).attr( 'href' ,
+			var href =  $( this ).attr( 'href' ),
 				$target = $( href );
 			if ( $target.length ) {
 				cache[ this.href ] = { link: $(v), target: $target }; 
@@ -53,7 +53,7 @@
 			};
 		
 		// work on scroll, but debounced
-		$(document).scroll( function() {	
+		var $document = $(document).scroll( function() {	
 			// timeout hasn't been created yet
 			if ( !deferred ) {
 				timeout = setTimeout( check , 250 ); // defer this stuff
@@ -63,7 +63,7 @@
 		
 		// fix any possible failed scroll events and fix the nav automatically
 		(function() {
-			$(document).scroll();
+			$document.scroll();
 			setTimeout( arguments.callee, 1500 );			
 		})();
 		
