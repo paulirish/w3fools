@@ -37,6 +37,7 @@ a:hover { color: hsl(37, 89%, 20%); }
 
 h1 { font-size: 5em; line-height: 1; }
 h2 { font-size: 3em; line-height: 1; }
+h4 { margin: 1em 0; font-size: 110%;}
 footer { font-size: 0.8em; line-height: 1.375;}
 
 h1, h2 { 
@@ -139,6 +140,8 @@ section li blockquote, section li a { font-family: Arial; }
 blockquote { border-left: 3px solid #ccc; padding-left: 15px; }
 p + blockquote { margin-top: -1.3em; margin-bottom: .2em; }
 
+
+li > ol, li > ul { margin-left: 25px; }
 
 
 
