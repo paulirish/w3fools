@@ -643,7 +643,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <p>
                       Unnecessary use of <code>new Object()</code> instead of object literal <code>{}</code> on "creating your own objects".
                       Bad naming used for object constructors, they call it "template of an object". They don't explain that calling the
-                      constructor using "new" will return a new object - sounds like a job for Captain Obvious.
+                      constructor using <code>new</code> will return a new object - sounds like a job for Captain Obvious.
                     </p>
                   </li>
 
@@ -766,14 +766,14 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/jsref/dom_obj_event.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/jsref/dom_obj_event.asp</a>
                     <p>
-                      Doesn't mention the essential preventDefault() and stopPropagation().
+                      Doesn't mention the essential <code>preventDefault()</code> and <code>stopPropagation()</code>.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/JS/js_howto.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/JS/js_howto.asp</a>
                     <p>
-                      The document.write command is a standard JavaScript command for writing output to a page" &ndash; this is on the second section and they never explain the danger of using document.write (see: all of the Awful Examples below).
+                      The <code>document.write</code> method is a standard JavaScript command for writing output to a page" &ndash; this is on the second section and they never explain the danger of using document.write (see: all of the Awful Examples below).
                     </p>
                   </li>
 
@@ -790,7 +790,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_image_maps.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/js/js_image_maps.asp</a>
                     <p>
-                      What in the world does this have to do with javascript?
+                      What in the world does this have to do with JavaScript?
                     </p>
                   </li>
 
@@ -848,7 +848,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_throw.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/js/js_throw.asp</a>
                     <p>
-                      throw is not a function, it is a language construct, so why does their example treat it like one? :(
+                      <code>throw</code> is not a function, it is a language construct, so why does their example treat it like one? :(
                     </p>
                   </li>
                 </ul>
@@ -889,28 +889,40 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_examples.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/svg/svg_examples.asp</a>.
                     <p>
-                      It's bad advice to suggest using the Adobe SVG Viewer for browser that don't support SVG. It's unmaintained and I think it doesn't even work on Windows 7. &nbsp;Better is to suggest the use of SVGWeb. As for the examples linked to from that page, there's no good reason to refer to the SVG DTD. Who knows why that have standalone="no" in the XML declaration when the document has no external references. Putting version="1.1" on the root is kinda useless too.
+                      It's bad advice to suggest using the Adobe SVG Viewer for browser that don't
+                      support SVG. It's unmaintained and I think it doesn't even work on Windows 7.
+                      &nbsp;Better is to suggest the use of SVGWeb. As for the examples linked to
+                      from that page, there's no good reason to refer to the SVG DTD. Who knows why
+                      that have standalone="no" in the XML declaration when the document has no
+                      external references. Putting version="1.1" on the root is kinda useless too.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_filters_intro.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/svg/svg_filters_intro.asp</a>.
                     <p>
-                      What an exceptionally useful page&hellip; The "tip" that you can use multiple filters on an element is kind of misleading, if you happened to know how to write filters (because that list of elements sure doesn't help you): an element can have only one filter, but that filter might use multiple filter primitives to define its effect. The three lighting elements feDistantLight, fePointLight and feSpotLight aren't even filters primitives -- they're just helper elements for the two lighting primitives feDiffuseLighting and feSpecularLighting.
+                      What an exceptionally useful page&hellip; The "tip" that you can use multiple
+                      filters on an element is kind of misleading, if you happened to know how to
+                      write filters (because that list of elements sure doesn't help you): an
+                      element can have only one filter, but that filter might use multiple filter
+                      primitives to define its effect. The three lighting elements feDistantLight,
+                      fePointLight and feSpotLight aren't even filters primitives -- they're just
+                      helper elements for the two lighting primitives feDiffuseLighting and
+                      feSpecularLighting.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_filters_gaussian.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/svg/svg_filters_gaussian.asp</a>.
                     <p>
-                      The sentence talking about the id attribute on the &lt;filter&gt; is confused. &lt;filter&gt; need not be nested in a &lt;defs&gt;. The description of &lt;defs&gt; is pretty weak.
+                      The sentence talking about the id attribute on the <code>&lt;filter&gt;</code> is confused. <code>&lt;filter&gt;</code> need not be nested in a <code>&lt;defs&gt;</code>. The description of <code>&lt;defs&gt;</code> is pretty weak.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_grad_linear.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/svg/svg_grad_linear.asp</a>.
                     <p>
-                      Again, there's no requirement for gradients to be defined within a &lt;defs&gt;. 
+                      Again, there's no requirement for gradients to be defined within a <code>&lt;defs&gt;</code>. 
                     </p>
                   </li>
 
@@ -992,12 +1004,12 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 19</span> Missing alt attribute.
+                    <span>Question 19</span> Missing <code>alt</code> attribute.
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Question 20</span> same thing as q12, advocates using background attribute of &lt;body&gt;
+                    <span>Question 20</span> same thing as q12, advocates using background attribute of <code>&lt;body&gt;</code>
                   </p>
                 </li>
               </ul>
@@ -1053,7 +1065,7 @@ K###########,  KW   ,#####    #G                                          ##    
               <ul>
                 <li>
                   <p>
-                    <span>Question 2</span> Not mentioning document.createElement or .innerHTML as correct syntax to write "hello world". document.write is always the wrong answer, except in one case, which this is not.
+                    <span>Question 2</span> Not mentioning <code>document.createElement</code> or <code>.innerHTML</code> as correct syntax to write "hello world". document.write is always the wrong answer, except in one case, which this is not.
                   </p>
                 </li>
                 <li>
@@ -1063,12 +1075,12 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 7</span> missing var name = function(){}, anonymous functions and closures
+                    <span>Question 7</span> missing <code>var name = function(){}</code>, anonymous functions and closures
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Question 9/10</span> using == instead of === <sup><a href="#cmnt19" id="cmnt_ref19">[s]</a></sup>
+                    <span>Question 9/10</span> using <code>==</code> instead of <code>===</code> <sup><a href="#cmnt19" id="cmnt_ref19">[s]</a></sup>
                   </p>
                 </li>
                 <li>
@@ -1078,7 +1090,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 15</span> using new Array instead of [].
+                    <span>Question 15</span> using <code>new Array</code> instead of <code>[]</code>.
                   </p>
                 </li>
                 <li>
@@ -1088,12 +1100,12 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 19</span> Not technically wrong, but a lot of browsers don't let you change the status text or don't have a status bar, so setting window.status has no effect anyway.
+                    <span>Question 19</span> Not technically wrong, but a lot of browsers don't let you change the status text or don't have a status bar, so setting <code>window.status</code> has no effect anyway.
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Question 20</span> using navigator.appName doesn't work cross browser&hellip; For example it gives navigator in Google Chrome, and is also worthless<sup><a href="#cmnt22" id="cmnt_ref22">[v]</a></sup> thing to ask anyway 
+                    <span>Question 20</span> using <code>navigator.appName</code> doesn't work cross browser&hellip; For example it gives navigator in Google Chrome, and is also worthless<sup><a href="#cmnt22" id="cmnt_ref22">[v]</a></sup> thing to ask anyway 
                   </p>
                 </li>
               </ul>
