@@ -58,6 +58,9 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 #contributors h2 { display: none; }
 #contributors a:after { content: ", "; }
 #contributors a:last-child:after { content: "."; }
+#contributors span.at { font-size: 65%; opacity: 0.65; -webkit-transition: 0.2;}
+#contributors a:hover span.at {  opacity: 1;}
+
 
 .incorrect, .cert, .noaffiliation { 
   background: url(../images/incorrect.png) no-repeat 1em center; 
@@ -111,7 +114,7 @@ section nav a:last-child { margin-right: 0; }
 
 footer { text-align: center; margin: 3.75em 0 1.875em 0; }
 
-
+sup { display:none;} /* kill off those comment links */
 
 
 
