@@ -32,6 +32,8 @@ a, a:visited, a:active { text-decoration: none; }
 
 h2 { letter-spacing: 1px; }
 
+code { font-size: 0.9em; }
+
 li ol, li ul { margin-left: 25px; }
 
 header h1 b, #main h2, .belief, .sucks h3 { 
@@ -144,6 +146,7 @@ h2 {
 
 #main h2 { margin-top: 1.5em; }
 #contributors h2 { margin-top: 0.5em; }
+
 h4 { 
   font-size: 1.2em; 
   line-height: 1.25; 
