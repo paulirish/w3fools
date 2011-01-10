@@ -91,8 +91,8 @@ sup { display:none;} /* kill off those comment links */
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
-
-
+.sucks .intro { width: 900px; margin: 0 auto; padding-bottom: 20px;}
+.sucks .intro blockquote { font-size: 22px;}
 /* 
 
 COLORS!
