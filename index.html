@@ -392,12 +392,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <a href="http://www.w3schools.com/html5/html5_form_input_types.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/html5_form_input_types.asp</a>.
                     <p>The support for <code>type=color</code> and <code>type=search</code> is wrong for Opera, those were added in version 11.</p>
 
-                    <!-- Move this to a more general area? Not URL-specific discussion -->
-                    <p>General disclaimer in the footer:</p>
-                    <blockquote>
-                      We do not warrant the correctness of its content. The risk from using it lies entirely with the user.
-                    </blockquote>
-                    <p>Tyhe dotn' eevnhu trst teoir wn crap.</p>
+                    
                   </li>
 
                   <li>
@@ -439,7 +434,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/html/html_links.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_links.asp</a>.
                     <p>
-                      Uses the deprecated named anchor (name attribute) instead of element id.
+                      Uses the deprecated named anchor (name attribute) instead of element id. Yes. you can link to any element with a <code>href="#thing"</code> as long as it has <code>id="thing"</code>. Yes, it works everywhere. OMG.
                     </p>
                   </li>
 
@@ -523,12 +518,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     </p>
                   </li>
 
-                  <li>
-                    <a href="http://www.w3schools.com/jsref/met_win_setinterval.asp" rel="nofollow" class="w3s-link">www.w3schools.com/jsref/met_win_setinterval.asp</a>.
-                    <p>
-                      No warning about what happens when the callback takes longer than the given interval.
-                    </p>
-                  </li>
+          
 
  				  <li>
                     <a href="http://w3schools.com/html5/html5_video.asp" rel="nofollow" class="w3s-link">http://w3schools.com/html5/html5_video.asp</a>.
@@ -550,7 +540,7 @@ K###########,  KW   ,#####    #G                                          ##    
                       <sup><a href="#cmnt17" id="cmnt_ref17">[q]</a></sup>.
                     </p>
                     <p>
-                      There is no reference to JavaScript API's those elements have.
+                      There is no reference to JavaScript APIs those elements have.
                     </p>
                   </li>
                   <li>
@@ -619,7 +609,7 @@ K###########,  KW   ,#####    #G                                          ##    
 
                   <li>
                     <a href="http://www.w3schools.com/css3/css3_pr_target.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_pr_target.asp</a>.
-                    <p>CSS target property? UMM&hellip;</p>
+                    <p>CSS target property? UMM&hellip; I guess you mean <a href="http://www.w3.org/TR/css3-hyperlinks/">this deprecated spec</a> from 2004 with zero browser support? Awesome.</p>
                   </li>
 
                   <li>
@@ -632,15 +622,12 @@ K###########,  KW   ,#####    #G                                          ##    
                     <p>Listing <code>skewX</code> and <code>skewY</code> but forgetting about <code>translateX</code>, <code>translateY</code>, <code>scaleX</code> and <code>scaleY</code>..</p>
                   </li>
 
-                  <li>
-                    <a href="http://www.w3schools.com/css3/css3_ref_selectors.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_ref_selectors.asp</a>.
-                    <p>The <code>::selection</code> pseudo-element was removed from the specification.</p>
-                  </li>
+              
 
                   <li>
                     <a href="http://www.w3schools.com/css3/css3_fonts.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_fonts.asp</a>.
                     <p>
-                      Oh and there I thought Microsoft invented the <code>@font-face</code> at-rule! It's not entirely new in CSS3 either, as it was previously defined in CSS2 (but not in 2.1). There's no such thing as the <code>url</code> descriptor for font-face rules either.
+                      Oh and there I thought Microsoft invented the <code>@font-face</code> at-rule! My bad! There's no such thing as the <code>url</code> descriptor for font-face rules either.
                     </p>
                   </li>
                 </ul>
@@ -651,9 +638,9 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_timing.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_timing.asp</a>.
                     <p>
-                      This is a bullshit page. Why? you <strong>never</strong> pass a string to <code>setTimeout()</code> unless you like using
+                      This is a bullshit page. You <strong>never</strong> pass a string to <code>setTimeout()</code> unless you like using
                       <code>eval()</code>. Doing this also means you can't use any variables from your local scope. Also, the examples on this page
-                      has a ton of global variables.
+                      has a ton of global variables. Bad.
                     </p>
                   </li>
 
@@ -664,6 +651,13 @@ K###########,  KW   ,#####    #G                                          ##    
                       also means that you can't defer/asynchronously load a script and your DOM loading is delayed because the browser has to wait
                       for your <code>document.write()</code>. Oh, and by the way, user-agent sniffing is a <em>very</em> bad thing. So is sniffing just
                       about any parts of the <code>window.navigator</code> object.
+                    </p>
+                  </li>
+                  
+                   <li>
+                    <a href="http://www.w3schools.com/jsref/met_win_setinterval.asp" rel="nofollow" class="w3s-link">www.w3schools.com/jsref/met_win_setinterval.asp</a>.
+                    <p>
+                      No warning about what happens when the callback takes longer than the given interval.
                     </p>
                   </li>
 
@@ -685,7 +679,7 @@ K###########,  KW   ,#####    #G                                          ##    
 
                     <p>
                       Apparently <em>declarations</em> and <em>expressions</em> can go right to hell (since JavaScript only is a sequence of statements),
-                      and the second part about "each statement is executed by the browser in the sequence they are written" is just plain wrong.
+                      and the second part about "each statement is executed by the browser in the sequence they are written" is just plain wrong. See also: hoisting.
                     </p>
                   </li>
 
@@ -720,10 +714,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_obj_boolean.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_obj_boolean.asp</a>.
                     <p>
-                      <code>new Boolean()</code> is completely useless. Well, typecasting&hellip; <code>!!</code> works just as well &mdash; <code>!!</code>
-                      actually works much much better since if you use <code>new Boolean()</code> you end up with a boxed value:
-                      <code>( new Boolean( false ) !== false )</code>. And as usual, some madness: <code>typeof new Boolean('sup') === 'object'</code>,
-                      <code>typeof Boolean('hey") === 'boolean'</code>.
+                      <code>new Boolean()</code> is completely useless. Use straight up <code>true</code> and <code>false</code>. Save bytes, improve performance, and prevent all sorts of WTF when you start <code>typeof</code> or <code>==</code>'ing things.
                     </p>
                   </li>
 
@@ -741,9 +732,8 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_summary.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_summary.asp</a>.
                     <p>
-                      Saying that "now you know JavaScript" (after reading many wrong info) and recommending ASP as the next step. The next step
-                      should be learning node.js or any other back-end language. <sup><a href="#cmnt11" id="cmnt_ref11">[k]</a></sup> Not to mention that
-                      DHTML is referenced as another possible next step!
+                      Saying that "now you know JavaScript" (after reading many wrong info) and recommending ASP as the next step. ASP! Yeah. That shit from 2000! Not to mention that
+                      DHTML is referenced as another possible next step! Hum dur.
                     </p>
                   </li>
 
@@ -778,7 +768,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <a href="http://www.w3schools.com/js/js_popup.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_popup.asp</a>.
                     <p>
                       <code>alert()</code> and <code>confirm()</code> dialogs with no explanation that they should generally be avoided. Also no
-                      discussion of <code>console.log()</code> in newer browsers for debugging purposes.
+                      discussion of <code>console.log()</code> for debugging purposes. Please god, can we put a nail in the coffin of alert debugging already?
                     </p>
                   </li>
 
