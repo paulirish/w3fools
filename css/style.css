@@ -52,9 +52,9 @@ header h2:before {
   display: block;
 }
 
-.content, .intro p, .sucks li, .sucks .intro { min-width: 60%; max-width: 800px; margin: 0 auto; }
+.content, .intro p, .sucks li, .sucks .intro, .intro cite { min-width: 60%; max-width: 800px; margin: 0 auto; }
 
-.intro p:last-child { text-align: right; font-style: italic; }
+.intro cite { text-align: right; font-style: italic; display:block; margin-bottom: 15px; }
 
 
 #contributors { padding-left: 10em; position: relative; }
@@ -220,7 +220,7 @@ p + blockquote {
 }
 
 .sucks .intro { margin-bottom: 1.5em; margin-top: 2.25em; }
-.sucks .intro blockquote { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+.sucks .intro blockquote { font-size: 1.5em; line-height: 1.5em; margin: 1em 0; }
 
 @media screen and (max-device-width: 480px) {
 
