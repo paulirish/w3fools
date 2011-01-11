@@ -32,7 +32,17 @@ a, a:visited, a:active { text-decoration: none; }
 
 h2 { letter-spacing: 1px; }
 
-code { font-size: 0.9em; background-color: hsl(42, 21%, 75%); display: inline-block; padding: 1px 2px; }
+code {
+  font-size: 0.9em;
+  background-color: hsl(42, 21%, 75%);
+  display: inline-block;
+  padding: 1px 4px;
+  text-shadow: 1px 1px 1px hsl(42, 21%, 85%);
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
 
 header h1 b, #main h2, .belief, .sucks h3 { 
   font-family: 'LeagueGothicRegular', Arial, sans-serif; 
@@ -45,7 +55,7 @@ header h1 b { display: block; }
 header { text-align: center; text-transform: uppercase; }
 
 header h2:before { 
-  content: "✪  〮✪  〮✪  〮✪  〮✪"; 
+  content: "✪ · ✪ · ✪ · ✪ · ✪"; 
   text-shadow: none; 
   display: block;
 }
