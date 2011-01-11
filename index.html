@@ -649,7 +649,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <p>
                       Also abysmal. <code>document.write()</code> has a tendency to trash a page and is one of the poorest ways possible to add content. It
                       also means that you can't defer/asynchronously load a script and your DOM loading is delayed because the browser has to wait
-                      for your <code>document.write()</code>. Oh, and by the way, user-agent sniffing is a <em>very</em> bad thing. So is sniffing just
+                      for your <code>document.write()</code>. Oh, and by the way, user-agent sniffing is a <em>very</em> bad thing, because is easily <a href="http://webaim.org/blog/user-agent-string-history/">spoofable</a>. So is sniffing just
                       about any parts of the <code>window.navigator</code> object.
                     </p>
                   </li>
@@ -676,14 +676,21 @@ K###########,  KW   ,#####    #G                                          ##    
                       JavaScript code (or just JavaScript) is a sequence of JavaScript statements. Each statement is executed by the browser in the
                       sequence they are written.
                     </blockquote>
-
                     <p>
                       Apparently <em>declarations</em> and <em>expressions</em> can go right to hell (since JavaScript only is a sequence of statements),
                       and the second part about "each statement is executed by the browser in the sequence they are written" is just plain wrong. See also: hoisting.
                     </p>
+                     <blockquote>
+                      JavaScript Blocks
+                    </blockquote>
+                    <p>
+                      Nothing about JavaScript not having block scope even though its block syntax suggests that it does. 
+                    </p>
+		    <blockquote>
+                      The example above is not very useful.
+                    </blockquote>
+                    <p> lol </p>
                   </li>
-
-
                   <li>
                     <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax2" rel="nofollow" class="w3s-link">www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax2</a>.
                     <p><code>async: false</code>, come on! ASYNCHRONOUS COADS ARE HARD :(</p>
@@ -756,7 +763,12 @@ K###########,  KW   ,#####    #G                                          ##    
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_whereto.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_whereto.asp</a>.
-                    <p>Advocates placing scripts in the <code>&lt;head&gt;</code> with no explanation of the consequences in older browsers such as IE.</p>
+                    <blockquote>
+                      Scripts in  <code>&lt;head&gt;</code>
+                    </blockquote>
+                    <p>In older browsers, placing scripts in the <code>&lt;head&gt;</code> has a negative impact on page performance.
+                     Until the script is done loading: 1) resources below the script are blocked from downloading 2) elements below the script are blocked from rendering. So try to put scripts at the bottom of the page, when possible.
+		            </p>
                     <blockquote>
                       If you don't want your script to be placed inside a function, or if your script should write page content, it should be
                       placed in the body section.
