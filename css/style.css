@@ -119,7 +119,7 @@ header, header h2 { text-shadow: hsl(15, 84%, 30%) 1px 1px; }
 
 .intro, .belief, .sucks  { 
   background: hsla(42, 21%, 55%, 0.2);
-  outline: 1px dotted hsla(42, 21%, 55%, 0.2); 
+  outline: 1px dotted hsla(42, 21%, 55%, 0.5); 
 }
 
 .sucks li li:after { border-color: hsl(41, 38%, 50%); }
@@ -163,7 +163,7 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
 .intro { 
   padding: 1.5em 1.5em 1px 1.5em;
-  outline-offset: 0.25em;
+  outline-offset: -0.25em;
   margin-bottom: 1.5em; 
 }
 
@@ -182,13 +182,13 @@ section nav { margin: 0.75em 0; }
 
 .belief {  
   padding: 0.75em 0; 
-  outline-offset: 0.1em; 
+  outline-offset: -0.1em; 
   font-size: 2em;
 }
 
 
 .sucks {
-  outline-offset: 0.25em;
+  outline-offset: -0.25em;
   padding: 1.5em 0;
   margin: 3em 0;
 }
@@ -228,4 +228,3 @@ p + blockquote {
 @media print {
   body { content: "why the eff are you trying to print this, bro??"; }
 }
-
