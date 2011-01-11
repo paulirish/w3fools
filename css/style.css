@@ -47,7 +47,7 @@ header h1 b { display: block; }
 header { text-align: center; text-transform: uppercase; }
 
 header h2:before { 
-  content: "✪  〮✪  〮✪  〮✪  〮✪"; 
+  content: "✪ ✪ ✪ ✪ ✪"; 
   text-shadow: none; 
   display: block;
 }
