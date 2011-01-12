@@ -227,37 +227,49 @@ K###########,  KW   ,#####    #G                                          ##    
           -->
 
           <section class="content"><h2 id="what-should-be-done">What should be done</h2>
-          <ol>
+              <ol>
+                 <li>
+                  W3schools should consider <abbr title="make the site a wiki. Or.. put it all in public source control, like on Github.">wikifying</abbr>
+                  their content so the community would self correct and keep the information up-to-date. Today, they do not even allow you to submit
+                  corrections on a page. They should.
+                </li>
+
+                <li>You should learn from reputable sources.
+                  <ul>
+                    <li>
+                        <a href="http://htmldog.com/">HTML Dog</a> is a fantastic and comprehensive intro for HTML and CSS.
+                    <li>
+                        <a href="http://dev.opera.com/articles/view/1-introduction-to-the-web-standards-cur/#toc">Opera Web Standards Curriculum</a>
+                        covers the basics of web standards-based design in HTML and CSS.
+                    <li>
+                        <a href="http://code.google.com/edu/submissions/html-css-javascript/">Google's HTML, CSS, and Javascript from the Ground Up</a>
+                        presents the basics of web development with video tutorials presented by Google's expert web developers.
+                    <li>
+                        The W3C, itself, has a wiki-based general <a href="http://www.w3.org/html/wiki/Learn">Learn</a> page as well as an <a
+                        href="http://www.w3.org/html/wiki/Elements">HTML element reference</a>.
+                    <li>
+                        <p>
+                            <a href="https://developer.mozilla.org/en-US/docs">The MDC (Mozilla's Doc Center)</a> takes over at intermediate CSS and
+                            covers JavaScript better than anyone.
+                        </p>
+                        <p>
+                            The MDC is also a wiki (little known fact), which means we, as knowledgeable web developers, can add or change information so
+                            the pages are as effective and comprehensive as possible.
+                        </p>
+                  </ul>
+                </li>
+                <!-- <li>
+                  Until they fix their content, we urge everyone, not just web
+                  developers, to stop linking to or referencing w3schools.
+                  <sup><a href="#cmnt4" id="cmnt_ref4">[d]</a></sup>
+                </li> -->
 
 
-             <li>
-              W3schools should consider <abbr title="make the site a wiki. Or.. put it all in public source control, like on Github.">wikifying</abbr> their content so the community would self correct and keep the information
-              up-to-date. Today, they do not even allow you to submit corrections on a page. They should.
-            </li>
+                <!-- http://news.ycombinator.com/item?id=2082089 -->
 
-            <li>You should learn from reputable sources.
-              <ul>
-                <li><a href="http://htmldog.com/">HTML Dog</a> is a fantastic and comprehensive intro for HTML and CSS.
-                <li><a href="http://dev.opera.com/articles/view/1-introduction-to-the-web-standards-cur/#toc">Opera Web Standards Curriculum</a> covers the basics of web standards-based design in HTML and CSS.
-                <li><a href="http://code.google.com/edu/submissions/html-css-javascript/">Google's HTML, CSS, and Javascript from the Ground Up</a> presents the basics of web development with video tutorials presented by Google's expert web developers.
-                <li>The W3C, itself, has a wiki-based general <a href="http://www.w3.org/html/wiki/Learn">Learn</a> page as well as an
-                    <a href="http://www.w3.org/html/wiki/Elements">HTML element reference</a>.
-                <li><p><a href="https://developer.mozilla.org/en-US/docs">The MDC (Mozilla's Doc Center)</a> takes over at intermediate CSS and covers JavaScript better than anyone. </p><p> The MDC is also a wiki (little known fact),
-                  which means we, as knowledgeable web developers, can add or change information so the pages are as effective and comprehensive as possible.</p>
+              </ol>
+          </section>
 
-
-              </ul>
-            </li>
-            <!-- <li>
-              Until they fix their content, we urge everyone, not just web
-              developers, to stop linking to or referencing w3schools.
-              <sup><a href="#cmnt4" id="cmnt_ref4">[d]</a></sup>
-            </li> -->
-
-
-            <!-- http://news.ycombinator.com/item?id=2082089 -->
-
-          </ol></section>
           <section class="content"><h2 id="build-one-yourselves">"Build One Yourselves"</h2>
           <p>
             An oft-repeated mantra in OSS - and critique we've received - is that you shouldn't criticise a project unless you actually want to put
@@ -267,13 +279,6 @@ K###########,  KW   ,#####    #G                                          ##    
             insignificant one.  We believe it is W3schools' <em>responsibility</em> to use their lofty position to disseminate accurate information that is
             not potentially detrimental to its consumers.
           </section>
-
-          <!--
-
-          <ol class="c14"><li class="c11" value="1"><span>Yeah right. They are just there to make money on ads</span></li></ol><ol><li value="6"><span>Help rather than pillory ;-) - tbh a lot of their mistakes are just because things have moved on and they're not editing the old material (like 10 years old!) to bring it up-to-date. Wiki or similar would be perfect. </span><span>Question is&hellip; what motivation do they have to improve things? </span><sup><a href="#cmnt7" id="cmnt_ref7">[g]</a></sup><span>What is the StackOverflow to W3Schools' ExpertsExchange ?</span></li></ol><ol class="c14"><li class="c11" value="1"><span>IMHO it's the MDC&hellip; it's a wiki. It's got decent enough SEO.. Until/Unless I'm successful at getting the MDC to be moved from Mozilla to the W3C and then blow it out to totally game the SEO biz, while being a wiki and being super comprehensive&hellip;.. .. well that </span><span>sounds good</span><sup><a href="#cmnt8" id="cmnt_ref8">[h]</a></sup><span>. :) ~paul
-
-          ^ is this relevant on this page?
-          -->
 
           <section class="sucks clearfix">
             <div class="intro" id="why-w3schools-sucks">
@@ -307,8 +312,9 @@ K###########,  KW   ,#####    #G                                          ##    
                       The latest versions of Safari, Chrome, Firefox, and Opera support some HTML5 features. Internet Explorer 9 will support some HTML5 features.
                     </blockquote>
                     <p>
-                      Some IE features are now being standardized by HTML5, e.g. <code>contenteditable</code> which has been supported for ages in Internet Explorer.
-                      IE8 also supports <code>localStorage</code>.
+                      Some IE features are now being standardized by HTML5, e.g. <code><a href="http://www.w3.org/TR/html5/editing.html#contenteditable" rel="external">contenteditable</a></code>
+                      which has been supported for ages in Internet Explorer. IE8 also supports
+                      <code><a href="https://developer.mozilla.org/en/dom/storage#localStorage" rel="external">localStorage</a></code>.
                     </p>
                   </li>
 
@@ -524,9 +530,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     </p>
                   </li>
 
-
-
- 				  <li>
+                  <li>
                     <a href="http://w3schools.com/html5/html5_video.asp" rel="nofollow" class="w3s-link">http://w3schools.com/html5/html5_video.asp</a>.
                     <blockquote>
                       "Currently, there are 2 supported video formats for the video element: &hellip; Ogg .. MPEG 4
@@ -776,9 +780,11 @@ K###########,  KW   ,#####    #G                                          ##    
                     <blockquote>
                       Scripts in  <code>&lt;head&gt;</code>
                     </blockquote>
-                    <p>In older browsers, placing scripts in the <code>&lt;head&gt;</code> has a negative impact on page performance.
-                     Until the script is done loading: 1) resources below the script are blocked from downloading 2) elements below the script are blocked from rendering. So try to put scripts at the bottom of the page, when possible.
-		            </p>
+                    <p>
+                      In older browsers, placing scripts in the <code>&lt;head&gt;</code> has a negative impact on page performance. Until the script
+                      is done loading: 1) resources below the script are blocked from downloading 2) elements below the script are blocked from
+                      rendering. So try to put scripts at the bottom of the page, when possible.
+                    </p>
                     <blockquote>
                       If you don't want your script to be placed inside a function, or if your script should write page content, it should be
                       placed in the body section.
@@ -796,7 +802,7 @@ K###########,  KW   ,#####    #G                                          ##    
 
                   <li>
                     <a href="http://www.w3schools.com/jsref/jsref_regexp_compile.asp" rel="nofollow" class="w3s-link">www.w3schools.com/jsref/jsref_regexp_compile.asp</a>.
-                    <p>DEPRECATED SINCE FOREVER AGO. WHY IS THIS LISTED?!</p>
+                    <p>The <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Deprecated_Features#RegExp_Methods" rel="external">compile</a></code> method has been deprecated for some time now.</p>
                   </li>
 
                   <li>
@@ -914,7 +920,9 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp" rel="nofollow" class="w3s-link">www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp</a>
                     <p>
-                      Beginners would probably copy and paste the code which lacks <code>var</code> statements and would add evil globals.
+                      Beginners would probably copy and paste the code which lacks
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/var" rel="external">var</a></code>
+                      statements and would add evil globals.
                     </p>
                   </li>
 
@@ -1041,17 +1049,15 @@ K###########,  KW   ,#####    #G                                          ##    
                     </p>
                   </li>
 
-
                   <li>
-                    <a href="http://www.w3schools.com/" rel="nofollow" class="w3s-link">http://www.w3schools.com/</a>
+                    <a href="http://www.w3schools.com/" rel="nofollow" class="w3s-link">www.w3schools.com/</a>
                     <p>
                        no links to the specs, ever. :(
                     </p>
                   </li>
-                  
-                  
+
                   <li>
-                    <a href="http://w3schools.com/browsers/browsers_explorer.asp" rel="nofollow" class="w3s-link">w3schools.com/browsers/browsers_explorer.asp</a> and <a href="http://w3schools.com/browsers/browsers_stats.asp" rel="nofollow" class="w3s-link">w3schools.com/browsers/browsers_stats.asp</a>
+                    <a href="http://w3schools.com/browsers/browsers_explorer.asp" rel="nofollow" class="w3s-link">www.w3schools.com/browsers/browsers_explorer.asp</a> and <a href="http://w3schools.com/browsers/browsers_stats.asp" rel="nofollow" class="w3s-link">w3schools.com/browsers/browsers_stats.asp</a>
                     <blockquote>These facts indicate that the browser figures above are not 100% realistic. Other web sites have statistics showing that Internet Explorer is used by at least 80% of the users.
                     </blockquote>
                     <p>Pretty much everyone quotes these figures as if they were global stats. They aren't. W3Schools discloses this, but you probably didn't notice that.</p>
@@ -1078,7 +1084,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 4</span> Actually, correct HTML is &lt;br&gt;, correct XHTML is &lt;br /&gt;
+                    <span>Question 4</span> Actually, correct HTML is <code>&lt;br&gt;</code>, correct XHTML is <code>&lt;br /&gt;</code>
                   </p>
                 </li>
                 <li>
@@ -1113,7 +1119,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 15</span> Actually, correct HTML is &lt;input type="checkbox"gt;, correct XHTML is &lt;input type="checkbox" /&gt;
+                    <span>Question 15</span> Actually, correct HTML is <code>&lt;input type="checkbox"&gt;</code>, correct XHTML is <code>&lt;input type="checkbox" /&gt;</code>
                   </p>
                 </li>
                 <li>
@@ -1123,7 +1129,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 20</span> same thing as q12, advocates using background attribute of <code>&lt;body&gt;</code>
+                    <span>Question 20</span> same thing as Question 12, advocates using background attribute of <code>&lt;body&gt;</code>
                   </p>
                 </li>
               </ul>
@@ -1179,8 +1185,11 @@ K###########,  KW   ,#####    #G                                          ##    
               <ul>
                 <li>
                   <p>
-                    <span>Question 2</span> Not mentioning <code>document.createElement()</code> or <code>innerHTML</code> as correct syntax to
-                    write "hello world". <a href="https://developer.mozilla.org/en/document.write" rel="external"><code>document.write()</code></a> is always the wrong answer, except in one case, which this is not.
+                    <span>Question 2</span> Not mentioning <code><a href="https://developer.mozilla.org/en/DOM/document.createElement" rel="external">document.createElement</a>()</code>
+                    or <code><a href="https://developer.mozilla.org/en/DOM:element.innerHTML" rel="external">innerHTML</a></code>
+                    as correct syntax to write "hello world".
+                    <a href="https://developer.mozilla.org/en/document.write" rel="external"><code>document.write()</code></a>
+                    is always the wrong answer, except in one case, which this is not.
                   </p>
                 </li>
                 <li>
@@ -1195,7 +1204,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 9/10</span> Using <code>==</code> instead of <code>===</code>
+                    <span>Question 9/10</span> <a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Comparison_Operators#Using_the_Equality_Operators" rel="external">Using <code>==</code> instead of <code>===</code></a>
                   </p>
                 </li>
                 <li>
@@ -1221,7 +1230,8 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 20</span> using <code>navigator.appName</code> doesn't work cross browser&hellip; For example it gives navigator in Google Chrome, and is also worthless thing to ask anyway
+                    <span>Question 20</span> using <code><a href="https://developer.mozilla.org/en/DOM/window.navigator.appName" rel="external">navigator.appName</a></code>
+                    doesn't work cross browser&hellip; For example it gives navigator in Google Chrome, and is also worthless thing to ask anyway
                   </p>
                 </li>
               </ul>
