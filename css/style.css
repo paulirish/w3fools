@@ -109,9 +109,6 @@ section nav, .belief, #main .sucks h2, footer, .sucks li li:after { text-align: 
   -o-column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
 }
 
-sup { display:none;} /* kill off those comment links */
-
-
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }

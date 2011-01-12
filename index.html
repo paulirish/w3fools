@@ -200,7 +200,6 @@ K###########,  KW   ,#####    #G                                          ##    
             </li>
             <li class="incorrect">
               W3Schools publishes inaccurate, misleading, and confusing content. Just scroll down this page. We dare you.
-              <sup><a href="#cmnt3" id="cmnt_ref3">[c]</a></sup>
             </li>
           </ol>
           </section>
@@ -399,7 +398,7 @@ K###########,  KW   ,#####    #G                                          ##    
 
                     <!-- Move this somewhere else, seems a bit more general and shouldn't under a specific topic? -->
                     <p>
-                      Prolific use of <code>new Array()</code> and <code>array[0] = "foo"; array[1] = "bar"</code> instead of
+                      Prolific use of <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" rel="external">Array</a>()</code> and <code>array[0] = "foo"; array[1] = "bar"</code> instead of
                       <code>["foo", "bar"]</code>.
                     </p>
                   </li>
@@ -419,7 +418,7 @@ K###########,  KW   ,#####    #G                                          ##    
                       Even if <code>&lt;br&gt;</code> works in all browsers, writing <code>&lt;br /&gt;</code> instead is more future proof.
                     </blockquote>
                     <p>
-                      Bullshit. I wouldn't expect them to know how the html parser works, but don't advocate so blindly.<br>also, &lt;br /&gt; isn't semantic, so just don't use it<sup><a href="#cmnt16" id="cmnt_ref16">[p]</a></sup>.
+                      Bullshit. I wouldn't expect them to know how the html parser works, but don't advocate so blindly.<br>also, &lt;br /&gt; isn't semantic, so just don't use it.
                     </p>
                   </li>
 
@@ -543,8 +542,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <a href="http://www.w3schools.com/html5/html5_video.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/html5_video.asp</a>.
                     <p>
                       Controls attribute are an boolean attribute. If attribute is present it similar to true, it its not present its similar
-                      to false. So its not <code>&lt;audio controls="controls"&gt;</code>, its just <code>&lt;audio controls&gt;</code>
-                      <sup><a href="#cmnt17" id="cmnt_ref17">[q]</a></sup>.
+                      to false. So its not <code>&lt;audio controls="controls"&gt;</code>, its just <code>&lt;audio controls&gt;</code>.
                     </p>
                     <p>
                       There is no reference to JavaScript APIs those elements have.
@@ -599,8 +597,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/css/pr_pseudo_after.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css/pr_pseudo_after.asp</a>.
                     <p>
-                      WTF. Play a sound after each occurrence of an <code>H1</code> element&hellip; HUH? This almost seems like a joke
-                      <sup><a href="#cmnt9" id="cmnt_ref9">[i]</a></sup>. It seems like an insult.
+                      WTF. Play a sound after each occurrence of an <code>H1</code> element&hellip; HUH? This almost seems like a joke. It seems like an insult.
                     </p>
                   </li>
 
@@ -645,7 +642,8 @@ K###########,  KW   ,#####    #G                                          ##    
                     <a href="http://www.w3schools.com/js/js_timing.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_timing.asp</a>.
                     <p>
                       This is a bullshit page. You <strong>never</strong> pass a string to <code>setTimeout()</code> unless you like using
-                      <code>eval()</code>. Doing this also means you can't use any variables from your local scope. Also, the examples on this page
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval" rel="external">eval</a>()</code>.
+                      Doing this also means you can't use any variables from your local scope. Also, the examples on this page
                       has a ton of global variables. Bad.
                     </p>
                   </li>
@@ -653,9 +651,12 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_browser.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_browser.asp</a>.
                     <p>
-                      Also abysmal. <code>document.write()</code> has a tendency to trash a page and is one of the poorest ways possible to add content. It
-                      also means that you can't defer/asynchronously load a script and your DOM loading is delayed because the browser has to wait
-                      for your <code>document.write()</code>. Oh, and by the way, user-agent sniffing is a <em>very</em> bad thing, because is easily <a href="http://webaim.org/blog/user-agent-string-history/">spoofable</a>. So is sniffing just
+                      Also abysmal.
+                      <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write</a>()</code>
+                      has a tendency to trash a page and is one of the poorest ways possible to add content. It also means that you can't
+                      defer/asynchronously load a script and your DOM loading is delayed because the browser has to wait for your
+                      <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write</a>()</code>.
+                      Oh, and by the way, user-agent sniffing is a <em>very</em> bad thing, because is easily <a href="http://webaim.org/blog/user-agent-string-history/">spoofable</a>. So is sniffing just
                       about any parts of the <code>window.navigator</code> object.
                     </p>
                   </li>
@@ -673,7 +674,10 @@ K###########,  KW   ,#####    #G                                          ##    
                       First, <code>eval()</code> determines if the argument is a valid string, then <code>eval()</code> parses the string looking
                       for JavaScript code. If it finds any JavaScript code, it will be executed.
                     </blockquote>
-                    <p>LOLWAT? This is ridiculous! <code>eval()</code> certainly does not parse a string to determine whether or not it's JavaScript.</p>
+                    <p>
+                        LOLWAT? This is ridiculous! <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval" rel="external">eval</a>()</code>
+                        certainly does not parse a string to determine whether or not it's JavaScript.
+                    </p>
                   </li>
 
                   <li>
@@ -692,7 +696,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <p>
                       Nothing about JavaScript not having block scope even though its block syntax suggests that it does. 
                     </p>
-		    <blockquote>
+                    <blockquote>
                       The example above is not very useful.
                     </blockquote>
                     <p> lol </p>
@@ -709,7 +713,7 @@ K###########,  KW   ,#####    #G                                          ##    
                       function, the variable is destroyed.
                     </blockquote>
                     <p>
-                      The whole concept of closures doesn't exist at w3schools&hellip; Also, they never go over the difference between a function
+                      The whole concept of closures doesn't exist at W3Schools&hellip; Also, they never go over the difference between a function
                       declaration and a function expression. I know this is for beginners, but they could at least put it in the advanced section, or make
                       it apparent that functions are first-class?
                     </p>
@@ -718,7 +722,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_objects.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_objects.asp</a>.
                     <p>
-                      Unnecessary use of <code>new Object()</code> instead of object literal <code>{}</code> on "creating your own objects".
+                      Unnecessary use of <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" rel="external">Object</a>()</code> instead of object literal <code>{}</code> on "creating your own objects".
                       Bad naming used for object constructors, they call it "template of an object". They don't explain that calling the
                       constructor using <code>new</code> will return a new object - sounds like a job for Captain Obvious.
                     </p>
@@ -738,7 +742,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     </blockquote>
                     <p>
                       Not only do they forget about using the <code>var</code> keyword to prevent the variable from leaking to the global scope, but
-                      also they use <code>var</code> as a variable name, which is forbidden. <sup><a href="#cmnt10" id="cmnt_ref10">[j]</a></sup>
+                      also they use <code>var</code> as a variable name, which is forbidden.
                     </p>
                   </li>
 
@@ -825,25 +829,31 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/JS/js_obj_array.asp" rel="nofollow" class="w3s-link">www.w3schools.com/JS/js_obj_array.asp</a>.
                     <p>
-                      It lists <code>new Array()</code> as the way to create an array. The problem is that this is the old, slower way.
-                      <sup><a href="#cmnt13" id="cmnt_ref13">[m]</a></sup>. The new way, <code>[]</code> is shorter and it makes you look cool.
-                      <sup><a href="#cmnt14" id="cmnt_ref14">[n]</a></sup>
+                      It lists <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" rel="external">Array</a>()</code> as the way to create an array. The problem is that this is the old, slower way.
+                      The new way, <code>[]</code> is shorter and it makes you look cool.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_form_validation.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_form_validation.asp</a>.
                     <p>
-                      Use of generally discouraged <code>with()</code>, use of global variables, use of JavaScript in HTML attribute
-                      (<code>onsubmit=""</code>) etc. Very last century. Also, the <code>if()</code> could be simplified to simply <code>if (!value)</code> - in
-                      its current form, it's likely to perpetuate some of the misunderstandings people tend to have about JavaScript.
+                      Use of generally discouraged
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/with" rel="external">with</a>()</code>, 
+                      use of global variables, use of JavaScript in HTML attribute (<code>onsubmit=""</code>) etc. Very last century. Also, the
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/if...else" rel="external">if</a>()</code>
+                      could be simplified to simply
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/if...else" rel="external">if</a> (!value)</code>
+                      - in its current form, it's likely to perpetuate some of the misunderstandings people tend to have about JavaScript.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/jsref/dom_obj_event.asp" rel="nofollow" class="w3s-link">www.w3schools.com/jsref/dom_obj_event.asp</a>
                     <p>
-                      Doesn't mention the essential <code>event.preventDefault()</code> and <code>event.stopPropagation()</code>.
+                      Doesn't mention the essential
+                      <code><a href="https://developer.mozilla.org/en/DOM/event.preventDefault" rel="external">event.preventDefault</a>()</code>
+                      and
+                      <code><a href="https://developer.mozilla.org/en/DOM/event.stopPropagation" rel="external">event.stopPropagation</a>()</code>
                     </p>
                   </li>
 
@@ -853,7 +863,7 @@ K###########,  KW   ,#####    #G                                          ##    
                       The <code>document.write()</code> command is a standard JavaScript command for writing output to a page.
                     </blockquote>
                     <p>
-                      This is on the second section and they never explain the danger of using <code>document.write()</code>
+                      This is on the second section and they never explain the danger of using <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write</a>()</code>
                     </p>
                   </li>
 
@@ -863,7 +873,8 @@ K###########,  KW   ,#####    #G                                          ##    
                       Use <code>getTime()</code> to calculate the years since 1970
                     </blockquote>
                     <p>
-                      UM, NO? Wrong? Very wrong?! Yes, it is wrong. Not &quot;years&quot; but &quot;milliseconds&quot;.
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getTime" rel="external">getTime</a>()</code>
+                      does not calculate the years since 1970, but rather milliseconds.
                     </p>
                   </li>
 
@@ -877,7 +888,7 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_animation.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_animation.asp</a>
                     <p>
-                      This is not animation<sup><a href="#cmnt15" id="cmnt_ref15">[o]</a></sup>. This is not even something that you should be using JS for. Ever.
+                      This is not animation. This is not even something that you should be using JS for. Ever.
                     </p>
                   </li>
 
@@ -910,33 +921,32 @@ K###########,  KW   ,#####    #G                                          ##    
                   <li>
                     <a href="http://www.w3schools.com/js/js_events.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_events.asp</a>
                     <p>
-                      Encouraging the use of inline event handlers. Also no mention of event bubbling or <code>event.stopPropagation()</code>.
+                      Encouraging the use of inline event handlers. Also no mention of event bubbling or <code><a href="https://developer.mozilla.org/en/DOM/event.stopPropagation" rel="external">event.stopPropagation</a>()</code>.
                       The wise bot from #jquery once said:
                     </p>
                     <blockquote>
                       Inline handlers are harder to debug, aren't reusable, are harder to maintain, bloat your HTML, and violate the
                       separation of content design principle. Also - jQuery can't normalize your event, leaving you unsure if you can
-                      reliably <code>event.stopPropagation()</code>, or access <code>event.which</code>.
+                      reliably
+                      <code><a href="https://developer.mozilla.org/en/DOM/event.stopPropagation" rel="external">event.stopPropagation</a>()</code>,
+                      or access
+                      <code><a href="https://developer.mozilla.org/en/DOM/event.which" rel="external">event.which</a></code>.
                     </blockquote>
-                    <p>
-
-                    </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_special_characters.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_special_characters.asp</a>
                     <p>
-                      That's weird, I am *pretty* sure that ampersands are not characters that need to be
-                      escaped<sup><a href="#cmnt24" id="cmnt_ref24">[x]</a></sup> in JS strings, but maybe I have been doing it wrong this
-                      whole time!?!? Maybe they meant that it is an HTML special character, so using it in JS blocks inside the HTML document
-                      can cause problems<sup><a href="#cmnt25" id="cmnt_ref25">[y]</a></sup>.
+                      That's weird, I am *pretty* sure that ampersands are not characters that need to be escaped in JS strings, but maybe I have been
+                      doing it wrong this whole time!?!? Maybe they meant that it is an HTML special character, so using it in JS blocks inside the
+                      HTML document can cause problems.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_throw.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_throw.asp</a>
                     <p>
-                      <code>throw</code> is not a function, it is a language construct, so why does their example treat it like one? :(
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/throw" rel="external">throw</a></code> is not a function, it is a language construct, so why does their example treat it like one? :(
                     </p>
                   </li>
                 </ul>
@@ -1063,7 +1073,7 @@ K###########,  KW   ,#####    #G                                          ##    
               <ul>
                 <li>
                   <p>
-                    <span>Question 1</span> WHO CARES<sup><a href="#cmnt18" id="cmnt_ref18">[r]</a></sup> WHAT IT STANDS FOR? HOW DOES THAT HELP YOU USE HTML?
+                    <span>Question 1</span> WHO CARES WHAT IT STANDS FOR? HOW DOES THAT HELP YOU USE HTML?
                   </p>
                 </li>
                 <li>
@@ -1170,7 +1180,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 <li>
                   <p>
                     <span>Question 2</span> Not mentioning <code>document.createElement()</code> or <code>innerHTML</code> as correct syntax to
-                    write "hello world". <code>document.write()</code> is always the wrong answer, except in one case, which this is not.
+                    write "hello world". <a href="https://developer.mozilla.org/en/document.write" rel="external"><code>document.write()</code></a> is always the wrong answer, except in one case, which this is not.
                   </p>
                 </li>
                 <li>
@@ -1185,23 +1195,23 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 9/10</span> Using <code>==</code> instead of <code>===</code> <sup><a href="#cmnt19" id="cmnt_ref19">[s]</a></sup>
+                    <span>Question 9/10</span> Using <code>==</code> instead of <code>===</code>
                   </p>
                 </li>
                 <li>
                   <p>
                     <span>Question 13/14</span> Glad we spent two whole questions going over the ways that one can comment text in JS.
-                    I can rest easy knowing that my JS devs will be able to write multi-line comments now. <sup><a href="#cmnt20" id="cmnt_ref20">[t]</a></sup>
+                    I can rest easy knowing that my JS devs will be able to write multi-line comments now.
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Question 15</span> using <code>new Array()</code> instead of <code>[]</code>
+                    <span>Question 15</span> using <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" rel="external">Array</a>()</code> instead of <code>[]</code>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Question 18</span> Pop-up windows? Really? Let's not talk about how falsy values work, let's ask how to open a WINDOW<sup><a href="#cmnt21" id="cmnt_ref21">[u]</a></sup>
+                    <span>Question 18</span> Pop-up windows? Really? Let's not talk about how falsy values work, let's ask how to open a WINDOW
                   </p>
                 </li>
                 <li>
@@ -1211,7 +1221,7 @@ K###########,  KW   ,#####    #G                                          ##    
                 </li>
                 <li>
                   <p>
-                    <span>Question 20</span> using <code>navigator.appName</code> doesn't work cross browser&hellip; For example it gives navigator in Google Chrome, and is also worthless<sup><a href="#cmnt22" id="cmnt_ref22">[v]</a></sup> thing to ask anyway
+                    <span>Question 20</span> using <code>navigator.appName</code> doesn't work cross browser&hellip; For example it gives navigator in Google Chrome, and is also worthless thing to ask anyway
                   </p>
                 </li>
               </ul>
@@ -1255,135 +1265,6 @@ K###########,  KW   ,#####    #G                                          ##    
             </ol>
           </section>
 
-<!--
-          <h3>Off-Topic</h3>
-          <p>So I'm looking at twitter search for w3schools to see where this link has gone.. but once i scroll past all the tweets referencing it&hellip;. i hit shit like&hellip;</p>
-          <p>"so impressed with the online web development tutorials out there. my favourite so far is <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3schools.com%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGKQuxy7D6Vc9sctyj5HMFjQ9hSKg">http://www.</a><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3schools.com%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGKQuxy7D6Vc9sctyj5HMFjQ9hSKg">w3schools</a><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3schools.com%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGKQuxy7D6Vc9sctyj5HMFjQ9hSKg">.com/</a>"</p>
-          <p>"Also, you can't beat w3schools"</p>
-          <p>"@<a href="http://www.google.com/url?q=http%3A%2F%2Ftwitter.com%2F_lokeshmotwani&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGNVeBfQETr7MI5cZkwMtCAutIFYg">_lokeshmotwani</a> Then u r ready for iOS development and PHP. For web development first learn html and css from w3schools"</p>
-          <p>"@<a href="http://www.google.com/url?q=http%3A%2F%2Ftwitter.com%2Fheyjudeonline&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGfl9POsitgxQSGKjzZljGlXfWirA">heyjudeonline</a> The best place to start:<a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3schools.com%2Fcss%2Fdefault.asp&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE8r-GNmViUYBs7oTTd6kuOwufAcg">http://www.</a><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3schools.com%2Fcss%2Fdefault.asp&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE8r-GNmViUYBs7oTTd6kuOwufAcg">w3schools</a><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3schools.com%2Fcss%2Fdefault.asp&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE8r-GNmViUYBs7oTTd6kuOwufAcg">.com/css/default.asp</a>"</p>
-          <p>:'(</p>
-          <p>but then&hellip;</p>
-          <p>"@<a href="http://www.google.com/url?q=http%3A%2F%2Ftwitter.com%2FmLewisLogic&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGnP4hks6vogowMwlocf4xxAEFOGQ">mLewisLogic</a> Whenever you find w3schools (which is utter crap), just add 'mdc' to your query." &nbsp;HOORAY <a href="http://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2F%23!%2Fsamuelclay&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH9ub9y6DAPQYkGY_XHJumpdk29GA">SIR</a>!</p>
-          <p>We need a Twitter bot to watch those and suggest MDC, etc. (Can a bot watch links too? I mean shortened ones? such that we can detect people passing wrong advice to each other?)</p>
-          <p>And a Google alert on w3schools to let a task force? go and comment to any 'comment-able' place where w3schools is praised.</p>
-          <p>Will make said bot this weekend&hellip;<sup><a href="#cmnt30" id="cmnt_ref30">[ad]</a></sup></p>
-          <p> &nbsp;^^ awesome. ~paul</p>
-          <p>Their logo kinda looks like a cock and balls. there, I said it.</p>
-          <p>Apparently nobody bought adwords on w3schools, I wonder if we can just advertise MDC when somebody searches for w3schools.</p>
-          <p>I would love if we could make a good informative article on w3schools (other dangerous &amp; outdated places) and have it published in A List Apart. </p>
-          <p> ^ go right ahead. you got a lot here to get you started. ~paul</p>
-          <p>Can we add a kind of "note," suggestion to be displayed by Firebug when someone has a another tab (than the one he's working on some content) opened on w3school, and suggest a proper place? Something simple, discreet (no MS Clippie) &hellip; "you might be using outdated and misleading documentation, here's where to find&hellip;"</p>
-          <p>OTOH can we get things like this in any other web dev tools they might use?</p>
-          <p>Are the forums at <a href="http://www.google.com/url?q=http%3A%2F%2Fw3schools.invisionzone.com%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFWRsL_jxsLAzITuNWI3BLJ1pllsQ">http://w3schools.invisionzone.com/</a> as bad as the site's original content?</p>
-          <p>Should one "join" the forums and advocate better places for documentation? ~trygve</p>
-          <div><p><a href="#cmnt_ref1" id="cmnt1">[a]</a>What I don't understand is why market forces haven't kicked in here &nbsp;&mdash;jamesgpearce</p>
-          <hr><p>s'not so much market forces as SEO power. and they've beaten specs and the MDC for that.. </p>
-          <p>i talked with the W3C about and and they're like.. "We should have a page for every html element." Which.. would indeed help a lot. &mdash;paulirish</p>
-          <hr><hr><p>I have a feeling it's because it may have been "first" on google, people link to it more and it gets higher. &nbsp;&mdash;antimatter15</p>
-          <hr><p>Now if only we knew someone who worked at Google&hellip; &mdash;jamesgpearce</p>
-          <hr><p>Heh. I wish I could simultaneously drop w3schools, kill off the SO clones, and fix all the relevance problems people have had lately.. but alas. &mdash;paulirish</p>
-          <p>+1</p>
-          <p>+100 -- bradneuberg</p>
-          </div><div><p><a href="#cmnt_ref2" id="cmnt2">[b]</a>w3school looks like it was written in 1997; it's just plain fugly and covered with Google AdSense spam widgets. &mdash;bradneuberg</p>
-          <hr><p>amen. &mdash;paulirish</p>
-          <hr><p>on web.archive.org, the w3schools from 2000 has the *exact* same content with less ads :) &mdash;antimatter15</p>
-          </div><div><p><a href="#cmnt_ref3" id="cmnt3">[c]</a>Just as important (maybe), they present incomplete concepts. Some of the transgressions we've listed might be didactically useful, but w3schools should be explicit in saying to never use them in practice and WHY. As it is now, w3schools is less of a school and more of a collection of shitty code samples and bad practices. &mdash;brianloveswords</p>
-          <hr><p>It's hard to know if something is complete - no sites contain complete info about the topic &mdash;scrptn</p>
-          <hr><p>That's true, but this is woefully bad. Really, really bad. And as far as no site having complete knowledge, that's what we're here to fix, right? &mdash;brianloveswords</p>
-          <hr><p>I'd better kill w3schools then fix it ;) &mdash;scrptn</p>
-          <hr><p>Oh I don't mean fix w3schools, it's gangrene at this point. It needs to come off. I mean we're fixing js documentation in general. &mdash;brianloveswords</p>
-          <hr><p>Not really &nbsp;;) I'm happy w/ documentation I have (not from w3schools) &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref4" id="cmnt4">[d]</a>Or place rel="vote-against" onto links &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref5" id="cmnt5">[e]</a>See Paul's comment up top re: the W3C and a page for each element--it sort of already exists &mdash;miketaylr</p>
-          </div><div><p><a href="#cmnt_ref6" id="cmnt6">[f]</a>good idea &mdash;kangax</p>
-          <hr><p>I concur &mdash;darren.waddell</p>
-          <hr><p>Screw that; why not just create our own wiki to compete? -- dw</p>
-          <hr><p><a href="http://www.google.com/url?q=http%3A%2F%2Fgoodluckwiththatdude.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH5XTbGBsx08_i56fktp2r1el3Hjg">http://goodluckwiththatdude.com</a> &nbsp;&mdash;paulirish</p>
-          </div><div><p><a href="#cmnt_ref7" id="cmnt7">[g]</a>The obvious reply to this is that if they allow us to update their content more of us would be willing to refer to their pages when we're writing articles or pointing newbs in the right direction ie MORE traffic. At the moment they're just gliding by. I don't know..I think their motivation to work with us should be keeping the material correct but obv if they get more traffic thats more clicks/money for them. &mdash;addyosmani</p>
-          <hr><p>Motivation can be simple: better content -&gt; more visitors -&gt; more money. But they're just too lazy &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref8" id="cmnt8">[h]</a>Indeed it does &mdash;jamesgpearce</p>
-          </div><div><p><a href="#cmnt_ref9" id="cmnt9">[i]</a>w3schools is trolling the internet. &mdash;brianloveswords</p>
-          </div><div><p><a href="#cmnt_ref10" id="cmnt10">[j]</a>Technical ly untrue. \u0076\u0061\u0072=1 is valid and would set var=1 &mdash;sephr</p>
-          <hr><p>don't be a pedant. ;) https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words</p>
-          <hr><p>not anymore in ES5 [edit: had nothing to do with ES5 but still correct] &mdash;sephr</p>
-          <hr><p>um, ES5 &sect; 7.6.1.1 contradicts that? var is still not a valid identifier, and how could it suddenly not be?</p>
-          <hr><p>I don't think \u0076\u0061\u0072 actually counts as "var" in that context &mdash;sephr</p>
-          <p>^-- It does [does as in I'm right or wrong?] -- as in, \u0076\u0061\u0072 is an invalid identifier ;) [ah ok, what about function::var then? ;)] Mozilla extension? e4x? [yes, but using a namespace from mozilla <a href="">(@mozilla.org/js/function)]</a> ok! [it's sorta the "default" namespace of every property <a href="">x="@mozilla.org/js/function"; document.x::title</a> === document.title; though also an empty namespace works too (x=""), but that won't work for direct variables (x::y as opposed to z.x::y) I think maybe this is a bug; oh, and don't get me started with the weird hacks you can get by combining destructuring assignment in arguments, escape sequences, eval, and the function:: namespace (all together); you can do crazy shit with the context]</p>
-          <p>[not really an extension when only mozilla implements JS]. See 7.6 where it clearly states that escape sequences should not constitute reserved words if they were to be replaced with their actual values (see <a href="http://www.google.com/url?q=https%3A%2F%2Fgist.github.com%2F770357&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaqylbLMI_abIazzl9FZoXxt3PFQ">https://gist.github.com/770357</a>). --kangax</p>
-          <hr><p>no it doesn't, but they are still not using \u0076\u0061\u0072, they are using "var".</p>
-          <hr><p>alright, shall I remove this comment then? &mdash;sephr</p>
-          <hr><p>GO FOR IT!!!!!!!!!!!!!!!!!!!! WOOOOO!!!!!!!</p>
-          <hr><p>comment threads are fun! keep it for the lulz. &mdash;paulirish</p>
-          </div><div><p><a href="#cmnt_ref11" id="cmnt11">[k]</a>Who said that? Don't mix facts and opinions, please. Also, Node.js is not the different language &mdash;scrptn</p>
-          <hr><p>Well&hellip;. ASP definitely doesnt belong, that's for sure. :) &mdash;paulirish</p>
-          <hr><p>I'm not an ASP programmer, but why not? Why is it bad? &mdash;scrptn</p>
-          <hr><p>Because it has not existed for about&hellip;9 years now. It was replaced by C#/ASP.NET (or VB/ASP.NET for people with no brain) in 2002. Actually the last release of ASP was in 2000. 11 years old!!</p>
-          <hr><p>I missed that &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref12" id="cmnt12">[l]</a>Actually, JS is more OOP than Java is, because "everything is an object" - in JS functions are objects, as you know, &mdash;scrptn</p>
-          <p>Should be more like "JavaScript is a rich, multi-paradigm language."</p>
-          <p>&ndash;brianloveswords</p>
-          <hr><p>Yep &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref13" id="cmnt13">[m]</a>i have to disagree. it feels like a big deal. :(</p>
-          <p>Well, to be fair it lists all the ways. It just lists the constructor way first and the literal way last, which should probably be reversed.</p>
-          <p>&ndash;brianloveswords</p>
-          <hr><p>I feel like they should just not have them listed, but then I guess it would not be a "reference". OH WELL. It's not a very good reference anyway since it does not mention that Array(number) will create an empty array of length number.</p>
-          <hr><p>Fuck the Array constructor. &mdash;paulirish</p>
-          <hr><p>I JUST WANTED TO SAY before you deleted it anyway that it does not really "control the length"&mdash;it's not like a Java array where it's bound to a particular length when you do that.</p>
-          <hr><p>Agreed. :) &mdash;paulirish</p>
-          <hr><p>Yeah it was a "not a big deal" compared to other massive crap. This one is just a tiny rabbit shit. &nbsp;&mdash;jerem.selier</p>
-          </div><div><p><a href="#cmnt_ref14" id="cmnt14">[n]</a>Like Chuck Norris &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref15" id="cmnt15">[o]</a>technically, it is an animation. But&hellip; evil animation &mdash;scrptn</p>
-          <hr><p>Yeah, it doesn't use nearly enough document.write() &mdash;brianloveswords</p>
-          </div><div><p><a href="#cmnt_ref16" id="cmnt16">[p]</a>How do non-semantical elements like this can break your semantics? I will use that when it's simple solution, rather than adding more tags and CSS &mdash;scrptn</p>
-          <hr><p>anon 109 agrees. line breaks are cool if you need them, at least until some of the more advanced text wrapping stuff happens. of course, most people don't need them.</p>
-          </div><div><p><a href="#cmnt_ref17" id="cmnt17">[q]</a>polyglot html5 says both are valid. still, w3schools is a little confused in general about the difference between HTML, XHTML, and polyglot HTML5.</p>
-          <hr><p>Mmm&hellip; Your right. But; W3C uses only the attribute name in their own examples. Boils down to what we want to teach. &nbsp;&mdash;trygvelie74</p>
-          </div><div><p><a href="#cmnt_ref18" id="cmnt18">[r]</a>"Who cares" isnt constructive &mdash;dean</p>
-          <hr><p>How about, "it is totally worthless knowledge that is completely inappropriate when giving a quiz to someone to test their competence level"? If you are only going to ask 20 questions, this should *not* be one of them.</p>
-          <hr><p>this isnt about being constructive at the moment. consider it a bit of developer catharsis. &mdash;paulirish</p>
-          <hr><p>Intro paragraph &amp; tweet are misleading.&mdash;dean</p>
-          <hr><p>deal with it? &mdash;paulirish</p>
-          <p>&hellip;done :) &mdash;dean</p>
-          <hr><p>i can't tell which is more fun, reading this doc, or reading this little side thread. -- getify</p>
-          <hr><p>its a nice happy treat for a friday evening. :D &mdash;paulirish</p>
-          <hr><p>^-- this is the reminder that I needed: I should be sleeping. 2:30am local time -tiffany</p>
-          <hr><p>cathartic, yes&hellip; got to figure out how to fix it tho' &mdash;jamesgpearce</p>
-          </div><div><p><a href="#cmnt_ref19" id="cmnt19">[s]</a>Using === for numbers is excessive, then new Number(32) === 32 is false :(</p>
-          <hr><p>why would you ever do new Number(&hellip;)? &mdash;sephr</p>
-          <hr><p>You never should (unless you learn from w3schools) but using === still has no point. &mdash;antimatter15</p>
-          <hr><p>strict equality is usually faster and avoids incorrect falsy evaluation.</p>
-          <hr><p>antimatter15 hasn't read JavaScript: The Good Parts :( I believe the main argument Crockford makes is that strict equality is often what people (particularly coming from backend backgrounds) actually expect, when they use ==</p>
-          <p>Well, either that or I'm completely misinterpreting the comment too broadly :P</p>
-          <p>Also, IIRC isn't FF currently the oddball in that strict comparison is slower in it?</p>
-          <p>--kfranqueiro</p>
-          </div><div><p><a href="#cmnt_ref20" id="cmnt20">[t]</a>Judging by the frequency with which I see inadequately-commented (or not at all) javascript on github, maybe more people actually need to learn this :P &mdash;kfranqueiro</p>
-          </div><div><p><a href="#cmnt_ref21" id="cmnt21">[u]</a>Proper ventilation is important! &nbsp;..oh wait &mdash;kfranqueiro</p>
-          </div><div><p><a href="#cmnt_ref22" id="cmnt22">[v]</a>Not just worthless, we should discourage browser detection whenever possible. (I think someone else hit on this elsewhere) &mdash;kfranqueiro</p>
-          <hr><p>probly ya &mdash;paulirish</p>
-          </div><div><p><a href="#cmnt_ref23" id="cmnt23">[w]</a>Primarily, but as paulirish stated above, it's turned into a bitch session about everything that's incorrect or inaccurate in w3schools. There's plenty of CSS and HTML mistakes mentioned. &mdash;ShaneRileyDotInfo</p>
-          <hr><p>Yeah bro it's totally cool. Load it on. &mdash;paulirish</p>
-          </div><div><p><a href="#cmnt_ref24" id="cmnt24">[x]</a>Notice they never once use the word "escape" on that page. This is one of the major problems with w3schools beyond all the nitpicky stuff: they actively shield their readers from ideas and concepts that should be central to what they are learning.</p>
-          <p>&mdash;brianloveswords</p>
-          </div><div><p><a href="#cmnt_ref25" id="cmnt25">[y]</a>But it can't, because the content of a &lt;script&gt; is CDATA, not PCDATA. The only way to break things once you are in a &lt;script&gt; is to write &lt;/script&gt;.</p>
-          <hr><p>Unless you use XHTML &mdash;scrptn</p>
-          <hr><p>In which case you wanna wrap that shit manually. Or, really, just don't include inline script. &lt;script&gt;&lt;![CDATA[ ]]&gt;&lt;/script&gt; Either way, \&amp; is not going to escape your XML. If you need to do that, you need to use &amp;amp;.</p>
-          <hr><p>You're right. That should be stated explicitly too &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref26" id="cmnt26">[z]</a>sure. &mdash;paulirish</p>
-          </div><div><p><a href="#cmnt_ref27" id="cmnt27">[aa]</a>You'd better create that links w/ document.write() ;D &mdash;scrptn</p>
-          </div><div><p><a href="#cmnt_ref28" id="cmnt28">[ab]</a>I could be wrong, but technically speaking when you render one of their pages and it gets downloaded to your cache, isn't THAT reproducing their content without their written permission? Also, if you look at their site they offer PRINT capabilities for each page. SO..they let you PRINT reproduce shit, but not quote? Isnt that a little contradictory? &mdash;addyosmani</p>
-          <hr><p>OHSHI-- I just used document.write() - did I steal their code?!?! &mdash;scrptn</p>
-          <hr><p>Wait, so does this mean that when people copy their code, they're screwed BOTH in the engineering AND the legal sense? Awesome.</p>
-          <p>--kfranqueiro</p>
-          </div><div><p><a href="#cmnt_ref29" id="cmnt29">[ac]</a>Parody is protected&hellip; but i dont know if we could call this parody&hellip; :/ &mdash;paulirish</p>
-          <hr><p>wikipedia says "Examples of fair use include commentary, criticism, news reporting, research, teaching, library archiving and scholarship." A case could be made for scholarship, teaching, criticism and commentary &mdash;antimatter15</p>
-          <hr><p>\o/ &mdash;paulirish</p>
-          <hr><p>Similar to an academic thesis, you're not claiming any copyright to the content on w3schools or pretending that you wrote it. Referencing it in this manner comes under fair research/reporting rights. As long as no one pastes huge chunks of their site in here I think you're more than covered -- addyosmani</p>
-          <hr><p>This is unequivocally fair use guys (unless you are sarah palin). also don't link to wikipedia as a source of authoritative information, sheesh :S http://www.law.cornell.edu/uscode/17/usc_sec_17_00000107----000-.html</p>
-          </div><div><p><a href="#cmnt_ref30" id="cmnt30">[ad]</a>Put it up on github and let me know when it's going down, I'd love to collaborate on that. &mdash;brianloveswords</p>
-          <hr><p>Yes! Also this site will go on as <a href="http://www.google.com/url?q=http%3A%2F%2Fgithub.com%2Fpaulirish%2Fw3fools&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE-xI_mjJpLrU3D4WLzJV9jEFRhTg">github.com/paulirish/w3fools</a> on monday. &mdash;paulirish</p>
-          <hr><p> &mdash;subscriptions</p></div>
--->
         </div>
 
         <div id="toc">
