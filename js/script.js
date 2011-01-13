@@ -84,6 +84,11 @@
 			$document.scroll();
 			setTimeout( arguments.callee, 1500 );
 		})();
+		
+		var contributors = $('#contributors');
+		contributors.find('h2').click(function(){
+			contributors.find('a').sort(function(){ return 0.5 - Math.random(); }).each(function(){ $(this).appendTo(contributors) });
+		})
 
 	});
 })(jQuery);

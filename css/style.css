@@ -73,8 +73,8 @@ header h2:before {
 .intro p + small { text-align: right; font-style: italic; display:block; }
 .belief { letter-spacing: 2px; }
 
-#contributors { padding-left: 10em; position: relative; }
-#contributors h2 { position: absolute; left: 0; }
+#contributors { padding-left: 10em; position: relative; -moz-user-select: none; -webkit-user-select: none; user-select: none;  }
+#contributors h2 { position: absolute; left: 0; cursor: help; }
 #contributors a:after { content: ", "; }
 #contributors a:last-child:after { content: "."; }
 #contributors span.at { font-size: 65%; opacity: 0.65; -webkit-transition: 0.2;}
