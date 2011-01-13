@@ -60,9 +60,9 @@ header h2:before {
   display: block;
 }
 
-.content, .intro p, .sucks li, .sucks .intro p, .sucks .intro blockquote, .intro cite { min-width: 60%; max-width: 800px; margin: 0 auto; }
+.content, .intro p, .sucks li, .sucks .intro p, .sucks .intro blockquote, .intro small { min-width: 60%; max-width: 800px; margin: 0 auto; }
 
-.intro cite { text-align: right; font-style: italic; display:block; padding-bottom: 1.5em; }
+.intro small { text-align: right; font-style: italic; display:block; padding-bottom: 1.5em; }
 
 
 #contributors { padding-left: 10em; position: relative; }
