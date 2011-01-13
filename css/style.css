@@ -19,13 +19,13 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 ::selection      { background-color: hsl(15, 84%, 30%); }
 ::-moz-selection { background-color: hsl(15, 84%, 30%); }
 
-html { 
+html {
   background-color: hsl(42, 21%, 85%);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(5%, hsla(40, 29%, 73%, 0.2)), color-stop(5%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -moz-linear-gradient(top, hsla(40, 29%, 73%, 0.2) 5%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(top, hsla(40, 29%, 73%, 0.2) 5%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 100%);    
+  background-image: linear-gradient(top, hsla(40, 29%, 73%, 0.2) 5%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 100%);
   background-size: 100% 24px;
-  background-position: fixed;     
+  background-position: fixed;
 }
 
 
@@ -52,19 +52,19 @@ section li code a {
   font-family: monospace, sans-serif;
 }
 
-header h1 b, #main h2, .belief, .sucks h3 { 
-  font-family: 'LeagueGothicRegular', Arial, sans-serif; 
-  text-transform: uppercase; 
+header h1 b, #main h2, .belief, .sucks h3 {
+  font-family: 'LeagueGothicRegular', Arial, sans-serif;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-                        
+
 header h1 b { display: block; }
 
 header { text-align: center; text-transform: uppercase; }
 
-header h2:before { 
-  content: "✪ · ✪ · ✪ · ✪ · ✪"; 
-  text-shadow: none; 
+header h2:before {
+  content: "✪ · ✪ · ✪ · ✪ · ✪";
+  text-shadow: none;
   display: block;
 }
 
@@ -81,17 +81,17 @@ header h2:before {
 #contributors a:hover span.at { opacity: 1; }
 
 .incorrect:before,
-.cert:before { 
+.cert:before {
   display: block;
   content: "";
-  position: absolute; 
-  left: 0; 
-  width: 100%; 
+  position: absolute;
+  left: 0;
+  width: 100%;
   border-top: 1px dotted;
 }
 
 .incorrect, .cert, .noaffiliation, .sucks li  { list-style: none; }
-                  
+
 section nav a { display: inline-block; margin: 0 1em; }
 section nav a:first-child { margin-left: 0; }
 section nav a:last-child { margin-right: 0; }
@@ -120,6 +120,7 @@ section nav, .belief, #main .sucks h2, footer, .sucks li li:after { text-align: 
   -o-column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
 }
 
+.quiz li p span { font-weight: bold; }
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
@@ -137,7 +138,7 @@ pre code { width: 98%; padding: 0 2%; }
 }
 
 #toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
-/* 
+/*
 
 COLORS!
 
@@ -148,7 +149,7 @@ a, a:visited, a:active { color: hsl(41, 88%, 27%); }
 a:hover { color: hsl(20, 80%, 30%); }
 
 header, header h2{ color: hsl(15, 84%, 10%); }
-header h2:before { color: hsl(15, 84%, 30%); }                                  
+header h2:before { color: hsl(15, 84%, 30%); }
 
 header h1 b { text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px, hsl(15, 84%, 10%) 3px 3px, hsl(15, 84%, 10%) 4px 4px; }
 
@@ -156,9 +157,9 @@ h2, h3 { text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px; }
 header, header h2 { text-shadow: hsl(15, 84%, 30%) 1px 1px; }
 .belief { text-shadow: hsl(15, 34%, 65%) 1px 1px, hsl(15, 34%, 65%) 2px 2px; }
 
-.intro, .belief, .sucks  { 
+.intro, .belief, .sucks  {
   background: hsla(42, 21%, 55%, 0.2);
-  outline: 1px dotted hsla(42, 21%, 55%, 0.5); 
+  outline: 1px dotted hsla(42, 21%, 55%, 0.5);
 }
 
 .sucks li li:after { border-color: hsl(41, 38%, 50%); }
@@ -172,28 +173,28 @@ VERTICAL RHYTHM
 */
 #container { padding-bottom: 3em; }
 header { margin: 6em 0 4.5em 0; }
-header h1 { 
-  font-size: 1.5em; 
-  line-height: 1; 
-  margin: 1em 0; 
+header h1 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 1em 0;
 }
-header h1 b { font-size: 4em; line-height: 1; }                                                                   
+header h1 b { font-size: 4em; line-height: 1; }
 
 header h2 { font-size: 1em; line-height: 1.5; }
 header h2:before { height: 3em; }
 
-h2 { 
-  font-size: 3em; 
-  line-height: 1; 
+h2 {
+  font-size: 3em;
+  line-height: 1;
 }
 
 #main h2 { margin-top: 1.5em; }
 #contributors h2 { margin-top: 0.5em; }
 
-h4 { 
-  font-size: 1.2em; 
-  line-height: 1.25; 
-  margin: 1.25em 0; 
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin: 1.25em 0;
 }
 
 pre { padding: 0; }
@@ -204,28 +205,28 @@ p, li { margin: 1.5em 0; padding: 0; }
 p:last-of-type, li:last-of-type { margin-bottom: 0; }
 .sucks p:last-of-type { margin-bottom: 1.5em; }
 
-.intro { 
+.intro {
   padding: 1.5em 1.5em 0 1.5em;
   outline-offset: -0.25em;
-  margin-bottom: 1.5em; 
+  margin-bottom: 1.5em;
 }
 
 .intro p { margin-bottom: 1.5em; }
 
 .incorrect:before,
 .cert:before { margin-top: -1.5em; }
- 
+
 .incorrect, .cert, .noaffiliation {
   margin: 0;
-  min-height: 3em;  
-  padding: 1.5em 0;  
+  min-height: 3em;
+  padding: 1.5em 0;
 }
 
-section nav { margin: 0.75em 0; }  
+section nav { margin: 0.75em 0; }
 
-.belief {  
-  padding: 0.75em 0; 
-  outline-offset: -0.1em; 
+.belief {
+  padding: 0.75em 0;
+  outline-offset: -0.1em;
   font-size: 2em;
 }
 
@@ -246,28 +247,28 @@ section nav { margin: 0.75em 0; }
 
 .sucks h3 { font-size: 2em; line-height: 1.5; }
 
-footer { 
-  font-size: 0.8em; 
-  line-height: 1.875; 
+footer {
+  font-size: 0.8em;
+  line-height: 1.875;
   margin: 5.675em 0 1.875em 0;
 }
 
 blockquote,
-.intro small { 
-  font-size: 0.8em; 
-  line-height: 1.875; 
+.intro small {
+  font-size: 0.8em;
+  line-height: 1.875;
   margin-bottom: 1.875em;
   padding-bottom: 0;
 }
 
 .intro small { padding-bottom: 1.875em; margin-bottom: 0; }
 
-p + blockquote { 
-  margin-top: -0.9375em; 
-  margin-bottom: 0.9375em; 
+p + blockquote {
+  margin-top: -0.9375em;
+  margin-bottom: 0.9375em;
   padding-bottom: 0;
 }
- 
+
 .sucks .intro p + blockquote {
   margin-top: -0.3333em;
   margin-bottom: 0.3333em;
