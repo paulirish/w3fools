@@ -16,6 +16,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 	font-style: normal;
 }
 
+::selection      { background-color: hsl(15, 84%, 30%); }
+::-moz-selection { background-color: hsl(15, 84%, 30%); }
+
 html { 
   background-color: hsl(42, 21%, 85%);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(5%, hsla(40, 29%, 73%, 0.2)), color-stop(5%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
@@ -42,6 +45,11 @@ code {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+
+section li code a {
+  font-weight: bold;
+  font-family: monospace, sans-serif;
 }
 
 header h1 b, #main h2, .belief, .sucks h3 { 

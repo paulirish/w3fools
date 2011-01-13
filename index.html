@@ -207,7 +207,7 @@ K###########,  KW   ,#####    #G                                          ##    
 
             <li class="incorrect">
               W3Schools frequently publishes inaccurate or misleading content. We have collected hundreds of examples
-              illustrating this problem below. <sup><a href="#cmnt3" id="cmnt_ref3">[c]</a></sup>
+              illustrating this problem below.
             </li>
           </ol>
           </section>
@@ -473,7 +473,7 @@ K###########,  KW   ,#####    #G                                          ##    
                     <p>
                       This is false and misleading; there is nothing future-proof about self-closing tags, especially
                       as XHTML has been discontinued. Furthermore, &lt;br /&gt; isn't semantic and probably should not
-                      be mentioned at all<sup><a href="#cmnt16" id="cmnt_ref16">[p]</a></sup>.
+                      be mentioned at all.
                     </p>
 
                     <blockquote>
@@ -705,7 +705,7 @@ Last name: &lt;input type="text" name="lastname" />
 
                   <li>
                     <a href="http://www.w3schools.com/css3/css3_pr_target.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_pr_target.asp</a>.
-                    <p>CSS target property? UMM&hellip; I guess you mean <a href="http://www.w3.org/TR/css3-hyperlinks/">this deprecated spec</a> from 2004 with zero browser support? Awesome.</p>
+                    <p>The CSS target property has long been deprecated from <a href="http://www.w3.org/TR/css3-hyperlinks/">this spec</a> from 2004 and has zero browser support?</p>
                   </li>
 
                   <li>
@@ -720,7 +720,7 @@ Last name: &lt;input type="text" name="lastname" />
                       <code>table</code>, <code>table-caption</code>, <code>table-cell</code>, <code>table-column</code>, <code>table-column-group</code>,
                       <code>table-row</code>, or <code>table-row-group</code>.
                     </blockquote>
-                    <p>This is bullshit; IE8 supports all of these.</p>
+                    <p>IE8 supports all of these.</p>
                   </li>
 
                   <li>
@@ -748,7 +748,9 @@ Last name: &lt;input type="text" name="lastname" />
                   <li>
                     <a href="http://www.w3schools.com/js/js_timing.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_timing.asp</a>.
                     <p>
-                      This is a bullshit page. You <strong>never</strong> pass a string to <code>setTimeout()</code> unless you like using
+                      You <strong>never</strong> pass a string to
+                      <code><a href="https://developer.mozilla.org/en/DOM/window.setTimeout" rel="external">setTimeout()</a></code>
+                      unless you like using
                       <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval" rel="external">eval</a>()</code>.
                       Doing this also means you can't use any variables from your local scope. Also, the examples on this page
                       has a ton of global variables. Bad.
@@ -782,7 +784,7 @@ Last name: &lt;input type="text" name="lastname" />
                       for JavaScript code. If it finds any JavaScript code, it will be executed.
                     </blockquote>
                     <p>
-                        LOLWAT? This is ridiculous! <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval" rel="external">eval</a>()</code>
+                        <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval" rel="external">eval</a>()</code>
                         certainly does not parse a string to determine whether or not it's JavaScript.
                     </p>
                   </li>
@@ -838,7 +840,10 @@ Last name: &lt;input type="text" name="lastname" />
                   <li>
                     <a href="http://www.w3schools.com/js/js_obj_boolean.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_obj_boolean.asp</a>.
                     <p>
-                      <code>new Boolean()</code> is completely useless. Use straight up <code>true</code> and <code>false</code>. Save bytes, improve performance, and prevent all sorts of WTF when you start <code>typeof</code> or <code>==</code>'ing things.
+                      <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" rel="external">Boolean</a>()</code>
+                      is completely useless. Use straight up <code>true</code> and <code>false</code>. Save bytes,
+                      improve performance, and prevent all sorts of WTF when you start
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/typeof" rel="external">typeof</a></code> or <code>==</code>'ing things.
                     </p>
                   </li>
 
@@ -848,8 +853,9 @@ Last name: &lt;input type="text" name="lastname" />
                       for (var=startvalue;var&lt;=endvalue;var=var+increment)
                     </blockquote>
                     <p>
-                      Not only do they forget about using the <code>var</code> keyword to prevent the variable from leaking to the global scope, but
-                      also they use <code>var</code> as a variable name, which is forbidden.
+                      Not only do they forget about using the <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/var" rel="external">var</a></code>
+                      keyword to prevent the variable from leaking to the global scope, but also they use
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/var" rel="external">var</a></code> as a variable name, which is forbidden.
                     </p>
                   </li>
 
@@ -874,7 +880,9 @@ Last name: &lt;input type="text" name="lastname" />
                     <a href="http://www.w3schools.com/js/js_loop_for_in.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_loop_for_in.asp</a>.
                     <p>
                       Advocates the use of for-in loops for arrays, and makes no mention of
-                      problems and <code>obj.hasOwnProperty()</code>. Also, the note about the variable argument sounds like it's half-BS to me.
+                      problems and
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" rel="external">Object.prototype.hasOwnProperty</a>()</code>.
+                      Also, the note about the variable argument sounds like it's half-BS to me.
                     </p>
                   </li>
 
@@ -979,7 +987,7 @@ Last name: &lt;input type="text" name="lastname" />
                   <li>
                     <a href="http://www.w3schools.com/js/js_obj_date.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_obj_date.asp</a>
                     <blockquote>
-                      Use <code>getTime()</code> to calculate the years since 1970
+                      Use <code>Date.prototype.getTime()</code> to calculate the years since 1970
                     </blockquote>
                     <p>
                       <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getTime" rel="external">getTime</a>()</code>
@@ -1291,13 +1299,15 @@ Last name: &lt;input type="text" name="lastname" />
                     <span>Question 2</span> Not mentioning <code><a href="https://developer.mozilla.org/en/DOM/document.createElement" rel="external">document.createElement</a>()</code>
                     or <code><a href="https://developer.mozilla.org/en/DOM:element.innerHTML" rel="external">innerHTML</a></code>
                     as correct syntax to write "hello world".
-                    <a href="https://developer.mozilla.org/en/document.write" rel="external"><code>document.write()</code></a>
+                    <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write()</a></code>
                     is always the wrong answer, except in one case, which this is not.
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Question 3</span> Advertising script placements in the head tags are correct.. Why?
+                    <span>Question 3</span> Advertising script placements in the head tags are correct.. Why? Script elements
+                    <a href="http://developer.yahoo.com/performance/rules.html#js_bottom" rel="external">block parallel downloads</a>
+                    and will cause a perceived slowness when placed in the <code>head</code> element.
                   </p>
                 </li>
                 <li>
@@ -1346,7 +1356,7 @@ Last name: &lt;input type="text" name="lastname" />
               <ul>
                 <li>
                   <p>
-                    <span>Question 2</span> Query used to have XPath selectors, but does not now. WHERE'S THAT OPTION, W3SCHOOLS? The answer is FALSE, but they think the answer is TRUE.
+                    <span>Question 2</span> Query used to have XPath selectors, but does not now. The answer is FALSE, but they think the answer is TRUE.
                   </p>
                 </li>
                 <li>
