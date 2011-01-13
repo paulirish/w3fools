@@ -6,9 +6,26 @@
 
 		var $toc = $('#toc'),
 			$tocLinks = $toc.find('a'),
-			$body = $.browser.opera ? $( document.documentElement ) : $( document.body ),
-			$window = $( window ),
 			cache = {};
+			$docEl = $( document.documentElement ),
+			$body = $( document.body ),
+			$window = $( window ),
+			$scrollable = $body; // default scrollable thingy, which'll be body or docEl (html)	
+			
+		// find out what the hell to scroll ( html or body )
+		// its like we can already tell - spooky
+		if ( $docEl.scrollTop() ) {
+			$scrollable = $docEl;
+		} else {
+			var bodyST = $body.scrollTop();
+			// if scrolling the body doesn't do anything
+			if ( $body.scrollTop( bodyST + 1 ).scrollTop() == bodyST) {
+				$scrollable = $docEl;
+			} else {
+				// we actually scrolled, so, er, undo it
+				$body.scrollTop( bodyST - 1 );
+			}
+		}		
 
 		// build cache
 		$tocLinks.each(function(i,v) {
@@ -21,9 +38,10 @@
 
 		// handle nav links
 		$toc.delegate( 'a', 'click', function(e) {
+		//	alert( $scrollable.scrollTop() );
 			e.preventDefault(); // if you expected return false, *sigh*
 			if ( cache[ this.href ] && cache[ this.href ].target ) {
-				$body.animate( { scrollTop: cache[ this.href ].target.position().top }, 600, 'swing' );
+				$scrollable.animate( { scrollTop: cache[ this.href ].target.position().top }, 600, 'swing' );
 			}
 		});
 
@@ -32,7 +50,7 @@
 			timeout = false, // so gonna clear this later, you have NO idea
 			last = false, // makes sure the previous link gets un-activated
 			check = function() {
-				var scroll = $body.scrollTop(),
+				var scroll = $scrollable.scrollTop(),
 					height = $body.height(),
 					tolerance = $window.height() * ( scroll / height );
 
