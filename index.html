@@ -668,10 +668,8 @@ Last name: &lt;input type="text" name="lastname" />
                   <li>
                     <a href="http://www.w3schools.com/html5/tag_details.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/tag_details.asp</a>
                     <p>
-                      W3Schools is misinforming people as to the purpose of the HTML5 <code>&lt;details&gt;</code>
-                      element. This article makes it sound like <code>&lt;details></code> is a document-level metadata
-                      tag, when in fact it's meant to be used as a collapsible container for additional content or
-                      controls.
+                      The purpose of the HTML5 <code>&lt;details&gt;</code> element. This article makes it sound like <code>&lt;details></code> is a
+                      document-level metadata tag, when in fact it's meant to be used as a collapsible container for additional content or controls.
                     </p>
                   </li>
 
@@ -694,7 +692,11 @@ Last name: &lt;input type="text" name="lastname" />
                   <li>
                     <a href="http://www.w3schools.com/css/pr_pseudo_after.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css/pr_pseudo_after.asp</a>.
                     <p>
-                      WTF. Play a sound after each occurrence of an <code>H1</code> element&hellip; HUH? This almost seems like a joke. It seems like an insult.
+                      Playing a sound after each occurrence of an <code>H1</code> element is not likely to be a real-world problem that needs solving.
+                      A better example might include something like:
+                      <code><pre>.description:after {
+  content:'...'
+}</pre></code>
                     </p>
                   </li>
 
@@ -735,11 +737,6 @@ Last name: &lt;input type="text" name="lastname" />
               <li id="jssucks">
                 <h3>JavaScript</h3>
                 <ul>
-                    <!--<p>
-                      Prolific use of <code>new Array()</code> and <code>array[0] = "foo"; array[1] = "bar"</code> instead of
-                      <code>["foo", "bar"]</code>.
-                    </p>-->
-
                   <li>
                     <a href="http://www.w3schools.com/js/js_timing.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_timing.asp</a>.
                     <p>
@@ -807,7 +804,12 @@ Last name: &lt;input type="text" name="lastname" />
                   </li>
                   <li>
                     <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax2" rel="nofollow" class="w3s-link">www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax2</a>.
-                    <p><code>async: false</code>, come on! ASYNCHRONOUS COADS ARE HARD :(</p>
+                    <blockquote><code>async: false</code></blockquote>
+                    <p>
+                      The first "A" in AJAX stands for "asynchronous" (or non-blocking). Promoting the <code>async</code> feature of jQuery's
+                      <code><a href="http://api.jquery.com/jQuery.ajax/" rel="external">ajax</a></code> method without any context in an example that
+                      is likely to be copy/pasta'd around the net is irresponsible.
+                    </p>
                   </li>
 
                   <li>
