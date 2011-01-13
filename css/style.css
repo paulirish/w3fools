@@ -121,7 +121,18 @@ section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
 
-#toc { position:fixed; bottom:0; left: 0; text-align: center; width:100%; background: hsla(42, 21%, 75%, 0.95);}
+#toc {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background: hsla(42, 21%, 75%, 0.95);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(42, 21%, 65%, 0.95)), color-stop(1, hsla(42, 21%, 85%, 0.95)));
+  background: -moz-linear-gradient(center bottom, hsla(42, 21%, 65%, 0.95) 0%, hsla(42, 21%, 65%, 0.95), 100%);
+  border-top: 1px solid hsl(42, 21%, 75%);
+}
+
 #toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 1px #fff; }
 /* 
 
