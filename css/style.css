@@ -70,7 +70,7 @@ header h2:before {
 
 .content, .intro p, .sucks li, .sucks .intro p, .sucks .intro blockquote, .intro small { min-width: 60%; max-width: 800px; margin: 0 auto; }
 
-.intro small { text-align: right; font-style: italic; display:block; }
+.intro p + small { text-align: right; font-style: italic; display:block; }
 .belief { letter-spacing: 2px; }
 
 #contributors { padding-left: 10em; position: relative; }
@@ -136,6 +136,9 @@ pre code { width: 98%; padding: 0 2%; }
   background: -moz-linear-gradient(center bottom, hsla(42, 21%, 65%, 0.95) 0%, hsla(42, 21%, 65%, 0.95), 100%);
   border-top: 1px solid hsl(42, 21%, 65%);
 }
+
+.intro p.update { border: 1px dotted hsla(0,0%,40%,0.5); padding: 10px 10px 0 ; margin: 10px auto;}
+.intro p.update small { display:block; margin-bottom: 10px;}
 
 #toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 /*
