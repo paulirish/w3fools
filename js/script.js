@@ -91,4 +91,25 @@
 		})
 
 	});
+
+	$(function () {
+		var keys = [ ],
+			kc   = '38,38,40,40,37,39,37,39,66,65';
+
+		function keydown(e) {
+			keys.push(e.which);
+			if (keys.join(',').indexOf(kc) > -1) {
+				$(document).unbind('keydown', keydown);
+				var height = 600,
+					width = 800;
+				window.open('certificate.html', 'U DUN GOOFED',
+					'height=' + height + ',\
+					width=' + width +',\
+					top=' + Number((window.outerHeight - height) / 2) + ',\
+					left=' + Number((window.outerWidth - width) / 2));
+			}
+		}
+
+		$(document).keydown(keydown);
+	});
 })(jQuery);

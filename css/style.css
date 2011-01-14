@@ -307,6 +307,17 @@ p + blockquote {
 
 #toc { padding: 0.75em 0; }
 
+#certificate p {
+  margin: auto;
+  text-align: center;
+  width: 400px;
+}
+
+#certificate p b {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+}
 
 @media screen and (max-device-width: 480px) {
 
