@@ -200,7 +200,7 @@
               <p>We couldn't put it much better ourselves.</p>
               <p class="update">
                 <small>Although we haven't heard from W3Schools directly, we have noticed that W3Schools has started to correct errors we've spotted. These have been noted here with <s>strikethrough</s>. Although we'd appreciate some communication, we're elated they've taken steps to improve their information. </small>
-                <small>Despite these attempts, we are not confident that W3Schools can be reliable as an accurate reference in the future. We think the resources we've recommended are superior for a variety of reasons.</small>
+                <small>Despite these attempts, we are not confident that W3Schools can be reliable as an accurate reference in the future. We think the resources we've recommended are superior.</small>
               </p>
             </div>
             <nav><a href="#htmlsucks">HTML</a><a href="#csssucks">CSS</a><a href="#jssucks">JavaScript</a><a href="#othersucks">Others</a></nav>
@@ -237,8 +237,7 @@
                       […] professional web developers often prefer HTML editors like FrontPage or Dreamweaver, instead of writing plain text.
                     </blockquote>
                     <p>
-                      This is blatantly false. Professional web developers abhor editors like FrontPage and Dreamweaver,
-                      and anyone that uses them is considered the butt of a very bad joke.
+                      Professional web developers do not recommend the use of WYSIWYG editors.
                     </p>
                   </li>
 
@@ -262,7 +261,7 @@
                     <a href="http://www.w3schools.com/html/html_frames.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_frames.asp</a>.
                     <p>
                       Again, frames are considered among the very worst of practices in modern Web development. In
-                      fact, they are considered so bad, they have been removed <em>completely</em> from the HTML5 spec.
+                      fact, they are considered so bad, they are no longer <em>valid</em> in HTML5.
                     </p>
                   </li>
 
@@ -272,8 +271,7 @@
                       Most browsers will display HTML correctly even if you forget the end tag
                     </blockquote>
                     <p>
-                      This is blatantly untrue. "Correctly" does not mean "try to guess and maybe get it right some of
-                      the time", which is what actually happens, usually in different ways between different browsers.
+                      Most browsers try to correct your markup but there will probably be unintended consequences.
                       There are a few elements, such as &lt;p>, which are explicitly stated in the HTML spec to have an
                       optional close tag, but most elements are not this way.
                     </p>
@@ -325,7 +323,7 @@
                       There is no such thing as a <code>subject</code> attribute, but W3Schools claims there is.
                       Furthermore, many HTML5 standard attributes such as <code>dir</code> and <code>dropzone</code>
                       are conspicuously absent.
-                      In HTML-dialect HTML5, boolean attributes like <code>hidden</code> do not have a value.
+                      In HTML-dialect HTML5, the values of boolean attributes like <code>hidden</code> are not relevant to how the attribute is processed.
                       Finally, instead of listing all five microdata attributes, only "item" and "itemprop" are
                       provided—and they don’t give a reasonable explanation of how they should be used, leaving the
                       visitor clueless.
@@ -366,7 +364,7 @@
                     </blockquote>
                     <p>
                       This is false and misleading; there is nothing future-proof about self-closing tags, especially
-                      as the work on XHTML 2.0 has been discontinued. Furthermore, &lt;br /&gt; isn't semantic and probably should not
+                      as the work on XHTML 2.0 has been discontinued. Furthermore, &lt;br /&gt; isn't semantic in most cases and probably should not
                       be mentioned at all.
                     </p>
 
@@ -400,7 +398,7 @@
                     </blockquote>
 
                     <p>
-                      This is wrong. All of these elements were deprecated in HTML4. <code>&lt;big></code> and <code>&lt;tt></code> are not only
+                      This is wrong. <code>&lt;big></code> and <code>&lt;tt></code> are not only
                       deprecated, they are obsolete as of HTML5. In any case, a learning site should never advocate the
                       use of these tags to format text, even with a mild disclaimer that “richer” effects are possible
                       via CSS.
@@ -657,14 +655,34 @@ content:url(beep.wav);
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_browser.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_browser.asp</a>.
+                    <blockquote>
+                      Sometimes it can be useful to detect the visitor's browser, and then serve the appropriate information.
+                      The best way to do this is to make your web pages smart enough to look one way to some browsers and another way to other browsers.
+                    </blockquote>
                     <p>
-                      Also abysmal.
-                      <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write</a>()</code>
-                      has a tendency to trash a page and is one of the poorest ways possible to add content. It also means that you can't
-                      defer/asynchronously load a script and your DOM loading is delayed because the browser has to wait for your
+                      Abysmal. User-agent sniffing is a <em>very</em> bad thing, because it is easily
+                      <a href="http://webaim.org/blog/user-agent-string-history/">spoofable</a>. This applies equally
+                      to the <code>window.navigator</code> object.
+                    </p>
+                    <blockquote><pre><code>&lt;script type="text/javascript">
+document.write("Browser CodeName: " + navigator.appCodeName);
+document.write("&lt;br />&lt;br />");
+document.write("Browser Name: " + navigator.appName);
+document.write("&lt;br />&lt;br />");
+document.write("Browser Version: " + navigator.appVersion);
+document.write("&lt;br />&lt;br />");
+document.write("Cookies Enabled: " + navigator.cookieEnabled);
+document.write("&lt;br />&lt;br />");
+document.write("Platform: " + navigator.platform);
+document.write("&lt;br />&lt;br />");
+document.write("User-agent header: " + navigator.userAgent);
+&lt;/script></code></pre></blockquote>
+                    <p>
+                      W3Schools uses <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write</a>()</code>
+                      in a lot of their examples; unfortunately, it has a tendency to trash a page and is one of the poorest
+                      ways possible to add content. It also means that you can't
+                      defer/asynchronously load any other scripts, and your DOM loading is delayed because the browser has to wait for your
                       <code><a href="https://developer.mozilla.org/en/document.write" rel="external">document.write</a>()</code>.
-                      Oh, and by the way, user-agent sniffing is a <em>very</em> bad thing, because is easily <a href="http://webaim.org/blog/user-agent-string-history/">spoofable</a> &mdash; So is sniffing just
-                      about any parts of the <code>window.navigator</code> object.
                     </p>
                   </li>
 
@@ -690,31 +708,41 @@ content:url(beep.wav);
                   <li>
                     <a href="http://www.w3schools.com/JS/js_statements.asp" rel="nofollow" class="w3s-link">www.w3schools.com/JS/js_statements.asp</a>.
                     <blockquote>
-                      JavaScript code (or just JavaScript) is a sequence of JavaScript statements. Each statement is executed by the browser in the
-                      sequence they are written.
+                      JavaScript code (or just JavaScript) is a sequence of JavaScript statements.
                     </blockquote>
                     <p>
-                      Apparently <em>declarations</em> and <em>expressions</em> can go right to hell (since JavaScript only is a sequence of statements),
-                      and the second part about "each statement is executed by the browser in the sequence they are written" is just plain wrong. See also: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Scope_Cheatsheet#Hoisting" rel="external">hoisting</a>.
+                      Apparently <em>declarations</em> and <em>expressions</em> can go right to hell (since JavaScript only is a sequence of statements).
                     </p>
-                     <blockquote>
+
+                    <blockquote>
+                      Each statement is executed by the browser in the sequence they are written.
+                    </blockquote>
+                    <p>
+                      This is not exactly true, either, as JavaScript
+                      <a href="https://developer.mozilla.org/en/JavaScript/Reference/Scope_Cheatsheet#Hoisting" rel="external">hoists</a>
+                      variable and function declarations, meaning that those declarations are not defined in sequence.
+                    </p>
+
+                    <blockquote>
                       JavaScript Blocks
                     </blockquote>
                     <p>
-                      Nothing about JavaScript not having block scope even though its block syntax suggests that it does.
+                      This section mentions nothing about JavaScript not having block scope even though its block
+                      syntax suggests that it does.
                     </p>
+
                     <blockquote>
                       The example above is not very useful.
                     </blockquote>
-                    <p> lol </p>
+                    <p>lol whut?!</p>
                   </li>
                   <li>
                     <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax2" rel="nofollow" class="w3s-link">www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax2</a>.
                     <blockquote><code>async: false</code></blockquote>
                     <p>
-                      The first "A" in AJAX stands for "asynchronous" (or non-blocking). Promoting the <code>async</code> feature of jQuery's
-                      <code><a href="http://api.jquery.com/jQuery.ajax/" rel="external">ajax</a></code> method without any context in an example that
-                      is likely to be copy/pasta'd around the net is irresponsible.
+                      The first "A" in AJAX stands for "asynchronous" (or non-blocking). Promoting setting the <code>async</code> property to false
+                      when calling jQuery's <code><a href="http://api.jquery.com/jQuery.ajax/" rel="external">ajax</a></code> method
+                      without any context in an example that is likely to be copy/pasta'd around the net is grossly irresponsible.
                     </p>
                   </li>
 
@@ -733,20 +761,39 @@ content:url(beep.wav);
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_objects.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_objects.asp</a>.
+                    <blockquote><code>personObj=new Object();</code></blockquote>
                     <p>
-                      Unnecessary use of <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" rel="external">Object</a>()</code> instead of object literal <code>{}</code> on "creating your own objects".
-                      Bad naming used for object constructors, they call it "template of an object". They don't explain that calling the
-                      constructor using <code>new</code> will return a new object
+                      This is a bad and unnecessary use of the <code>new</code> keyword. They should be using and
+                      advocating the object literal syntax (<code>{}</code>) for creating new objects.
+                    </p>
+
+                    <blockquote>Create a template of an object. The template defines the structure of an object.</blockquote>
+                    <p>
+                      This is the wrong name for an object constructor. They also don't explain that calling the
+                      constructor using <code>new</code> will return a new object.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_obj_boolean.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_obj_boolean.asp</a>.
+                    <blockquote><code>var myBoolean=new Boolean();</code></blockquote>
                     <p>
-                      <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" rel="external">Boolean</a>()</code>
-                      is completely useless. Use straight up <code>true</code> and <code>false</code>. Save bytes,
-                      improve performance, and prevent all sorts of WTF when you start
-                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/typeof" rel="external">typeof</a></code> or <code>==</code>'ing things.
+                      This code is completely useless. It is slower, larger, and causes all sorts of problems compared
+                      to straight-up <code>true</code> and <code>false</code>. If you use
+                      <code>new <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" rel="external">Boolean</a>()</code>,
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/typeof" rel="external">typeof</a></code> will
+                      return "object" instead of "boolean", and strict equality operators will fail.
+                    </p>
+                    <blockquote><pre><code>var myBoolean=new Boolean();
+var myBoolean=new Boolean(0);
+var myBoolean=new Boolean(null);
+var myBoolean=new Boolean("");
+var myBoolean=new Boolean(false);
+var myBoolean=new Boolean(NaN);</code></pre></blockquote>
+                    <p>
+                      You can coerce any value to a boolean by using a double-unary operator (e.g. <code>!!null</code>,
+                      <code>!!0</code>, etc.). It's shorter, and it gives you a proper primitive instead of a boxed
+                      Boolean object (which, as mentioned above, will not act like you expect).
                     </p>
                   </li>
 
@@ -757,35 +804,42 @@ content:url(beep.wav);
                     </blockquote>
                     <p>
                       Not only do they forget about using the <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/var" rel="external">var</a></code>
-                      keyword to prevent the variable from leaking to the global scope, but also they use
-                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/var" rel="external">var</a></code> as a variable name, which is forbidden.
+                      keyword to prevent the variable from leaking to the global scope, but you can't even use
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Statements/var" rel="external">var</a></code> as a variable name—it is
+                      a reserved word, and this code will generate a SyntaxError.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/js/js_summary.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_summary.asp</a>.
+                    <blockquote>
+                      Now You Know JavaScript, What's Next? […] If you want to learn about server-side scripting, the
+                      next step is to learn ASP or PHP.
+                    </blockquote>
                     <p>
-                      Saying that "now you know JavaScript" (after reading many wrong info) and recommending ASP as the next step. ASP! Yeah. That shit from 2000! Not to mention that
-                      DHTML is referenced as another possible next step!
+                      ASP Classic was discontinued in 2000 and replaced with C#/ASP.NET. Recommending people learn an
+                      outdated language is <em>not</em> a good next step.
                     </p>
                   </li>
 
                   <li>
-                    <a href="http://www.w3schools.com/js/js_obj_intro.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_obj_intro.asp</a>.
-                    <blockquote>
-                      JavaScript is an Object Oriented Programming (OOP) language. An OOP language allows you to define your own objects and make
-                      your own variable types.
-                    </blockquote>
-                    <p>This is just terribly wrong in each part.</p>
-                  </li>
-
-                  <li>
                     <a href="http://www.w3schools.com/js/js_loop_for_in.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_loop_for_in.asp</a>.
+                    <blockquote>Use the for...in statement to loop through an array:</blockquote>
                     <p>
-                      Advocates the use of for-in loops for arrays, and makes no mention of
-                      problems and
-                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" rel="external">Object.prototype.hasOwnProperty</a>()</code>.
-                      Also, the note about the variable argument sounds like it's half-BS to me.
+                      This is wrong. You should never use for..in to loop through an array, since it will enumerate
+                      any properties or methods that are attached to Array.prototype (or the Array object itself).
+                    </p>
+                    <p>
+                      This page also completely fails to mention the use of
+                      <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" rel="external">Object.prototype.hasOwnProperty</a>()</code>
+                      to avoid enumerating properties set on the object’s prototype.
+                    </p>
+
+                    <blockquote>
+                      The variable argument can be a named variable, an array element, or a property of an object.
+                    </blockquote>
+                    <p>
+                      Why would you ever do this? Why would you even say it is possible?
                     </p>
                   </li>
 
@@ -796,14 +850,19 @@ content:url(beep.wav);
                     </blockquote>
                     <p>
                       In older browsers, placing scripts in the <code>&lt;head&gt;</code> has a negative impact on page performance. Until the script
-                      is done loading: 1) resources below the script are blocked from downloading 2) elements below the script are blocked from
-                      rendering. So try to put scripts at the bottom of the page, when possible.
+                      is done loading, resources below the script are blocked from downloading, and elements below the
+                      script are blocked from rendering. So try to put scripts at the bottom of the page, when possible.
                     </p>
+
                     <blockquote>
                       If you don't want your script to be placed inside a function, or if your script should write page content, it should be
                       placed in the body section.
                     </blockquote>
-                    <p>Whaaat?</p>
+                    <p>
+                      Whaaat? This doesn't make sense. There is no requirement for scripts to be placed inside
+                      functions when they are in the <code>&lt;head></code>, though it is a great idea to do that to
+                      avoid polluting the global scope.
+                    </p>
                   </li>
 
                   <li>
@@ -994,7 +1053,7 @@ content:url(beep.wav);
                       TCP/IP uses 4 computer bytes
                     </blockquote>
                     <p>
-                      Unlike the other sort of bytes? Furthermore, addressing has nothing to do with TCP. It happens on the OSI network layer; this
+                      Unlike the other sort of bytes? this
                       information is very specific to IPv4 and is going to be increasingly obsolete as time goes on. <!-- http://twitter.com/#!/ipv4countdown -->
                     </p>
                   </li>
@@ -1017,8 +1076,8 @@ content:url(beep.wav);
                     <p>
                       It's bad advice to suggest using the Adobe SVG Viewer for browser that don't support SVG. It's unmaintained and I think it
                       doesn't even work on Windows 7. Better is to suggest the use of <a href="https://code.google.com/p/svgweb/">SVGWeb</a>. As for the examples linked to from that page, there's
-                      no good reason to refer to the SVG DTD. Also, who knows why they have <code>standalone="no"</code> in the XML declaration when the document
-                      has no external references. Putting <code>version="1.1"</code> on the root is kinda useless too.
+                      no good reason to refer to the SVG DTD. Who knows why they have <code>standalone="no"</code> in the XML declaration when the document
+                      has no external references.
                     </p>
                   </li>
 
@@ -1125,7 +1184,7 @@ VALUES
               <ul>
                 <li>
                   <p>
-                    <span>Question 4</span> Actually, correct HTML is <code>&lt;br&gt;</code>, correct XHTML is <code>&lt;br /&gt;</code>
+                    <span>Question 4</span> Actually, correct HTML5 is <code>&lt;br&gt;</code> and <code>&lt;br/&gt;</code>, correct XHTML is <code>&lt;br /&gt;</code>
                   </p>
                 </li>
                 <li>
