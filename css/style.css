@@ -225,7 +225,7 @@ h4 {
 }
 
 pre { padding: 0; }
-pre code { line-height: 1.875em; padding: 0.9375em; font-size: 1em; }
+pre code { line-height: 1.875em; padding: 0.9375em 0 0.9375em 0.9375em; font-size: 1em; }
 
 p, li { margin: 1.5em 0; padding: 0; }
 .sucks p { margin-top: 0;}
