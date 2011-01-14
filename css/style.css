@@ -79,6 +79,20 @@ header h2:before {
 #contributors a:last-child:after { content: "."; }
 #contributors span.at { font-size: 65%; opacity: 0.65; -webkit-transition: 0.2;}
 #contributors a:hover span.at { opacity: 1; }
+#contributors a {
+  display: inline-block;
+   -moz-transition: all 0.2s ease-out;  
+     -o-transition: all 0.2s ease-out;  
+-webkit-transition: all 0.2s ease-out;  
+        transition: all 0.2s ease-out;
+}
+#contributors a:hover {
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+}
+
 
 .incorrect:before,
 .cert:before {
