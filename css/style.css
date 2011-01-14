@@ -154,13 +154,13 @@ pre code { width: 98%; padding: 0 2%; }
   border-top: 1px solid hsl(42, 21%, 65%);
   padding: 0.75em 0; 
   _display: none;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  text-transform: uppercase;
 }
-#toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
+#toc a { display:inline-block; font-weight: bold; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
 .intro p.update { text-align: left; }
 .intro p.update small { display:block; }
-
-#toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
 * html .heart { display: none; /* Bad bad IE 6 gets no luv! */ }
 
@@ -280,7 +280,8 @@ footer {
 }
 
 blockquote,
-.intro small {
+.intro small,
+#toc a {
   font-size: 0.8em;
   line-height: 1.875;
   margin-bottom: 1.875em;
@@ -289,6 +290,8 @@ blockquote,
 
 .intro p:last-child { padding-bottom: 1.5em; margin-bottom: 0; text-align: right; }
 .sucks .intro p.update small { text-align: left; }
+
+#toc a { margin-bottom: 0; }
    
 p + blockquote {
   margin-top: -0.9375em;
