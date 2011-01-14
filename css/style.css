@@ -122,6 +122,14 @@ section nav, .belief, #main .sucks h2, footer, .sucks li li:after { text-align: 
 .sucks li li:last-of-type:after { border-bottom: 0; }
 .sucks h3 { letter-spacing: 2px; }
 .sucks > p { text-align: center; }
+.sucks li li .wrap { width: 20px; height: 50px; position: absolute; top: 3em; left: -20px; opacity: 0; 
+  -moz-transition: opacity 0.2s ease-out;  
+  -o-transition: opacity 0.2s ease-out;  
+  -webkit-transition: opacity 0.2s ease-out;  
+  transition: opacity 0.2s ease-out;
+}
+.sucks li li:hover .wrap { opacity: 1;}
+.sucks li li:first-child .wrap  { top: 1.5em; }
 
 .quiz ul ul {
   -moz-column-count: 2;
