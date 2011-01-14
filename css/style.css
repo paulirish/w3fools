@@ -158,6 +158,8 @@ pre code { width: 98%; padding: 0 2%; }
 .intro p.update small { display:block; }
 
 #toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
+
+* html .heart { display: none; /* Bad bad IE 6 gets no luv! */ }
 /*
 
 COLORS!
