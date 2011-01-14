@@ -1,0 +1,154 @@
+<style>
+body { 
+  font-family: verdana, helvetica, arial, sans-serif;
+  min-width:357px;
+  overflow-x:hidden;                                
+  font-size: .8em;
+}
+
+img {
+  margin:5px;
+  border:2px solid black;
+  vertical-align:middle;
+  width:75px;
+  height:75px;
+}
+
+#urls_to_filter
+{            
+  font-size: 100%;
+  height: 300px;
+  width: 100%;
+}              
+
+#syncing_as
+{
+  font-size: 80%;
+}    
+
+ul
+{    
+  font-size: 80%;
+  margin-left: 0;
+  padding-left: 20px;                   
+}   
+
+#about_us
+{
+  color: #aaa;
+  font-size: 70%;
+  text-align: right;
+}
+
+#about_us a
+{
+  color: #999;
+  text-decoration: none;
+  font-weight: bold;
+}
+            
+
+</style>
+
+<script type="text/javascript" src="jquery-1.4.2.js"></script>
+
+<script>  
+function load_urls(force)
+{
+  $('#display_sync_name').html(chrome.extension.getBackgroundPage().get_sync_name() || "nobody");
+  chrome.extension.getBackgroundPage().get_filters_online(function () {
+    $('#loading_urls_to_filter').hide();
+    $('#urls_to_filter').val(chrome.extension.getBackgroundPage().get_filters_raw()).show();
+  }, force || false);
+};       
+
+function update_filters(callback)
+{
+  chrome.extension.getBackgroundPage().update_filters($('#urls_to_filter').val(), callback);
+};
+
+$(document).ready(function () {    
+  $('#update_sync').click(function () {    
+    if ($('#sync_name').val().length > 20)
+    {
+      $('#sync_name_error').show();
+    }
+    else
+    {  
+      chrome.extension.getBackgroundPage().set_setup_complete();
+      chrome.extension.getBackgroundPage().set_sync_name($('#sync_name').val()); 
+      $('#sync_config').hide();
+      $('#url_config').show();
+      $('#loading_urls_to_filter').show();
+      $('#urls_to_filter').hide();  
+      load_urls(true);              
+    }
+  });                   
+  
+  $('#update_urls').click(function () {
+    var button = $(this);
+    button.attr('disabled', 'disabled'); 
+    var previous_val = button.val();
+    button.val('saving...');
+    update_filters(function () {         
+      button.removeAttr('disabled');
+      button.val(previous_val);
+    });
+  });                                                                               
+  
+  $('#reconfig_sync').click(function() { 
+    $('#sync_name_error').hide();
+    chrome.extension.getBackgroundPage().set_setup_complete(false);
+    $('#url_config').hide();
+    $('#sync_config').show();
+    $('#sync_name').val(chrome.extension.getBackgroundPage().get_sync_name() || "");  
+    return false;    
+  });
+  
+  if (!chrome.extension.getBackgroundPage().get_setup_complete())
+  {        
+    $('#sync_config').show();
+  }             
+  else
+  {             
+    $('#url_config').show();
+    load_urls();
+  }                                   
+});
+</script>
+
+<div id="container">
+  <div id="url_config" style="display: none;">
+    <p>Enter <b>1 DOMAIN per line</b> (see below for tips):</p>               
+    <p id="loading_urls_to_filter">loading...</p>
+    <textarea id="urls_to_filter" style="display: none"></textarea>
+    <p><input type="button" value="SAVE CHANGES" id="update_urls" style="font-size: 1em;"/> <span id="syncing_as">syncing as <span id="display_sync_name" style="font-weight: bold">nobody</span> <a href="#" id="reconfig_sync">change</a></span></p>
+    <ul> 
+      <li>You <b>must save changes</b> after editing for them to take effect</li>  
+      <li>Matches are partial - <b>domain</b> matches http://www.<b>domain</b>.com/</li>                                                            
+      <li>Add <b>+</b> before a domain to make it STAND OUT in search results</li>
+      <li>Add <b>#</b> before a domain to disable the filter</li> 
+    </ul>
+    <p>
+      <span style="font-size: 90%">Example <i>(copy and paste above to try it out)</i>:</span><br/>
+      <pre>
+# Make these domains stand out in results
++en.wikipedia.org
++stackoverflow.com 
++github.com
++api.rubyonrails.org
+# SPAM - never show these results
+experts-exchange.com</pre>
+    </p>
+  </div>
+  <div id="sync_config" style="display: none;"> 
+    <h2>Welcome to Google Search Filter</h2> 
+    <p>Before you start using the filter, you can configure a special <b>sync name</b> so that
+    you can use the same filter configuration across multiple installations of Chrome.</p>
+    <p>Your sync name is like a <b>username and password in one</b>. Pick something like <b>yourname2424</b> and keep it secret.</p>
+    <p style="font-size: 90%; font-style: italic">You can leave it blank to disable syncing.</p>
+    <p><b>Sync as </b><input type="text" id="sync_name"/><input type="button" value="START!" id="update_sync"/></p>
+    <div id="sync_name_error" style="display: none">name is too long (max 20 chars)</div>
+  </div>                                                                                 
+  <p id="about_us">created by <a href="http://www.lanttern.com/" target="_blank">Lanttern Web Development</a></p> 
+</div>

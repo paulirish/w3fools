@@ -35,6 +35,8 @@ a, a:visited, a:active { text-decoration: none; }
 
 h2 { letter-spacing: 1px; }
 
+ol ul li { list-style: none; }
+
 code {
   font-size: 0.9em;
   background-color: hsl(42, 21%, 75%);
@@ -66,11 +68,12 @@ header h2:before {
   content: "✪ · ✪ · ✪ · ✪ · ✪";
   text-shadow: none;
   display: block;
+  text-align: center;
 }
 
-.content, .intro p, .sucks li, .sucks .intro p, .sucks .intro blockquote, .intro small { min-width: 60%; max-width: 800px; margin: 0 auto; }
+.content, .intro p, .sucks li, .sucks .intro p, .intro .update, .sucks .intro blockquote { _width: 800px; min-width: 60%; max-width: 800px; margin: 0 auto; }
 
-.intro p + small { text-align: right; font-style: italic; display:block; }
+.intro p + small { text-align: right; font-style: italic; }
 .belief { letter-spacing: 2px; }
 
 #contributors { padding-left: 10em; position: relative; -moz-user-select: none; -webkit-user-select: none; user-select: none;  }
@@ -143,17 +146,24 @@ pre code { width: 98%; padding: 0 2%; }
   bottom: 0;
   left: 0;
   text-align: center;
-  width: 100%;
+  width: 100%; 
+  background: #ccc;
   background: hsla(42, 21%, 75%, 0.95);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(42, 21%, 65%, 0.95)), color-stop(1, hsla(42, 21%, 75%, 0.95)));
   background: -moz-linear-gradient(center bottom, hsla(42, 21%, 65%, 0.95) 0%, hsla(42, 21%, 65%, 0.95), 100%);
   border-top: 1px solid hsl(42, 21%, 65%);
+  padding: 0.75em 0; 
+  _display: none;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  text-transform: uppercase;
 }
+#toc a { display:inline-block; font-weight: bold; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
-.intro p.update { text-align: left; min-width: 100%; }
+.intro p.update { text-align: left; }
 .intro p.update small { display:block; }
 
-#toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
+* html .heart { display: none; /* Bad bad IE 6 gets no luv! */ }
+
 /*
 
 COLORS!
@@ -205,7 +215,7 @@ h2 {
 }
 
 #main h2 { margin-top: 1.5em; }
-#contributors h2 { margin-top: 0.5em; }
+#contributors h2 { margin-top: 0.5em; _padding-left: -10em; _position: relative; }
 
 h4 {
   font-size: 1.2em;
@@ -270,15 +280,18 @@ footer {
 }
 
 blockquote,
-.intro small {
+.intro small,
+#toc a {
   font-size: 0.8em;
   line-height: 1.875;
   margin-bottom: 1.875em;
   padding-bottom: 0;
 }
 
-.intro small { padding-bottom: 1.875em; margin-bottom: 0; }
+.intro p:last-child { padding-bottom: 1.5em; margin-bottom: 0; text-align: right; }
 .sucks .intro p.update small { text-align: left; }
+
+#toc a { margin-bottom: 0; }
    
 p + blockquote {
   margin-top: -0.9375em;
@@ -291,9 +304,9 @@ p + blockquote {
   margin-bottom: 0.3333em;
 }
 
-.sucks .intro { margin-bottom: 1.5em; margin-top: 1.75em; }
+.sucks .intro { margin-bottom: 1.5em; margin-top: 1.5em; }
 .sucks .intro blockquote { font-size: 1.5em; line-height: 1.5em; margin-top: 1.75em; margin-bottom: 1.75em; }
-.sucks .intro small { padding-bottom: 0.9375em; }
+.sucks .intro small { padding-bottom: 0.9375em; margin-bottom: 0; }
 .sucks .intro p { padding-bottom: 1.5em; }
 .sucks .intro + nav { margin-bottom: 0; }
 
@@ -301,11 +314,16 @@ p + blockquote {
   column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
   margin: 1.5em 0 0 0;
 }
+   
+.quiz p { _text-align: center; }
+.quiz li p { _text-align: left; }
 
 .quiz li li { padding: 0 0 1.5em 0; position: static; }
 .quiz li li:after { content: none; border: 0;}
 
-#toc { padding: 0.75em 0; }
+
+/* no love for IE6.. LITERALLY */
+li.heart { _display: none;}
 
 #certificate p {
   margin: auto;
