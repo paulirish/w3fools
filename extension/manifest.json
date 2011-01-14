@@ -1,0 +1,29 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Google Search Filter",
+  "version": "1.0.3",
+  "description": "Allows you to make specified domains STAND OUT or DISAPPEAR from Google Search results.",
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
+  "background_page": "background.html",
+  "page_action": {
+    "default_icon": "icon.png", 
+    "default_title": "Google Search Filter",
+    "popup": "popup.html"
+  },
+  "permissions": [  
+    "tabs",
+    "http://*/*",
+    "http://clobapi.heroku.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"], 
+      "css": ["filter_results.css"],
+      "js": ["jquery-1.4.2.js", "filter_results.js"],
+      "run_at": "document_start",
+      "all_frames": true 
+    }
+  ]
+}
