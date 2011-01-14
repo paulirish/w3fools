@@ -17,7 +17,7 @@
 
 </head>
 <!--
- 
+
 -->
 <body>
   <div id="container">
@@ -101,7 +101,7 @@
               or respect W3Schools certificates. Unlike Microsoft’s <abbr title="Microsoft Certified Professional (MCSE, etc.)">MCP</abbr>
               or Cisco’s <abbr title="Cisco Career Certifications (CCNE, etc.)">CCC</abbr>, W3Schools has absolutely
               no authority over the technologies for which they claim to provide certification. Unlike CompTIA’s
-              ANSI/ISO accredited certifications, W3Schools has no support from governing standards bodies. 
+              ANSI/ISO accredited certifications, W3Schools has no support from governing standards bodies.
             </li>
 
             <li class="incorrect">
@@ -590,22 +590,20 @@ Last name: &lt;input type="text" name="lastname" />
                 <ul>
                   <li>
                     <a href="http://www.w3schools.com/css/pr_pseudo_after.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css/pr_pseudo_after.asp</a>.
+                    <blockquote>
+                      Example: Play a sound after each occurrence of an h1 element:
+
+                      <pre><code>h1:after
+{
+content:url(beep.wav);
+}</code></pre>
+                    </blockquote>
                     <p>
                       Playing a sound after each occurrence of an <code>H1</code> element is not likely to be a real-world problem that needs solving, nor is it even possible with the current implementation.
                       A better example might include something like:</p>
                       <pre><code>.description:after {
   content:'...'
 }</code></pre>
-                  </li>
-
-                  <li>
-                    <a href="http://www.w3schools.com/css3/css3_pr_target.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_pr_target.asp</a>.
-                    <p>The CSS target property has long been deprecated from <a href="http://www.w3.org/TR/css3-hyperlinks/">this spec</a> from 2004 and has zero browser support?</p>
-                  </li>
-
-                  <li>
-                    <a href="http://www.w3schools.com/css/css_dont.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css/css_dont.asp</a>.
-                    <p>Briefly saying that htc-scripts should be avoided is nice, but having two large examples, one of which addresses a <i>common</i> problem and a another for a <i>popular</i> feature is advocating otherwise.</p>
                   </li>
 
                   <li>
@@ -620,14 +618,23 @@ Last name: &lt;input type="text" name="lastname" />
 
                   <li>
                     <a href="http://www.w3schools.com/css3/css3_2dtransforms.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_2dtransforms.asp</a>.
-                    <p>Listing <code>skewX</code> and <code>skewY</code> but forgetting about <code>translateX</code>, <code>translateY</code>, <code>scaleX</code> and <code>scaleY</code>..</p>
+                    <blockquote>
+                      2D Transform Methods […] matrix(n,n,n,n,n,n) translate(x,y) scale(x,y) rotate(angle)
+                      skew(x-angle,y-angle) skewX(angle) skewY(angle)
+                    </blockquote>
+                    <p>
+                      This reference of transform methods lists <code>skewX</code> and <code>skewY</code> but
+                      omits <code>translateX</code>, <code>translateY</code>, <code>scaleX</code>, and <code>scaleY</code>.
+                    </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/css3/css3_fonts.asp" rel="nofollow" class="w3s-link">www.w3schools.com/css3/css3_fonts.asp</a>.
+                    <blockquote>
+                      Internet Explorer does not yet support the @font-face rule.
+                    </blockquote>
                     <p>
-                      Microsoft invented the <code>@font-face</code> at-rule (yet it claims Internet Explorer does not "support" the font-face rule) and there's no such thing as the
-                      <code>url</code> descriptor for font-face rules either.
+                      This is wrong. In fact, Microsoft <em>invented</em> the <code>@font-face</code> at-rule.
                     </p>
                   </li>
                 </ul>
@@ -637,13 +644,14 @@ Last name: &lt;input type="text" name="lastname" />
                 <ul>
                   <li>
                     <a href="http://www.w3schools.com/js/js_timing.asp" rel="nofollow" class="w3s-link">www.w3schools.com/js/js_timing.asp</a>.
+                    <blockquote><code>var t=setTimeout("javascript statement",milliseconds);</code></blockquote>
                     <p>
-                      You <strong>never</strong> pass a string to
+                      This is terrible advice. You <strong>never</strong> pass a string to
                       <code><a href="https://developer.mozilla.org/en/DOM/window.setTimeout" rel="external">setTimeout()</a></code>
                       unless you like using
                       <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval" rel="external">eval</a>()</code>.
-                      Doing this also means you can't use any variables from your local scope. Also, the examples on this page
-                      has a ton of global variables. Bad.
+                      Passing a string also means, among other things, that you can't use any variables from your local
+                      scope. Also, the examples on this page use a ton of global variables. Bad.
                     </p>
                   </li>
 
@@ -993,26 +1001,40 @@ Last name: &lt;input type="text" name="lastname" />
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_inhtml.asp" rel="nofollow" class="w3s-link">www.w3schools.com/svg/svg_inhtml.asp</a>.
+                    <blockquote>The <code>&lt;embed></code> tag is not listed in any HTML specification.</blockquote>
                     <p>
-                      I wish&hellip; this page would be updated to show an example of SVG in HTML5.
+                      <code>&lt;embed></code> is a valid HTML5 tag. This page also doesn’t mention SVG in HTML5, which
+                      would be nice.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_examples.asp" rel="nofollow" class="w3s-link">www.w3schools.com/svg/svg_examples.asp</a>.
+                    <blockquote>
+                      All browsers support SVG files nowadays, except for Internet Explorer, which needs a plug-in.
+                      Those are available for free, as for example the Adobe SVG Viewer.
+                    </blockquote>
                     <p>
                       It's bad advice to suggest using the Adobe SVG Viewer for browser that don't support SVG. It's unmaintained and I think it
-                      doesn't even work on Windows 7. Better is to suggest the use of SVGWeb. As for the examples linked to from that page, there's
-                      no good reason to refer to the SVG DTD. Who knows why that have <code>standalone="no"</code> in the XML declaration when the document
+                      doesn't even work on Windows 7. Better is to suggest the use of <a href="https://code.google.com/p/svgweb/">SVGWeb</a>. As for the examples linked to from that page, there's
+                      no good reason to refer to the SVG DTD. Also, who knows why they have <code>standalone="no"</code> in the XML declaration when the document
                       has no external references. Putting <code>version="1.1"</code> on the root is kinda useless too.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_filters_intro.asp" rel="nofollow" class="w3s-link">www.w3schools.com/svg/svg_filters_intro.asp</a>.
+                    <blockquote>
+                      SVG Filters is used to add special effects to shapes and text.
+                      The available filters in SVG are: feBlend feColorMatrix feComponentTransfer feComposite
+                      feConvolveMatrix feDiffuseLighting feDisplacementMap feFlood feGaussianBlur feImage feMerge
+                      feMorphology feOffset feSpecularLighting feTile feTurbulence feDistantLight fePointLight
+                      feSpotLight. You can use multiple filters on each SVG element!
+                    </blockquote>
                     <p>
-                      What an exceptionally useful page&hellip; The "tip" that you can use multiple filters on an element is kind of misleading, if you
-                      happened to know how to write filters (because that list of elements sure doesn't help you): an element can have only one filter,
+                      This page is pretty much useless, since it provides no explanation of how to actually use SVG
+                      filters, nor does it explain what each of the filters does. Furthermore, the "tip" that you can
+                      use multiple filters on an element is misleading: an element can have only one filter,
                       but that filter might use multiple filter primitives to define its effect. The three lighting elements <code>feDistantLight</code>,
                       <code>fePointLight</code> and <code>feSpotLight</code> aren't even filters primitives -- they're just helper elements for the two
                       lighting primitives <code>feDiffuseLighting</code> and <code>feSpecularLighting</code>.
@@ -1021,38 +1043,55 @@ Last name: &lt;input type="text" name="lastname" />
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_filters_gaussian.asp" rel="nofollow" class="w3s-link">www.w3schools.com/svg/svg_filters_gaussian.asp</a>.
+                    <blockquote>
+                      The <code>&lt;filter></code> tag has a required id attribute which identifies which filter will
+                      be applied to the graphic.
+                    </blockquote>
                     <p>
-                      The sentence talking about the id attribute on the <code>&lt;filter&gt;</code> is confused. <code>&lt;filter&gt;</code> need not be nested
-                      in a <code>&lt;defs&gt;</code>. The description of <code>&lt;defs&gt;</code> is pretty weak.
+                      This sentence is wrong.
+                    </p>
+
+                    <blockquote>
+                      The <code>&lt;filter></code> tag must be nested within a <code>&lt;defs></code> tag.
+                    </blockquote>
+
+                    <p>
+                      This is false. A <code>&lt;filter&gt;</code> need not be nested in a <code>&lt;defs&gt;</code>.
+                      The description of <code>&lt;defs&gt;</code> is pretty weak.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/svg/svg_grad_linear.asp" rel="nofollow" class="w3s-link">www.w3schools.com/svg/svg_grad_linear.asp</a>.
+                    <blockquote>
+                      The <code>&lt;linearGradient></code> tag must be nested within a <code>&lt;defs></code> tag.
+                    </blockquote>
                     <p>
-                      Again, there's no requirement for gradients to be defined within a <code>&lt;defs&gt;</code>.
+                      This is false. Like <code>&lt;filter></code>, there is no requirement that gradients be nested
+                      in a <code>&lt;defs></code>.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://www.w3schools.com/vbscript/vbscript_intro.asp" rel="nofollow" class="w3s-link">www.w3schools.com/vbscript/vbscript_intro.asp</a>
-                    <p>
-                      They teach VBScript and state:
-                    </p>
                     <blockquote>
                       When a VBScript is inserted into an HTML document, the Internet browser will read the HTML and interpret the VBScript.
                     </blockquote>
                     <p>
-                      It implies it will work in all browsers. The doc says nothing about VB being a proprietary language.
+                      This strongly implies that VBScript will work in all browsers. The doc says nothing about VB
+                      being a proprietary language that only works in Internet Explorer.
                     </p>
                   </li>
 
                   <li>
                     <a href="http://w3schools.com/php/php_mysql_insert.asp" rel="nofollow" class="w3s-link">www.w3schools.com/php/php_mysql_insert.asp</a>
+                    <blockquote><pre><code>$sql="INSERT INTO Persons (FirstName, LastName, Age)
+VALUES
+('$_POST[firstname]','$_POST[lastname]','$_POST[age]')";
+                    </code></pre></blockquote>
                     <p>
-                      I imagine there are over 9000 errors in their PHP stuff, but I knew I would find this very easily if I looked.
-
-                      This is very misleading and will make your Database susceptible to trivial SQL Injection attacks.
+                      Yikes. This code exposes an application to trivial <a href="http://bobby-tables.com/">SQL injection</a>
+                      attacks and should never have been posted. It contravenes every best practice.
                     </p>
                   </li>
 
