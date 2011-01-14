@@ -338,7 +338,7 @@ li.heart { _display: none;}
 }
 
 @media screen and (max-device-width: 480px) {
-
+  #toc { position: relative; }
 }
 @media print {
   body { content: "why the eff are you trying to print this, bro??"; }
