@@ -43,7 +43,7 @@ code {
   display: inline-block;
   padding: 1px 4px;
   text-shadow: 1px 1px 1px hsl(42, 21%, 85%);
-
+  word-wrap:break-word;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -155,7 +155,8 @@ pre code { width: 98%; padding: 0 2%; }
   padding: 0.75em 0; 
   _display: none;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: uppercase;  
+  z-index: 1;
 }
 #toc a { display:inline-block; font-weight: bold; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
@@ -224,7 +225,7 @@ h4 {
 }
 
 pre { padding: 0; }
-pre code { line-height: 1.02666em; padding: 1.02666em; }
+pre code { line-height: 1.875em; padding: 0.9375em; font-size: 1em; }
 
 p, li { margin: 1.5em 0; padding: 0; }
 .sucks p { margin-top: 0;}
