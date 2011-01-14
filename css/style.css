@@ -152,7 +152,10 @@ pre code { width: 98%; padding: 0 2%; }
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(42, 21%, 65%, 0.95)), color-stop(1, hsla(42, 21%, 75%, 0.95)));
   background: -moz-linear-gradient(center bottom, hsla(42, 21%, 65%, 0.95) 0%, hsla(42, 21%, 65%, 0.95), 100%);
   border-top: 1px solid hsl(42, 21%, 65%);
+  padding: 0.75em 0; 
+  _display: none;
 }
+#toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
 .intro p.update { text-align: left; }
 .intro p.update small { display:block; }
@@ -160,6 +163,7 @@ pre code { width: 98%; padding: 0 2%; }
 #toc a { display:inline-block; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
 * html .heart { display: none; /* Bad bad IE 6 gets no luv! */ }
+
 /*
 
 COLORS!
@@ -314,7 +318,9 @@ p + blockquote {
 .quiz li li { padding: 0 0 1.5em 0; position: static; }
 .quiz li li:after { content: none; border: 0;}
 
-#toc { padding: 0.75em 0; }
+
+/* no love for IE6.. LITERALLY */
+li.heart { _display: none;}
 
 
 @media screen and (max-device-width: 480px) {
