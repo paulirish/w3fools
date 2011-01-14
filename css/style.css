@@ -77,7 +77,7 @@ header h2:before {
 #contributors h2 { position: absolute; left: 0; cursor: help; }
 #contributors a:after { content: ", "; }
 #contributors a:last-child:after { content: "."; }
-#contributors span.at { font-size: 65%; opacity: 0.65; -webkit-transition: 0.2;}
+#contributors span.at { font-size: 65%; opacity: 0.65; -webkit-transition: 0.2; pointer-events: none;}
 #contributors a:hover span.at { opacity: 1; }
 #contributors a {
   display: inline-block;
