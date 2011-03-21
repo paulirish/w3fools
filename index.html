@@ -295,7 +295,7 @@
                     </blockquote>
                     <p>
                       Most browsers try to correct your markup but there will probably be unintended consequences.
-                      There are a few elements, such as &lt;p>, which are explicitly stated in the HTML spec to have an
+                      There are a few elements, such as &lt;p&gt;, which are explicitly stated in the HTML spec to have an
                       optional close tag, but most elements are not this way.
                     </p>
 
@@ -305,8 +305,16 @@
                       The example above will work in most browsers, but don't rely on it. Forgetting the end tag can produce unexpected results or errors.
                     </blockquote>
                     <p>
-                      This is still wrong. The example uses <code>&lt;p></code> tags, which are one of the few exceptions where
+                      This is still wrong. The example uses <code>&lt;p&gt;</code> tags, which are one of the few exceptions where
                       a closing tag is optional.
+                    </p>
+
+                    <blockquote>
+                      W3Schools use lowercase tags because the World Wide Web Consortium (W3C) recommends lowercase in HTML 4
+                    </blockquote>
+                    <p>
+                      Incorrect. W3C's HTML 4.01 Specification defines nothing about it and uses uppercase tags.
+                      The current draft of HTML 5 specification allows mixed use for the HTML mode (with documents served as text/html).
                     </p>
                   </li>
 
