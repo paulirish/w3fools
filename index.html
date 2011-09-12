@@ -329,6 +329,13 @@
                       That is hardly "new software", and illustrates the misunderstanding of basic principles of
                       computing &amp; software design that tends to permeate W3Schools material.
                     </p>
+                    <p>
+                      Extensions are not necessary at all and if they are present they don't have to be
+                      <code>.htm</code> or <code>.html</code>. The key thing is that HTML files are served with
+                      the corrent content-type e.g. <code>text/html</code>.  (many web servers have some built in
+                      or preconfigured knowledge that <code>.htm</code> and <code>.html</code> should be served
+                      with the <code>text/html</code> content-type)
+                    </p>
                   </li>
 
                   <li id="html5_webstorage">
@@ -829,7 +836,7 @@ document.write("User-agent header: " + navigator.userAgent);
                         represents an expression or statement. The expression/statement represented by the string is executed.
                     </p>
                     <p>
-                        If fact, if you do not pass a string to <code>eval()</code>, the argument is returned unchanged.
+                        In fact, if you do not pass a string to <code>eval()</code>, the argument is returned unchanged.
                     </p>
                     <p>
                         Worst of all, W3Schools irresponsibility fails to educate users on why <code>eval()</code> is a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/eval#section_5">dangerous function to use</a>
