@@ -1330,6 +1330,16 @@ VALUES
                       attacks and should never have been posted. It contravenes every best practice.
                     </p>
                   </li>
+                  
+                  <li id="php_file_upload">
+                    <a href="#php_file_upload" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/php/php_file_upload.asp" rel="nofollow" class="w3s-link">www.w3schools.com/php/php_file_upload.asp</a>
+                    <blockquote><pre><code>move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);</code></pre></blockquote>
+                    <p>
+                      Anyone could upload a file with a name like "../hacked.php", and PHP would happily write it.
+                      It is not okay to do no validation on a file upload, this is a massive security risk
+                    </p>
+                  </li>
 
                   <li id="specs">
                     <a href="#specs" class="wrap">#</a>
