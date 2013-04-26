@@ -219,29 +219,14 @@
                 <h3>HTML</h3>
                 <ul>
 
-                  <li id="html-headings">
-                    <a href="#html-headings" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_headings.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_headings.asp</del></a>.
-                    <blockquote>
-                      Note: Browsers automatically add an empty line before and after a heading.
-                    </blockquote>
+                  <li id="markup">
+                    <a href="#markup" class="wrap">#</a>
                     <p>
-                      This is an oversimplification. Browsers' default stylesheets define these elements as block-level with non-zero <code>margin-top</code>
-                      and <code>margin-bottom</code> values. No newlines are added.
+                      The markup of the W3Schools site itself is awful and does not conform to best practices: <del>table in
+                      table in table in table</del><ins>div in div in div in div</ins>, with <strong>lots</strong> of inline styles.
                     </p>
                   </li>
 
-                  <li id="html5_intro">
-                    <a href="#html5_intro" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/html5_intro.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/html5_intro.asp</a>.
-                    <blockquote>
-                      The latest versions of Safari, Chrome, Firefox, and Opera support some HTML5 features. Internet Explorer 9 will support some HTML5 features.
-                    </blockquote>
-                    <p>
-                      This is misleading. Many features that have existed for years in IE are just now being standardized by HTML5, e.g. <code>contenteditable</code>.
-                      IE8 also already supports <code>localStorage</code>, which is an HTML5 feature.
-                    </p>
-                  </li>
 
                   <li id="html5-elements">
                     <a href="#html5-elements" class="wrap">#</a>
@@ -254,17 +239,6 @@
                     </blockquote>
                     <p>
                       These are examples of their vague and unhelpful circular definitions.  Many of their descriptions for new elements fail to clarify anything, but for article and section, somewhat subtle elements, a circular definition will be of no assistance to a new user trying to find the right usage.
-                    </p>
-                  </li>
-
-                  <li id="html_getstarted">
-                    <a href="#html_getstarted" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
-                    <blockquote>
-                      […] professional web developers often prefer HTML editors like FrontPage or Dreamweaver, instead of writing plain text.
-                    </blockquote>
-                    <p>
-                      Professional web developers do not recommend the use of WYSIWYG editors.
                     </p>
                   </li>
 
@@ -331,45 +305,6 @@
                     </p>
                   </li>
 
-                  <li id="html_getstarted_htm">
-                    <a href="#html_getstarted_htm" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
-                    <blockquote>
-                      When you save an HTML file, you can use either the <code>.htm</code> or the <code>.html</code> file extension. We use <code>.htm</code> in
-                      our examples. It is a habit from the past, when the software only allowed three letters in file extensions. With new software
-                      it is perfectly safe to use <code>.html</code>
-                    </blockquote>
-                    <p>
-                      Nitpicking to be sure, but Unix has supported arbitrary 255-character file names since 1983.
-                      That is hardly "new software", and illustrates the misunderstanding of basic principles of
-                      computing &amp; software design that tends to permeate W3Schools material.
-                    </p>
-                    <p>
-                      Extensions are not necessary at all and if they are present they don't have to be
-                      <code>.htm</code> or <code>.html</code>. The key thing is that HTML files are served with
-                      the correct content-type e.g. <code>text/html</code>.  (many web servers have some built in
-                      or preconfigured knowledge that <code>.htm</code> and <code>.html</code> should be served
-                      with the <code>text/html</code> content-type)
-                    </p>
-                  </li>
-
-                  <li id="html5_webstorage">
-                    <a href="#html5_webstorage" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/html5_webstorage.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_webstorage.asp</del></a>.
-                    <blockquote>
-                      The localStorage method stores the data with no time limit. […] The sessionStorage method stores
-                      the data for one session.
-                    </blockquote>
-                    <p>
-                      <code>localStorage</code> and <code>sessionStorage</code> are called "methods", but they are not
-                      methods—they are objects that implement the HTML5 Storage interface. Nothing about their
-                      properties and methods are mentioned, it just shows a simple dot syntax getter example. This is
-                      important, because W3Schools apologists often claim that the reason W3Schools documentation is
-                      wrong is because it is old—but this "content" is certainly not old, as the web storage API is
-                      less than 2 years old.
-                    </p>
-                  </li>
-
                   <li id="html5_ref_standardattributes">
                     <a href="#html5_ref_standardattributes" class="wrap">#</a>
                     <a href="http://www.w3schools.com/html5/html5_ref_standardattributes.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/html5_ref_standardattributes.asp</a>.
@@ -393,13 +328,6 @@
                     <p>This is blatantly false; <code>&lt;q></code> tags work just fine in IE8.</p>
                   </li>
 
-                  <li id="markup">
-                    <a href="#markup" class="wrap">#</a>
-                    <p>
-                      The markup of the W3Schools site itself is awful and does not conform to best practices: table in
-                      table in table in table, with lots of inline styles.
-                    </p>
-                  </li>
 
                   <li id="html5_form_input_types">
                     <a href="#html5_form_input_types" class="wrap">#</a>
@@ -708,6 +636,82 @@ Last name: &lt;input type="text" name="lastname" />
                       Wrong. In HTML5 the <code>&lt;header&gt;</code> element <a href="http://developers.whatwg.org/sections.html#the-header-element">represents a group of introductory or navigational aids</a>. It is not <em>just</em> for the document. In addition it’s often used for headers in sectioning content elements such as <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code>.
                     </p>
                   </li>
+
+                  <li id="html_getstarted">
+                    <a href="#html_getstarted" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
+                    <blockquote>
+                      […] professional web developers often prefer HTML editors like FrontPage or Dreamweaver, instead of writing plain text.
+                    </blockquote>
+                    <p>
+                      Professional web developers do not recommend the use of WYSIWYG editors.
+                    </p>
+                  </li>
+
+                  <li id="html5_intro">
+                    <a href="#html5_intro" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html5_intro.asp" rel="nofollow" class="w3s-link"><del>http://www.w3schools.com/html/html5_intro.asp</del></a>.
+                    <blockquote>
+                      The latest versions of Safari, Chrome, Firefox, and Opera support some HTML5 features. Internet Explorer 9 will support some HTML5 features.
+                    </blockquote>
+                    <p>
+                      This is misleading. Many features that have existed for years in IE are just now being standardized by HTML5, e.g. <code>contenteditable</code>.
+                      IE8 also already supports <code>localStorage</code>, which is an HTML5 feature.
+                    </p>
+                  </li>
+
+                  <li id="html-headings">
+                    <a href="#html-headings" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_headings.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_headings.asp</del></a>.
+                    <blockquote>
+                      Note: Browsers automatically add an empty line before and after a heading.
+                    </blockquote>
+                    <p>
+                      This is an oversimplification. Browsers' default stylesheets define these elements as block-level with non-zero <code>margin-top</code>
+                      and <code>margin-bottom</code> values. No newlines are added.
+                    </p>
+                  </li>
+
+
+                  <li id="html_getstarted_htm">
+                    <a href="#html_getstarted_htm" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
+                    <blockquote>
+                      When you save an HTML file, you can use either the <code>.htm</code> or the <code>.html</code> file extension. We use <code>.htm</code> in
+                      our examples. It is a habit from the past, when the software only allowed three letters in file extensions. With new software
+                      it is perfectly safe to use <code>.html</code>
+                    </blockquote>
+                    <p>
+                      Nitpicking to be sure, but Unix has supported arbitrary 255-character file names since 1983.
+                      That is hardly "new software", and illustrates the misunderstanding of basic principles of
+                      computing &amp; software design that tends to permeate W3Schools material.
+                    </p>
+                    <p>
+                      Extensions are not necessary at all and if they are present they don't have to be
+                      <code>.htm</code> or <code>.html</code>. The key thing is that HTML files are served with
+                      the correct content-type e.g. <code>text/html</code>.  (many web servers have some built in
+                      or preconfigured knowledge that <code>.htm</code> and <code>.html</code> should be served
+                      with the <code>text/html</code> content-type)
+                    </p>
+                  </li>
+
+                  <li id="html5_webstorage">
+                    <a href="#html5_webstorage" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html5/html5_webstorage.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_webstorage.asp</del></a>.
+                    <blockquote>
+                      The localStorage method stores the data with no time limit. […] The sessionStorage method stores
+                      the data for one session.
+                    </blockquote>
+                    <p>
+                      <code>localStorage</code> and <code>sessionStorage</code> are called "methods", but they are not
+                      methods—they are objects that implement the HTML5 Storage interface. Nothing about their
+                      properties and methods are mentioned, it just shows a simple dot syntax getter example. This is
+                      important, because W3Schools apologists often claim that the reason W3Schools documentation is
+                      wrong is because it is old—but this "content" is certainly not old, as the web storage API is
+                      less than 2 years old.
+                    </p>
+                  </li>
+
 
                 </ul>
               </li>
