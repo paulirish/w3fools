@@ -98,7 +98,8 @@ header h2:before {
 
 
 .incorrect:before,
-.cert:before {
+.cert:before,
+.nocommunity:before {
   display: block;
   content: "";
   position: absolute;
@@ -107,7 +108,7 @@ header h2:before {
   border-top: 1px dotted;
 }
 
-.incorrect, .cert, .noaffiliation, .sucks li  { list-style: none; }
+.incorrect, .cert, .noaffiliation, .nocommunity, .sucks li  { list-style: none; }
 
 section nav a { display: inline-block; margin: 0 1em; }
 section nav a:first-child { margin-left: 0; }
@@ -248,10 +249,10 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
 .intro p { margin-bottom: 1.5em; }
 
-.incorrect:before,
+.nocommunity:before, .incorrect:before,
 .cert:before { margin-top: -1.5em; }
 
-.incorrect, .cert, .noaffiliation {
+.incorrect, .cert, .nocommunity, .noaffiliation {
   margin: 0;
   min-height: 3em;
   padding: 1.5em 0;
