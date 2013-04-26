@@ -221,9 +221,11 @@
 
                   <li id="markup">
                     <a href="#markup" class="wrap">#</a>
+                    <a href="http://www.w3schools.com" rel="nofollow" class="w3s-link">http://www.w3schools.com/</a>.
                     <p>
                       The markup of the W3Schools site itself is awful and does not conform to best practices: <del>table in
-                      table in table in table</del><ins>div in div in div in div</ins>, with <strong>lots</strong> of inline styles.
+                      table in table in table</del> <ins>div in div in div in div</ins>, with <strong>lots</strong> of inline styles.
+                      The content of the site's pages talk about html5, but it has not been implemented on their own site.
                     </p>
                   </li>
 
@@ -264,16 +266,6 @@
                     </p>
                   </li>
                  -->
-
-                  <li id="html_frames">
-                    <a href="#html_frames" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/tags/tag_frame.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_frames.asp</a>.
-                    <p>
-                      Again, frames are considered among the very worst of practices in modern Web development. In
-                      fact, though the iframe element is still a usable spec, the frame element itself is no longer <em>valid</em> in HTML5.  
-                      Generally lighter ajax or js loading of information is recommended over the full page load that iframes provide.
-                    </p>
-                  </li>
 
                   <li id="html_elements">
                     <a href="#html_elements" class="wrap">#</a>
@@ -316,80 +308,6 @@
                       Finally, instead of listing all five microdata attributes, only "item" and "itemprop" are
                       provided—and they don’t give a reasonable explanation of how they should be used, leaving the
                       visitor clueless.
-                    </p>
-                  </li>
-
-                  <li id="tag_q">
-                    <a href="#tag_q" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/tags/tag_q.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/tags/tag_q.asp</del></a>.
-                    <blockquote>
-                      Browser Support. The &lt;q> tag is supported in all major browsers, except Internet Explorer.
-                    </blockquote>
-                    <p>This is blatantly false; <code>&lt;q></code> tags work just fine in IE8.</p>
-                  </li>
-
-
-                  <li id="html5_form_input_types">
-                    <a href="#html5_form_input_types" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/html5_form_input_types.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_form_input_types.asp</del></a>.
-                    <blockquote>
-                      search: No No 9.0 No No, color: No No 9.0 No No
-                    </blockquote>
-                    <p>
-                      This entire support matrix is wrong. Support for <code>type=color</code> and
-                      <code>type=search</code> were added in Opera version 11, not version 9. Furthermore, IE, Safari,
-                      Chrome, and Firefox all have support for properties that W3Schools claims they do not support.
-                    </p>
-                  </li>
-
-                  <li id="html_elements_br">
-                    <a href="#html_elements_br" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_elements.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_elements.asp</a>.
-                    <blockquote>
-                      Even if <code>&lt;br&gt;</code> works in all browsers, writing <code>&lt;br /&gt;</code> instead is more future proof.
-                    </blockquote>
-                    <p>
-                      This is false and misleading; there is nothing future-proof about self-closing tags, especially
-                      as the work on XHTML 2.0 has been discontinued. Furthermore, &lt;br /&gt; isn't semantic in most cases and probably should not
-                      be mentioned at all.
-                    </p>
-
-                    <blockquote>
-                      Note: Future version of HTML will not allow you to skip end tags.
-                    </blockquote>
-                    <p>
-                      This is blatantly false. The latest version of HTML, HTML5, continues to allow certain end tags
-                      to be omitted.
-                    </p>
-                  </li>
-
-                  <li id="html_links">
-                    <a href="#html_links" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_links.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_links.asp</a>.
-                    <blockquote>
-                      The name attribute specifies the name of an anchor. The name attribute is used to create a
-                      bookmark inside an HTML document.
-                    </blockquote>
-                    <p>
-                      This is misleading. Named anchors have been deprecated since HTML4 and replaced with element IDs.
-                      (Yes, that's right: you can link to any element with a <code>href="#thing"</code> as long as it
-                      has <code>id="thing"</code>. Yes, it works everywhere.)
-                    </p>
-                  </li>
-
-                  <li id="tag_font_style">
-                    <a href="#tag_font_style" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/tags/tag_font_style.asp" rel="nofollow" class="w3s-link">www.w3schools.com/tags/tag_font_style.asp</a>.
-                    <blockquote>
-                      The &lt;tt>, &lt;i>, &lt;b>, &lt;big>, and &lt;small> tags are all font-style tags. They are not
-                      deprecated, but it is possible to achieve richer effect with CSS.
-                    </blockquote>
-
-                    <p>
-                      This is wrong. <code>&lt;big></code> and <code>&lt;tt></code> are not only
-                      deprecated, they are obsolete as of HTML5. In any case, a learning site should never advocate the
-                      use of these tags to format text, even with a mild disclaimer that “richer” effects are possible
-                      via CSS.
                     </p>
                   </li>
 
@@ -459,28 +377,6 @@ Last name: &lt;input type="text" name="lastname" />
                       Their "minimum document example" is missing a DOCTYPE. It also differs from other "minimal
                       document examples" on their site, such as the one on the HTML Introduction page, which is missing
                       a <code>&lt;head></code> entirely.
-                    </p>
-                  </li>
-
-                  <li id="html_url">
-                    <a href="#html_url" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_url.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_url.asp</del></a>.
-                    <blockquote>
-                      Pages starting with http:// are not encrypted, so all information exchanged between your computer
-                      and the Internet can be "seen" by hackers.
-                    </blockquote>
-
-                    <p>
-                      This is a gross mischaracterization of how attacks involving traffic sniffing operate.
-                    </p>
-
-                    <blockquote>
-                      Common URL Schemes […] gopher […] news […] WAIS
-                    </blockquote>
-
-                    <p>
-                      None of these URL schemes were ever "common" within the lifetime of W3Schools, and certainly are
-                      not common now. This information simply should have never existed.
                     </p>
                   </li>
 
@@ -672,6 +568,22 @@ Last name: &lt;input type="text" name="lastname" />
                     </p>
                   </li>
 
+                  <li id="tag_font_style">
+                    <a href="#tag_font_style" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_font_style.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/tags/tag_font_style.asp</del></a>.
+                    <blockquote>
+                      The &lt;tt>, &lt;i>, &lt;b>, &lt;big>, and &lt;small> tags are all font-style tags. They are not
+                      deprecated, but it is possible to achieve richer effect with CSS.
+                    </blockquote>
+
+                    <p>
+                      This is wrong. <code>&lt;big></code> and <code>&lt;tt></code> are not only
+                      deprecated, they are obsolete as of HTML5. In any case, a learning site should never advocate the
+                      use of these tags to format text, even with a mild disclaimer that “richer” effects are possible
+                      via CSS.
+                    </p>
+                  </li>
+
 
                   <li id="html_getstarted_htm">
                     <a href="#html_getstarted_htm" class="wrap">#</a>
@@ -695,6 +607,16 @@ Last name: &lt;input type="text" name="lastname" />
                     </p>
                   </li>
 
+                  <li id="html_frames">
+                    <a href="#html_frames" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_frame.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_frames.asp</a>.
+                    <p>
+                      Again, frames are considered among the very worst of practices in modern Web development. In
+                      fact, though the iframe element is still a usable element, the frame element itself is no longer <em>valid</em> in HTML5.  
+                      Generally lighter ajax or js loading of information is recommended over the completely new page load that iframes require.
+                    </p>
+                  </li>
+
                   <li id="html5_webstorage">
                     <a href="#html5_webstorage" class="wrap">#</a>
                     <a href="http://www.w3schools.com/html5/html5_webstorage.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_webstorage.asp</del></a>.
@@ -711,6 +633,88 @@ Last name: &lt;input type="text" name="lastname" />
                       less than 2 years old.
                     </p>
                   </li>
+
+                  <li id="tag_q">
+                    <a href="#tag_q" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_q.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/tags/tag_q.asp</del></a>.
+                    <blockquote>
+                      Browser Support. The &lt;q> tag is supported in all major browsers, except Internet Explorer.
+                    </blockquote>
+                    <p>This is blatantly false; <code>&lt;q></code> tags work just fine in IE8.</p>
+                  </li>
+
+                  <li id="html_links">
+                    <a href="#html_links" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_links.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_links.asp</del></a>.
+                    <blockquote>
+                      The name attribute specifies the name of an anchor. The name attribute is used to create a
+                      bookmark inside an HTML document.
+                    </blockquote>
+                    <p>
+                      This is misleading. Named anchors have been deprecated since HTML4 and replaced with element IDs.
+                      (Yes, that's right: you can link to any element with a <code>href="#thing"</code> as long as it
+                      has <code>id="thing"</code>. Yes, it works everywhere.)
+                    </p>
+                  </li>
+
+
+                  <li id="html5_form_input_types">
+                    <a href="#html5_form_input_types" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html5/html5_form_input_types.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_form_input_types.asp</del></a>.
+                    <blockquote>
+                      search: No No 9.0 No No, color: No No 9.0 No No
+                    </blockquote>
+                    <p>
+                      This entire support matrix is wrong. Support for <code>type=color</code> and
+                      <code>type=search</code> were added in Opera version 11, not version 9. Furthermore, IE, Safari,
+                      Chrome, and Firefox all have support for properties that W3Schools claims they do not support.
+                    </p>
+                  </li>
+
+                  <li id="html_url">
+                    <a href="#html_url" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_url.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_url.asp</del></a>.
+                    <blockquote>
+                      Pages starting with http:// are not encrypted, so all information exchanged between your computer
+                      and the Internet can be "seen" by hackers.
+                    </blockquote>
+
+                    <p>
+                      This is a gross mischaracterization of how attacks involving traffic sniffing operate.
+                    </p>
+
+                    <blockquote>
+                      Common URL Schemes […] gopher […] news […] WAIS
+                    </blockquote>
+
+                    <p>
+                      None of these URL schemes were ever "common" within the lifetime of W3Schools, and certainly are
+                      not common now. This information simply should have never existed.
+                    </p>
+                  </li>
+
+
+                  <li id="html_elements_br">
+                    <a href="#html_elements_br" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_elements.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_elements.asp</del></a>.
+                    <blockquote>
+                      Even if <code>&lt;br&gt;</code> works in all browsers, writing <code>&lt;br /&gt;</code> instead is more future proof.
+                    </blockquote>
+                    <p>
+                      This is false and misleading; there is nothing future-proof about self-closing tags, especially
+                      as the work on XHTML 2.0 has been discontinued. Furthermore, &lt;br /&gt; isn't semantic in most cases and probably should not
+                      be mentioned at all.
+                    </p>
+
+                    <blockquote>
+                      Note: Future version of HTML will not allow you to skip end tags.
+                    </blockquote>
+                    <p>
+                      This is blatantly false. The latest version of HTML, HTML5, continues to allow certain end tags
+                      to be omitted.
+                    </p>
+                  </li>
+
 
 
                 </ul>
