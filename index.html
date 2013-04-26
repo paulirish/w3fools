@@ -116,6 +116,12 @@
               ANSI/ISO accredited certifications, W3Schools has no support from governing standards bodies.
             </li>
 
+            <li class='nocommunity'>
+              W3Schools.com is slow to update material on its site, and provides no mechanism to allow the community to contribute updates or corrections.  
+              In a world where the html5 spec&#151;itself built by a community effort&#151;is growing and gaining speed, outdated and unchanging examples with
+              high visibility are a hinderance to the web.
+            </li>
+
             <li class="incorrect">
               W3Schools frequently publishes inaccurate or misleading content. We have collected several examples
               illustrating this problem below.
@@ -134,6 +140,7 @@
             <li>Being badly educated hampers your ability to score a good job.
             <li>Inaccurate references slow development and cause costly QA loops.
             <li>Learning key web development idioms slowly or incorrectly puts you years behind your own colleagues.
+            <li>Adoption of html5 by browsers (and html5.1, etc) depends on correct usage in the wild, which is hampered by out-of-date or unhelpful example usage.
 
           </ol></section>
 
@@ -149,7 +156,8 @@
           <ol>
             <li>
               <strong>W3Schools</strong> should consider <abbr title="make the site a wiki. Or.. put it all in public source control, like on Github.">wikifying</abbr> their content so the community could self-correct and keep the information
-              up-to-date. Today, they do not even allow you to submit corrections on a page. They should.
+              up-to-date. Previously, they did not even have a mechanism for submitting corrections.  
+              They now have a tiny "REPORT ERROR" link in their footer.  We should use it liberally and see how responsive they are to inaccuracies.
             </li>
 
 
@@ -165,7 +173,7 @@
                       <a href="http://reference.sitepoint.com/">SitePoint</a> is a pretty good reference for HTML, CSS and JavaScript. Their documentation always mentions feature support across different browsers, and describes known browser bugs.
                   <li>
                       The W3C, itself, has a wiki-based general <a href="http://www.w3.org/html/wiki/Learn">Learn</a> page as well as an <a
-                      href="http://www.w3.org/html/wiki/Elements">HTML element reference</a>.
+                      href="http://www.w3.org/community/webed/wiki/HTML/Elements">HTML element reference</a>.
                   <li>
                       <p>
                           <a href="https://developer.mozilla.org/en-US/docs">The MDN (Mozilla's Developer Network)</a> takes over at intermediate CSS and
@@ -218,38 +226,35 @@
                 <h3>HTML</h3>
                 <ul>
 
-                  <li id="html-headings">
-                    <a href="#html-headings" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_headings.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_headings.asp</del></a>.
-                    <blockquote>
-                      Note: Browsers automatically add an empty line before and after a heading.
-                    </blockquote>
+                  <li id="markup">
+                    <a href="#markup" class="wrap">#</a>
+                    <a href="http://www.w3schools.com" rel="nofollow" class="w3s-link">http://www.w3schools.com/</a>.
                     <p>
-                      This is an oversimplification. Browsers' default stylesheets define these elements as block-level with non-zero <code>margin-top</code>
-                      and <code>margin-bottom</code> values. No newlines are added.
+                      The markup of the W3Schools site itself is awful and does not conform to best practices: <del>table in
+                      table in table in table</del> <ins>now div in div in div in div</ins>, with <strong>lots</strong> of inline styles.
+                      The content of the site's pages talk about html5, but it has not been implemented on their own site.
                     </p>
                   </li>
 
-                  <li id="html5_intro">
-                    <a href="#html5_intro" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/html5_intro.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/html5_intro.asp</a>.
-                    <blockquote>
-                      The latest versions of Safari, Chrome, Firefox, and Opera support some HTML5 features. Internet Explorer 9 will support some HTML5 features.
-                    </blockquote>
+                  <li id="specs">
+                    <a href="#specs" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/" rel="nofollow" class="w3s-link">www.w3schools.com/</a>
                     <p>
-                      This is misleading. Many features that have existed for years in IE are just now being standardized by HTML5, e.g. <code>contenteditable</code>.
-                      IE8 also already supports <code>localStorage</code>, which is an HTML5 feature.
+                       No links to the specs, ever. :(  This is like having a wikipedia article full of [citation needed] tags, but with no citations forthcoming.
                     </p>
                   </li>
 
-                  <li id="html_getstarted">
-                    <a href="#html_getstarted" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
+                  <li id="html5-elements">
+                    <a href="#html5-elements" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html5_new_elements.asp" rel="nofollow" class="w3s-link">http://www.w3schools.com/html/html5_new_elements.asp</a>.
                     <blockquote>
-                      […] professional web developers often prefer HTML editors like FrontPage or Dreamweaver, instead of writing plain text.
+                      &lt;article&gt; Defines an article
+                    </blockquote>
+                    <blockquote>
+                      &lt;section&gt; Defines an section
                     </blockquote>
                     <p>
-                      Professional web developers do not recommend the use of WYSIWYG editors.
+                      These are examples of their vague and unhelpful circular definitions.  Many of their descriptions for new elements fail to clarify anything, but for article and section, somewhat subtle elements, a circular definition will be of no assistance to a new user trying to find the right usage.
                     </p>
                   </li>
 
@@ -275,15 +280,6 @@
                     </p>
                   </li>
                  -->
-
-                  <li id="html_frames">
-                    <a href="#html_frames" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/tags/tag_frame.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_frames.asp</a>.
-                    <p>
-                      Again, frames are considered among the very worst of practices in modern Web development. In
-                      fact, they are considered so bad, they are no longer <em>valid</em> in HTML5.
-                    </p>
-                  </li>
 
                   <li id="html_elements">
                     <a href="#html_elements" class="wrap">#</a>
@@ -315,45 +311,6 @@
                     </p>
                   </li>
 
-                  <li id="html_getstarted_htm">
-                    <a href="#html_getstarted_htm" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
-                    <blockquote>
-                      When you save an HTML file, you can use either the <code>.htm</code> or the <code>.html</code> file extension. We use <code>.htm</code> in
-                      our examples. It is a habit from the past, when the software only allowed three letters in file extensions. With new software
-                      it is perfectly safe to use <code>.html</code>
-                    </blockquote>
-                    <p>
-                      Nitpicking to be sure, but Unix has supported arbitrary 255-character file names since 1983.
-                      That is hardly "new software", and illustrates the misunderstanding of basic principles of
-                      computing &amp; software design that tends to permeate W3Schools material.
-                    </p>
-                    <p>
-                      Extensions are not necessary at all and if they are present they don't have to be
-                      <code>.htm</code> or <code>.html</code>. The key thing is that HTML files are served with
-                      the correct content-type e.g. <code>text/html</code>.  (many web servers have some built in
-                      or preconfigured knowledge that <code>.htm</code> and <code>.html</code> should be served
-                      with the <code>text/html</code> content-type)
-                    </p>
-                  </li>
-
-                  <li id="html5_webstorage">
-                    <a href="#html5_webstorage" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/html5_webstorage.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_webstorage.asp</del></a>.
-                    <blockquote>
-                      The localStorage method stores the data with no time limit. […] The sessionStorage method stores
-                      the data for one session.
-                    </blockquote>
-                    <p>
-                      <code>localStorage</code> and <code>sessionStorage</code> are called "methods", but they are not
-                      methods—they are objects that implement the HTML5 Storage interface. Nothing about their
-                      properties and methods are mentioned, it just shows a simple dot syntax getter example. This is
-                      important, because W3Schools apologists often claim that the reason W3Schools documentation is
-                      wrong is because it is old—but this "content" is certainly not old, as the web storage API is
-                      less than 2 years old.
-                    </p>
-                  </li>
-
                   <li id="html5_ref_standardattributes">
                     <a href="#html5_ref_standardattributes" class="wrap">#</a>
                     <a href="http://www.w3schools.com/html5/html5_ref_standardattributes.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/html5_ref_standardattributes.asp</a>.
@@ -365,87 +322,6 @@
                       Finally, instead of listing all five microdata attributes, only "item" and "itemprop" are
                       provided—and they don’t give a reasonable explanation of how they should be used, leaving the
                       visitor clueless.
-                    </p>
-                  </li>
-
-                  <li id="tag_q">
-                    <a href="#tag_q" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/tags/tag_q.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/tags/tag_q.asp</del></a>.
-                    <blockquote>
-                      Browser Support. The &lt;q> tag is supported in all major browsers, except Internet Explorer.
-                    </blockquote>
-                    <p>This is blatantly false; <code>&lt;q></code> tags work just fine in IE8.</p>
-                  </li>
-
-                  <li id="markup">
-                    <a href="#markup" class="wrap">#</a>
-                    <p>
-                      The markup of the W3Schools site itself is awful and does not conform to best practices: table in
-                      table in table in table, with lots of inline styles.
-                    </p>
-                  </li>
-
-                  <li id="html5_form_input_types">
-                    <a href="#html5_form_input_types" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/html5_form_input_types.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_form_input_types.asp</del></a>.
-                    <blockquote>
-                      search: No No 9.0 No No, color: No No 9.0 No No
-                    </blockquote>
-                    <p>
-                      This entire support matrix is wrong. Support for <code>type=color</code> and
-                      <code>type=search</code> were added in Opera version 11, not version 9. Furthermore, IE, Safari,
-                      Chrome, and Firefox all have support for properties that W3Schools claims they do not support.
-                    </p>
-                  </li>
-
-                  <li id="html_elements_br">
-                    <a href="#html_elements_br" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_elements.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_elements.asp</a>.
-                    <blockquote>
-                      Even if <code>&lt;br&gt;</code> works in all browsers, writing <code>&lt;br /&gt;</code> instead is more future proof.
-                    </blockquote>
-                    <p>
-                      This is false and misleading; there is nothing future-proof about self-closing tags, especially
-                      as the work on XHTML 2.0 has been discontinued. Furthermore, &lt;br /&gt; isn't semantic in most cases and probably should not
-                      be mentioned at all.
-                    </p>
-
-                    <blockquote>
-                      Note: Future version of HTML will not allow you to skip end tags.
-                    </blockquote>
-                    <p>
-                      This is blatantly false. The latest version of HTML, HTML5, continues to allow certain end tags
-                      to be omitted.
-                    </p>
-                  </li>
-
-                  <li id="html_links">
-                    <a href="#html_links" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_links.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_links.asp</a>.
-                    <blockquote>
-                      The name attribute specifies the name of an anchor. The name attribute is used to create a
-                      bookmark inside an HTML document.
-                    </blockquote>
-                    <p>
-                      This is misleading. Named anchors have been deprecated since HTML4 and replaced with element IDs.
-                      (Yes, that's right: you can link to any element with a <code>href="#thing"</code> as long as it
-                      has <code>id="thing"</code>. Yes, it works everywhere.)
-                    </p>
-                  </li>
-
-                  <li id="tag_font_style">
-                    <a href="#tag_font_style" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/tags/tag_font_style.asp" rel="nofollow" class="w3s-link">www.w3schools.com/tags/tag_font_style.asp</a>.
-                    <blockquote>
-                      The &lt;tt>, &lt;i>, &lt;b>, &lt;big>, and &lt;small> tags are all font-style tags. They are not
-                      deprecated, but it is possible to achieve richer effect with CSS.
-                    </blockquote>
-
-                    <p>
-                      This is wrong. <code>&lt;big></code> and <code>&lt;tt></code> are not only
-                      deprecated, they are obsolete as of HTML5. In any case, a learning site should never advocate the
-                      use of these tags to format text, even with a mild disclaimer that “richer” effects are possible
-                      via CSS.
                     </p>
                   </li>
 
@@ -482,19 +358,10 @@ Last name: &lt;input type="text" name="lastname" />
                     <a href="http://www.w3schools.com/html/html_colornames.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_colornames.asp</a>,
                     <a href="http://www.w3schools.com/html/html_colorvalues.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_colorvalues.asp</a>
                     <p>
-                      This is all CSS stuff. It should not be listed in the HTML section. Additionally, the Color Names page lies: not all browsers support the 130 SVG colors.
+                      This is all CSS stuff. It should not be listed in the HTML section. Additionally, the Color Names page is misleading: not all browsers support the 130 SVG colors.
                     </p>
                   </li>
 
-                  <li id="html_whyusehtml4">
-                    <a href="#html_whyusehtml4" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_whyusehtml4.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_whyusehtml4.asp</a>.
-                    <p>
-                      This is one of the few places in the entire site where they provide an example that contains a
-                      DOCTYPE. People that use their examples as starting points will be generating quirks-mode markup,
-                      since pretty much none of them offer a DOCTYPE.
-                    </p>
-                  </li>
 
                   <li id="html_head">
                     <a href="#html_head" class="wrap">#</a>
@@ -515,28 +382,6 @@ Last name: &lt;input type="text" name="lastname" />
                       Their "minimum document example" is missing a DOCTYPE. It also differs from other "minimal
                       document examples" on their site, such as the one on the HTML Introduction page, which is missing
                       a <code>&lt;head></code> entirely.
-                    </p>
-                  </li>
-
-                  <li id="html_url">
-                    <a href="#html_url" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html/html_url.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_url.asp</del></a>.
-                    <blockquote>
-                      Pages starting with http:// are not encrypted, so all information exchanged between your computer
-                      and the Internet can be "seen" by hackers.
-                    </blockquote>
-
-                    <p>
-                      This is a gross mischaracterization of how attacks involving traffic sniffing operate.
-                    </p>
-
-                    <blockquote>
-                      Common URL Schemes […] gopher […] news […] WAIS
-                    </blockquote>
-
-                    <p>
-                      None of these URL schemes were ever "common" within the lifetime of W3Schools, and certainly are
-                      not common now. This information simply should have never existed.
                     </p>
                   </li>
 
@@ -620,16 +465,6 @@ Last name: &lt;input type="text" name="lastname" />
                     </p>
                   </li>
 
-                  <li id="tag_meta">
-                    <a href="#tag_meta" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/html5/tag_meta.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/tag_meta.asp</a>
-                    <blockquote><pre>&lt;meta charset="ISO-8859-1" /></pre></blockquote>
-                    <p>
-                      This is very bad. Sites like W3Schools should not be advocating the use of ISO-8859-1. UTF-8
-                      should be used in nearly all cases.
-                    </p>
-                  </li>
-
                   <li id="tag_details">
                     <a href="#tag_details" class="wrap">#</a>
                     <a href="http://www.w3schools.com/html5/tag_details.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html5/tag_details.asp</a>
@@ -692,6 +527,210 @@ Last name: &lt;input type="text" name="lastname" />
                       Wrong. In HTML5 the <code>&lt;header&gt;</code> element <a href="http://developers.whatwg.org/sections.html#the-header-element">represents a group of introductory or navigational aids</a>. It is not <em>just</em> for the document. In addition it’s often used for headers in sectioning content elements such as <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code>.
                     </p>
                   </li>
+
+                  <li id="html_getstarted">
+                    <a href="#html_getstarted" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
+                    <blockquote>
+                      […] professional web developers often prefer HTML editors like FrontPage or Dreamweaver, instead of writing plain text.
+                    </blockquote>
+                    <p>
+                      Professional web developers do not recommend the use of WYSIWYG editors.
+                    </p>
+                  </li>
+
+                  <li id="html5_intro">
+                    <a href="#html5_intro" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html5_intro.asp" rel="nofollow" class="w3s-link"><del>http://www.w3schools.com/html/html5_intro.asp</del></a>.
+                    <blockquote>
+                      The latest versions of Safari, Chrome, Firefox, and Opera support some HTML5 features. Internet Explorer 9 will support some HTML5 features.
+                    </blockquote>
+                    <p>
+                      This is misleading. Many features that have existed for years in IE are just now being standardized by HTML5, e.g. <code>contenteditable</code>.
+                      IE8 also already supports <code>localStorage</code>, which is an HTML5 feature.
+                    </p>
+                  </li>
+
+                  <li id="html-headings">
+                    <a href="#html-headings" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_headings.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_headings.asp</del></a>.
+                    <blockquote>
+                      Note: Browsers automatically add an empty line before and after a heading.
+                    </blockquote>
+                    <p>
+                      This is an oversimplification. Browsers' default stylesheets define these elements as block-level with non-zero <code>margin-top</code>
+                      and <code>margin-bottom</code> values. No newlines are added.
+                    </p>
+                  </li>
+
+                  <li id="tag_meta">
+                    <a href="#tag_meta" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_meta.asp" rel="nofollow" class="w3s-link"><del>http://www.w3schools.com/tags/tag_meta.asp</del></a>
+                    <blockquote><pre>&lt;meta charset="ISO-8859-1" /></pre></blockquote>
+                    <p>
+                      This is very bad. Sites like W3Schools should not be advocating the use of ISO-8859-1. UTF-8
+                      should be used in nearly all cases.
+                    </p>
+                  </li>
+
+                  <li id="html_whyusehtml4">
+                    <a href="#html_whyusehtml4" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_whyusehtml4.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_whyusehtml4.asp</del></a>.
+                    <p>
+                      This is one of the few places in the entire site where they provide an example that contains a
+                      DOCTYPE. People that use their examples as starting points will be generating quirks-mode markup,
+                      since pretty much none of them offer a DOCTYPE.
+                    </p>
+                  </li>
+
+                  <li id="tag_font_style">
+                    <a href="#tag_font_style" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_font_style.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/tags/tag_font_style.asp</del></a>.
+                    <blockquote>
+                      The &lt;tt>, &lt;i>, &lt;b>, &lt;big>, and &lt;small> tags are all font-style tags. They are not
+                      deprecated, but it is possible to achieve richer effect with CSS.
+                    </blockquote>
+
+                    <p>
+                      This is wrong. <code>&lt;big></code> and <code>&lt;tt></code> are not only
+                      deprecated, they are obsolete as of HTML5. In any case, a learning site should never advocate the
+                      use of these tags to format text, even with a mild disclaimer that “richer” effects are possible
+                      via CSS.
+                    </p>
+                  </li>
+
+
+                  <li id="html_getstarted_htm">
+                    <a href="#html_getstarted_htm" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_getstarted.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_getstarted.asp</del></a>.
+                    <blockquote>
+                      When you save an HTML file, you can use either the <code>.htm</code> or the <code>.html</code> file extension. We use <code>.htm</code> in
+                      our examples. It is a habit from the past, when the software only allowed three letters in file extensions. With new software
+                      it is perfectly safe to use <code>.html</code>
+                    </blockquote>
+                    <p>
+                      Nitpicking to be sure, but Unix has supported arbitrary 255-character file names since 1983.
+                      That is hardly "new software", and illustrates the misunderstanding of basic principles of
+                      computing &amp; software design that tends to permeate W3Schools material.
+                    </p>
+                    <p>
+                      Extensions are not necessary at all and if they are present they don't have to be
+                      <code>.htm</code> or <code>.html</code>. The key thing is that HTML files are served with
+                      the correct content-type e.g. <code>text/html</code>.  (many web servers have some built in
+                      or preconfigured knowledge that <code>.htm</code> and <code>.html</code> should be served
+                      with the <code>text/html</code> content-type)
+                    </p>
+                  </li>
+
+                  <li id="html_frames">
+                    <a href="#html_frames" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_frame.asp" rel="nofollow" class="w3s-link">www.w3schools.com/html/html_frames.asp</a>.
+                    <p>
+                      Again, frames are considered among the very worst of practices in modern Web development. In
+                      fact, though the iframe element is still a usable element, the frame element itself is no longer <em>valid</em> in HTML5.  
+                      Generally lighter ajax or js loading of information is recommended over the completely new page load that iframes require.
+                    </p>
+                  </li>
+
+                  <li id="html5_webstorage">
+                    <a href="#html5_webstorage" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html5/html5_webstorage.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_webstorage.asp</del></a>.
+                    <blockquote>
+                      The localStorage method stores the data with no time limit. […] The sessionStorage method stores
+                      the data for one session.
+                    </blockquote>
+                    <p>
+                      <code>localStorage</code> and <code>sessionStorage</code> are called "methods", but they are not
+                      methods—they are objects that implement the HTML5 Storage interface. Nothing about their
+                      properties and methods are mentioned, it just shows a simple dot syntax getter example. This is
+                      important, because W3Schools apologists often claim that the reason W3Schools documentation is
+                      wrong is because it is old—but this "content" is certainly not old, as the web storage API is
+                      less than 2 years old.
+                    </p>
+                  </li>
+
+                  <li id="tag_q">
+                    <a href="#tag_q" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/tags/tag_q.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/tags/tag_q.asp</del></a>.
+                    <blockquote>
+                      Browser Support. The &lt;q> tag is supported in all major browsers, except Internet Explorer.
+                    </blockquote>
+                    <p>This is blatantly false; <code>&lt;q></code> tags work just fine in IE8.</p>
+                  </li>
+
+                  <li id="html_links">
+                    <a href="#html_links" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_links.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_links.asp</del></a>.
+                    <blockquote>
+                      The name attribute specifies the name of an anchor. The name attribute is used to create a
+                      bookmark inside an HTML document.
+                    </blockquote>
+                    <p>
+                      This is misleading. Named anchors have been deprecated since HTML4 and replaced with element IDs.
+                      (Yes, that's right: you can link to any element with a <code>href="#thing"</code> as long as it
+                      has <code>id="thing"</code>. Yes, it works everywhere.)
+                    </p>
+                  </li>
+
+
+                  <li id="html5_form_input_types">
+                    <a href="#html5_form_input_types" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html5/html5_form_input_types.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html5/html5_form_input_types.asp</del></a>.
+                    <blockquote>
+                      search: No No 9.0 No No, color: No No 9.0 No No
+                    </blockquote>
+                    <p>
+                      This entire support matrix is wrong. Support for <code>type=color</code> and
+                      <code>type=search</code> were added in Opera version 11, not version 9. Furthermore, IE, Safari,
+                      Chrome, and Firefox all have support for properties that W3Schools claims they do not support.
+                    </p>
+                  </li>
+
+                  <li id="html_url">
+                    <a href="#html_url" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_url.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_url.asp</del></a>.
+                    <blockquote>
+                      Pages starting with http:// are not encrypted, so all information exchanged between your computer
+                      and the Internet can be "seen" by hackers.
+                    </blockquote>
+
+                    <p>
+                      This is a gross mischaracterization of how attacks involving traffic sniffing operate.
+                    </p>
+
+                    <blockquote>
+                      Common URL Schemes […] gopher […] news […] WAIS
+                    </blockquote>
+
+                    <p>
+                      None of these URL schemes were ever "common" within the lifetime of W3Schools, and certainly are
+                      not common now. This information simply should have never existed.
+                    </p>
+                  </li>
+
+
+                  <li id="html_elements_br">
+                    <a href="#html_elements_br" class="wrap">#</a>
+                    <a href="http://www.w3schools.com/html/html_elements.asp" rel="nofollow" class="w3s-link"><del>www.w3schools.com/html/html_elements.asp</del></a>.
+                    <blockquote>
+                      Even if <code>&lt;br&gt;</code> works in all browsers, writing <code>&lt;br /&gt;</code> instead is more future proof.
+                    </blockquote>
+                    <p>
+                      This is false and misleading; there is nothing future-proof about self-closing tags, especially
+                      as the work on XHTML 2.0 has been discontinued. Furthermore, &lt;br /&gt; isn't semantic in most cases and probably should not
+                      be mentioned at all.
+                    </p>
+
+                    <blockquote>
+                      Note: Future version of HTML will not allow you to skip end tags.
+                    </blockquote>
+                    <p>
+                      This is blatantly false. The latest version of HTML, HTML5, continues to allow certain end tags
+                      to be omitted.
+                    </p>
+                  </li>
+
+
 
                 </ul>
               </li>
@@ -1338,14 +1377,6 @@ VALUES
                     <p>
                       Anyone could upload a file with a name like "../hacked.php", and PHP would happily write it.
                       It is not okay to do no validation on a file upload, this is a massive security risk
-                    </p>
-                  </li>
-
-                  <li id="specs">
-                    <a href="#specs" class="wrap">#</a>
-                    <a href="http://www.w3schools.com/" rel="nofollow" class="w3s-link">www.w3schools.com/</a>
-                    <p>
-                       No links to the specs, ever. :(
                     </p>
                   </li>
 
