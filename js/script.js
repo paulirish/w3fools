@@ -10,8 +10,8 @@
 			$docEl = $( document.documentElement ),
 			$body = $( document.body ),
 			$window = $( window ),
-			$scrollable = $body; // default scrollable thingy, which'll be body or docEl (html)	
-			
+			$scrollable = $body; // default scrollable thingy, which'll be body or docEl (html)
+
 		// find out what the hell to scroll ( html or body )
 		// its like we can already tell - spooky
 		if ( $docEl.scrollTop() ) {
@@ -25,7 +25,7 @@
 				// we actually scrolled, so, er, undo it
 				$body.scrollTop( bodyST - 1 );
 			}
-		}		
+		}
 
 		// build cache
 		$tocLinks.each(function(i,v) {
@@ -84,18 +84,11 @@
 			$document.scroll();
 			setTimeout( arguments.callee, 1500 );
 		})();
-		
+
 		var contributors = $('#contributors');
 		contributors.find('h2').click(function(){
 			contributors.find('a').sort(function(){ return 0.5 - Math.random(); }).each(function(){ $(this).appendTo(contributors) });
 		});
-		
-		
-		twttr.anywhere(function(T) {
-			T('#contributors').hovercards();
-		});
-		
-
 	});
 
 	$(function () {
