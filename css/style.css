@@ -153,11 +153,11 @@ h4 {
   margin: 1.25em 0;
 }
 
-pre { padding: 0; }
+pre, p, li { padding: 0; }
 pre code { line-height: 1.875em; padding: 0.9375em 0 0.9375em 0.9375em; font-size: 1em; }
 
-p, li { margin: 1.5em 0; padding: 0; }
-
+p { margin: 1.5em 0; }
+li { margin: 0.5em; }
 p:last-of-type, li:last-of-type { margin-bottom: 0; }
 
 
