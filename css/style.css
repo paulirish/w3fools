@@ -37,18 +37,6 @@ h2 { letter-spacing: 1px; }
 
 ol ul li { list-style: none; }
 
-code {
-  font-size: 0.9em;
-  background-color: hsl(42, 21%, 75%);
-  display: inline-block;
-  padding: 1px 4px;
-  text-shadow: 1px 1px 1px hsl(42, 21%, 85%);
-  word-wrap:break-word;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
 section li code a {
   font-weight: bold;
   font-family: monospace, sans-serif;
@@ -73,9 +61,6 @@ header h2:before {
 
 .content, .intro p, .sucks li, .sucks .intro p, .intro .update, .sucks .intro blockquote { _width: 800px; min-width: 60%; max-width: 800px; margin: 0 auto; }
 
-.intro p + small { text-align: right; font-style: italic; }
-.belief { letter-spacing: 2px; }
-
 #contributors { padding-left: 10em; position: relative; -moz-user-select: none; -webkit-user-select: none; user-select: none;  }
 #contributors h2 { left: 0; }
 #contributors a:after { content: ", "; }
@@ -97,32 +82,11 @@ header h2:before {
 }
 
 
-.incorrect:before,
-.cert:before,
-.nocommunity:before {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  border-top: 1px dotted;
-}
-
-.incorrect, .cert, .noaffiliation, .nocommunity, .sucks li  { list-style: none; }
-
-section nav a { display: inline-block; margin: 0 1em; }
-section nav a:first-child { margin-left: 0; }
-section nav a:last-child { margin-right: 0; }
-
-section nav, .belief, #main .sucks h2, footer, .sucks li li:after { text-align: center; }
+footer { text-align: center; }
 
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
-pre code { width: 98%; padding: 0 2%; }
-
-.intro p.update { text-align: left; }
-.intro p.update small { display:block; }
 
 * html .heart { display: none; /* Bad bad IE 6 gets no luv! */ }
 
@@ -143,9 +107,8 @@ header h1 b { text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px,
 
 h2, h3 { text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px; }
 header, header h2 { text-shadow: hsl(15, 84%, 30%) 1px 1px; }
-.belief { text-shadow: hsl(15, 34%, 65%) 1px 1px, hsl(15, 34%, 65%) 2px 2px; }
 
-.intro, .belief, .sucks  {
+.intro  {
   background: hsla(42, 21%, 55%, 0.2);
   outline: 1px dotted hsla(42, 21%, 55%, 0.5);
 }
@@ -202,17 +165,6 @@ p:last-of-type, li:last-of-type { margin-bottom: 0; }
 }
 
 .intro p { margin-bottom: 1.5em; }
-
-.nocommunity:before, .incorrect:before,
-.cert:before { margin-top: -1.5em; }
-
-.incorrect, .cert, .nocommunity, .noaffiliation {
-  margin: 0;
-  min-height: 3em;
-  padding: 1.5em 0;
-}
-
-section nav { margin: 0.75em 0; }
 
 .belief {
   padding: 0.75em 0;
