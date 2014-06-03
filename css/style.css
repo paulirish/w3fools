@@ -150,7 +150,9 @@ header, header h2 { text-shadow: hsl(15, 84%, 30%) 1px 1px; }
   outline: 1px dotted hsla(42, 21%, 55%, 0.5);
 }
 
-.sucks li li:after { border-color: hsl(41, 38%, 50%); }
+.heart {
+	font-size: 60px;
+}
 
 /*
 
@@ -238,7 +240,7 @@ p + blockquote {
 }
 
 /* no love for IE6.. LITERALLY */
-li.heart { _display: none;}
+.heart { _display: none;}
 
 .no-list-style {
 	list-style:none;
