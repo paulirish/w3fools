@@ -6,7 +6,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 
  /* Primary Styles
-    Author: Divya Manian, Paul Irish, and everyone else keen on getting W3Schools less popular or more correct
+    Authors: Divya Manian, Paul Irish, and everyone else keen on getting W3Schools less popular or more correct
 */
 @font-face {
 	font-family: 'LeagueGothicRegular';
@@ -22,7 +22,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 html {
   background-color: hsl(42, 21%, 85%);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(5%, hsla(40, 29%, 73%, 0.2)), color-stop(5%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(top, hsla(40, 29%, 73%, 0.2) 5%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(top, hsla(40, 29%, 73%, 0.2) 5%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 100%);
   background-size: 100% 24px;
   background-position: fixed;
@@ -61,7 +60,13 @@ header h2:before {
 
 .content, .intro p, .sucks li, .sucks .intro p, .intro .update, .sucks .intro blockquote { _width: 800px; min-width: 60%; max-width: 800px; margin: 0 auto; }
 
-#contributors { padding-left: 10em; position: relative; -moz-user-select: none; -webkit-user-select: none; user-select: none;  }
+#contributors {
+  padding-left: 10em;
+  position: relative;
+     -moz-user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
+}
 #contributors h2 { left: 0; }
 #contributors a:after { content: ", "; }
 #contributors a:last-child:after { content: "."; }
@@ -69,16 +74,14 @@ header h2:before {
 #contributors a:hover span.at { opacity: 1; }
 #contributors a {
   display: inline-block;
-   -moz-transition: all 0.2s ease-out;  
-     -o-transition: all 0.2s ease-out;  
 -webkit-transition: all 0.2s ease-out;  
         transition: all 0.2s ease-out;
 }
 #contributors a:hover {
      -moz-transform: scale(1.1);
-       -o-transform: scale(1.1);
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 
@@ -195,7 +198,7 @@ p + blockquote {
 .heart { _display: none;}
 
 .no-list-style {
-	list-style:none;
+  list-style:none;
 }
 
 @media screen and (max-device-width: 480px) {
