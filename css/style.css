@@ -42,7 +42,7 @@ section li code a {
   font-family: monospace, sans-serif;
 }
 
-header h1 b, #main h2, .belief, .sucks h3 {
+header h1 b, h2, .belief, .sucks h3 {
   font-family: 'LeagueGothicRegular', Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
