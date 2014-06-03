@@ -138,14 +138,25 @@ AddType application/octet-stream       safariextz
   RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
 </IfModule>
 
-# html, txt, css, js, json, xml, htc:
-<IfModule filter_module>
-  FilterDeclare   COMPRESS
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type /text/(html|css|javascript|plain|x(ml|-component))/
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type /application/(javascript|json|xml|x-javascript)/
-  FilterChain     COMPRESS
-  FilterProtocol  COMPRESS  change=yes;byteranges=no
-</IfModule>
+   # Compress all output labeled with one of the following MIME-types
+   <IfModule mod_filter.c>
+    AddOutputFilterByType DEFLATE application/atom+xml \
+                                   application/javascript \
+                                   application/json \
+                                   application/rss+xml \
+                                   application/vnd.ms-fontobject \
+                                   application/x-font-ttf \
+                                   application/xhtml+xml \
+                                   application/xml \
+                                   font/opentype \
+                                   image/svg+xml \
+                                   image/x-icon \
+                                   text/css \
+                                   text/html \
+                                   text/plain \
+                                   text/x-component \
+                                   text/xml
+    </IfModule>
 
 <IfModule !mod_filter.c>
   # Legacy versions of Apache
