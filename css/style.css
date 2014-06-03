@@ -77,7 +77,7 @@ header h2:before {
 .belief { letter-spacing: 2px; }
 
 #contributors { padding-left: 10em; position: relative; -moz-user-select: none; -webkit-user-select: none; user-select: none;  }
-#contributors h2 { position: absolute; left: 0; cursor: help; }
+#contributors h2 { left: 0; }
 #contributors a:after { content: ", "; }
 #contributors a:last-child:after { content: "."; }
 #contributors span.at { font-size: 65%; opacity: 0.65; -webkit-transition: 0.2; pointer-events: none;}
@@ -116,58 +116,10 @@ section nav a:last-child { margin-right: 0; }
 
 section nav, .belief, #main .sucks h2, footer, .sucks li li:after { text-align: center; }
 
-.sucks .intro { width: auto; outline: 0; }
-.sucks li li { position: relative; min-width: 100%;}
-.sucks li li:after { content: ""; display: block; margin: 0 auto; position: absolute; left: 40%; width: 30%; border-bottom: 1px dotted; }
-
-.sucks li li:last-of-type:after { border-bottom: 0; }
-.sucks h3 { letter-spacing: 2px; }
-.sucks > p { text-align: center; }
-.sucks li li .wrap { width: 20px; height: 50px; position: absolute; top: 3em; left: -20px; opacity: 0; 
-  -moz-transition: opacity 0.2s ease-out;  
-  -o-transition: opacity 0.2s ease-out;  
-  -webkit-transition: opacity 0.2s ease-out;  
-  transition: opacity 0.2s ease-out;
-}
-.sucks li li:hover .wrap { opacity: 1;}
-.sucks li li:first-child .wrap  { top: 1.5em; }
-
-.quiz ul ul {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  -o-column-count: 2;
-  column-count: 2;
-  -moz-column-gap: 2em;
-  -webkit-column-gap: 2em;
-  -o-column-gap: 2em;
-  -moz-column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
-  -webkit-column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
-  -o-column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
-}
-
-.quiz li p span { font-weight: bold; }
 section li blockquote, section li a { font-family: sans-serif; }
 
 blockquote { border-left: 3px solid; padding-left: 1em; }
 pre code { width: 98%; padding: 0 2%; }
-#toc {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  width: 100%; 
-  background: #ccc;
-  background: hsla(42, 21%, 75%, 0.95);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(42, 21%, 65%, 0.95)), color-stop(1, hsla(42, 21%, 75%, 0.95)));
-  background: -moz-linear-gradient(center bottom, hsla(42, 21%, 65%, 0.95) 0%, hsla(42, 21%, 65%, 0.95), 100%);
-  border-top: 1px solid hsl(42, 21%, 65%);
-  padding: 0.75em 0; 
-  _display: none;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  text-transform: uppercase;  
-  z-index: 1;
-}
-#toc a { display:inline-block; font-weight: bold; padding: 0 1em 0; text-shadow: 0px 1px 0px hsl(42, 21%, 25%); }
 
 .intro p.update { text-align: left; }
 .intro p.update small { display:block; }
@@ -237,9 +189,9 @@ pre { padding: 0; }
 pre code { line-height: 1.875em; padding: 0.9375em 0 0.9375em 0.9375em; font-size: 1em; }
 
 p, li { margin: 1.5em 0; padding: 0; }
-.sucks p { margin-top: 0;}
+
 p:last-of-type, li:last-of-type { margin-bottom: 0; }
-.sucks p:last-of-type { margin-bottom: 1.5em; }
+
 
 .intro {
   padding: 1.5em 1.5em 0 1.5em;
@@ -268,21 +220,6 @@ section nav { margin: 0.75em 0; }
 
 .belief p { margin: 0; }
 
-.sucks {
-  outline-offset: -0.25em;
-  padding: 1.5em 0;
-  margin: 3em 0;
-}
-
-#main .sucks h2 { margin-top: 0; }
-
-.sucks li { padding-top: 3em; }
-.sucks li li { padding: 3em 0 0 0; }
-.sucks li li:first-child { padding-top: 1.5em; }
-.sucks li li:after { bottom: -1.5em; }
-
-.sucks h3 { font-size: 2em; line-height: 1.5; }
-
 footer {
   font-size: 0.8em;
   line-height: 1.875;
@@ -291,17 +228,8 @@ footer {
 
 blockquote,
 .intro small,
-#toc a {
-  font-size: 0.8em;
-  line-height: 1.875;
-  margin-bottom: 1.875em;
-  padding-bottom: 0;
-}
 
-.intro p:last-child { padding-bottom: 1.5em; margin-bottom: 0; text-align: right; }
-.sucks .intro p.update small { text-align: left; }
-
-#toc a { margin-bottom: 0; }
+.intro p:last-child { padding-bottom: 1.5em; margin-bottom: 0; }
    
 p + blockquote {
   margin-top: -0.9375em;
@@ -309,42 +237,11 @@ p + blockquote {
   padding-bottom: 0;
 }
 
-.sucks .intro p + blockquote {
-  margin-top: -0.3333em;
-  margin-bottom: 0.3333em;
-}
-
-.sucks .intro { margin-bottom: 1.5em; margin-top: 1.5em; }
-.sucks .intro blockquote { font-size: 1.5em; line-height: 1.5em; margin-top: 1.75em; margin-bottom: 1.75em; }
-.sucks .intro small { padding-bottom: 0.9375em; margin-bottom: 0; }
-.sucks .intro p { padding-bottom: 1.5em; }
-.sucks .intro + nav { margin-bottom: 0; }
-
-.quiz ul ul {
-  column-rule: hsla(42, 21%, 55%, 0.5) dotted 1px;
-  margin: 1.5em 0 0 0;
-}
-   
-.quiz p { _text-align: center; }
-.quiz li p { _text-align: left; }
-
-.quiz li li { padding: 0 0 1.5em 0; position: static; }
-.quiz li li:after { content: none; border: 0;}
-
-
 /* no love for IE6.. LITERALLY */
 li.heart { _display: none;}
 
-#certificate p {
-  margin: auto;
-  text-align: center;
-  width: 400px;
-}
-
-#certificate p b {
-  display: block;
-  font-size: 4em;
-  font-weight: bold;
+.no-list-style {
+	list-style:none;
 }
 
 @media screen and (max-device-width: 480px) {
