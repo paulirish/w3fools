@@ -1,5 +1,7 @@
 w3fools
 =======
 
-Pull requests should currently be sent into the master branch.
-We may move the site over to github pages in the future for hosting, so ignore the gh-pages branch entirely for now. It exists only for experimentation.
+This is the repository for W3Fools.
+The history of the site can be seen through the git history.
+
+If you would like to submit any pull requests, please do so to the `gh-pages` branch.
